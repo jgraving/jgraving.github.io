@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV"
+title: "Curriculum Vitae"
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -9,17 +9,29 @@ redirect_from:
 
 {% include base_path %}
 
+
+<object data="http://jgraving.github.io/files/jacob_graving_cv.pdf" type="application/pdf" width="700px" height="700px">
+    <embed src="http://jgraving.github.io/files/jacob_graving_cv.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="http://jgraving.github.io/files/jacob_graving_cv.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
+
+<!---
 Education
 ======
-* Ph.D in Biology (Collective Behavior), Max Planck Institute of Animal Behaviour, 2019 (expected)
+* Ph.D. in Biology (Collective Behavior), 2019 (expected)
+  * Department of Collective Behaviour, Max Planck Institute of Animal Behaviour
+  * Department of Biology, University of Konstanz
+  * International Max Planck Research School (IMPRS) for Organismal Biology
 * M.S. in Biology (Animal Behavior), Bowling Green State University, 2015
 * B.S. in Biology (Neuroscience), Bowling Green State University, 2013
 
-<!---
-Work experience
+
+Research experience
 ======
-* Summer 2015: Research Assistant
-  * Github University
+* 2015—
+  * Department of Collective Behaviour, Max Planck Institute of Animal Behaviour
+  * Department of Biology, University of Konstanz
   * Duties included: Tagging issues
   * Supervisor: Professor Git
 
@@ -27,7 +39,7 @@ Work experience
   * Github University
   * Duties included: Merging pull requests
   * Supervisor: Professor Hub
-  
+
 Skills
 ======
 * Skill 1
