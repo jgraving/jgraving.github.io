@@ -8,37 +8,71 @@ redirect_from:
 ---
 
 {% include base_path %}
-
-
-<object data="http://jgraving.github.io/files/jacob_graving_cv.pdf" type="application/pdf" width="700px" height="700px">
-    <embed src="http://jgraving.github.io/files/jacob_graving_cv.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="http://jgraving.github.io/files/jacob_graving_cv.pdf">Download PDF</a>.</p>
-    </embed>
-</object>
+[Download here](/files/jacob_graving_cv.pdf){: .btn}
 
 <!---
+
 Education
 ======
-* Ph.D. in Biology (Collective Behavior), 2019 (expected)
-  * Department of Collective Behaviour, Max Planck Institute of Animal Behaviour
-  * Department of Biology, University of Konstanz
-  * International Max Planck Research School (IMPRS) for Organismal Biology
-* M.S. in Biology (Animal Behavior), Bowling Green State University, 2015
-* B.S. in Biology (Neuroscience), Bowling Green State University, 2013
+* 2019 (expected)
+  * Ph.D. in Biology (Collective Behavior)
+    * Department of Collective Behaviour, Max Planck Institute of Animal Behaviour
+    * Department of Biology, University of Konstanz
+    * International Max Planck Research School (IMPRS) for Organismal Biology
+* 2015
+  * M.S. in Biology (Animal Behavior)
+    * Department of Biological Sciences, Bowling Green State University
+* 2013
+  * B.S. in Biology (Neuroscience)
+      * Department of Biological Sciences, Bowling Green State University
 
-
-Research experience
+Research
 ======
 * 2015—
   * Department of Collective Behaviour, Max Planck Institute of Animal Behaviour
   * Department of Biology, University of Konstanz
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+  * Topic: "Perception and motion in animal groups"
+  * Supervisor: Iain Couzin
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* 2011—2015
+  * Department of Biological Sciences, Bowling Green State University
+  * Topic: "Sensing and navigation in nocturnal arthropods"
+  * Supervisors: Daniel Wiegmann, Verner Bingman
+
+* 2013
+  * Department of Biological Sciences, Bowling Green State University
+  * Topic: "The sensory basis of rheotaxis in fish"
+  * Supervisor: Sheryl Coombs
+
+* 2009
+  * Department of Biological Sciences, Bowling Green State University
+  * Topic: "Phenotypic plasticity in stony corals"
+  * Supervisor: Matthew Partin
+
+Teaching
+======
+* 2015—
+  * Department of Collective Behaviour, Max Planck Institute of Animal Behaviour
+  * Department of Biology, University of Konstanz
+  * Topic: "Perception and motion in animal groups"
+  * Supervisor: Iain Couzin
+
+* 2011—2015
+  * Department of Biological Sciences, Bowling Green State University
+  * Topic: "Sensing and navigation in nocturnal arthropods"
+  * Supervisors: Daniel Wiegmann, Verner Bingman
+
+* 2013
+  * Department of Biological Sciences, Bowling Green State University
+  * Topic: "The sensory basis of rheotaxis in fish"
+  * Supervisor: Sheryl Coombs
+
+* 2009
+  * Department of Biological Sciences, Bowling Green State University
+  * Topic: "Phenotypic plasticity in stony corals"
+  * Supervisor: Matthew Partin
+
+
 
 Skills
 ======
