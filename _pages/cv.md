@@ -8,7 +8,8 @@ redirect_from:
 ---
 
 {% include base_path %}
-[Download here](/files/jacob_graving_cv.pdf){: .btn}
+[Download](/files/jacob_graving_cv.pdf){: .btn}
+[Google Scholar](https://scholar.google.com/citations?user=ybpKXnEAAAAJ){: .btn}
 
 <!---
 
