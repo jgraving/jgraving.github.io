@@ -11,10 +11,11 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* Ph.D in Biology (Collective Behavior), Max Planck Institute of Animal Behaviour, 2019 (expected)
+* M.S. in Biology (Animal Behavior), Bowling Green State University, 2015
+* B.S. in Biology (Neuroscience), Bowling Green State University, 2013
 
+<!---
 Work experience
 ======
 * Summer 2015: Research Assistant
@@ -57,3 +58,4 @@ Teaching
 Service and leadership
 ======
 * Currently signed in to 43 different slack teams
+--->
