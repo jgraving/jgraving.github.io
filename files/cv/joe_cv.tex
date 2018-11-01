@@ -1,0 +1,389 @@
+% !TEX encoding = UTF-8 Unicode
+%%% LaTeX Template: Curriculum Vitae
+%%%
+%%% Source: http://www.howtotex.com/
+%%% Feel free to distribute this template, but please keep the referal to HowToTeX.com.
+%%% Date: July 2011
+
+%%% ------------------------------------------------------------
+%%% BEGIN PREAMBLE
+%%% ------------------------------------------------------------
+\documentclass[paper=a4,fontsize=11pt]{scrartcl}	 			% KOMA-article class							
+%\usepackage[english]{babel}								% English language/hyphenation
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+%\color{darkgray}
+\usepackage{framed,color}
+%\definecolor{shader}{rgb}{1,0.8,0.3}
+%\definecolor{shader}{rgb}{1,1,1}
+%\definecolor{black}{black}{0.25}
+\usepackage[protrusion=true,expansion=true]{microtype}		% Better typography
+\usepackage{amsmath,amsfonts,amsthm}					% Math packages
+\usepackage{graphicx}								% Enable pdflatex
+\usepackage[svgnames]{xcolor}							% Colors by their 'svgnames'
+\usepackage[left=2cm,top=1cm,right=2cm,bottom=2cm,nohead,nofoot]{geometry}									% Saving trees ;-) 
+%\usepackage{url}
+\usepackage{hyperref}										% Clickable URL's
+\usepackage{wrapfig}									% Wrap text along figures
+\usepackage{comment}
+\renewcommand{\refname}{PUBLICATIONS}
+% Bibliography
+%\usepackage{natbib}\
+% Print the labelnumber as the total number of entries in the
+% current refsection, minus the actual labelnumber, plus one
+% Count total number of entries in each refsection
+
+
+\usepackage[backend=bibtex,style=numeric,sorting=ydnt,maxbibnames=9]{biblatex}
+
+\addbibresource[label=manuscripts]{manuscripts.bib}
+\addbibresource[label=published]{published.bib}
+%\usepackage{bibentry}
+%\usepackage{bibtex}
+%\nobibliography*
+%\bibliographystyle{apa}
+
+%%add a picture
+%\graphicspath{ {images/} }
+%\DeclareGraphicsExtensions{.jpg,.pdf,.png}
+
+
+
+%%% Chinese typesetting %%%%%%%%%%%
+%\usepackage{xeCJK}
+%\setCJKmainfont{STFangsong}
+%\XeTeXlinebreaklocale "zh" 
+%\XeTeXlinebreakskip = 0pt plus 1pt
+
+\frenchspacing									% Better looking spacings after periods
+\pagestyle{empty}								% No pagenumbers/headers/footers
+%\usepackage{bbding}									% Symbols
+
+
+%%% Custom sectioning (sectsty package)
+%%% ------------------------------------------------------------
+\usepackage{sectsty}							% Custom sectioning (see below)
+
+\sectionfont{%									% Change font of \section command
+	\usefont{OT1}{phv}{b}{n}%					% bch-b-n: CharterBT-Bold font
+	\sectionrule{0pt}{0pt}{-5pt}{3pt}
+	}
+
+%%% Macros
+%%% ------------------------------------------------------------
+\newlength{\spacebox}
+\settowidth{\spacebox}{8888888888}				% Box to align text
+\newcommand{\sepspace}{\vspace*{1em}}			% Vertical space macro
+
+\newcommand{\MyName}[1]{
+		\Huge \usefont{OT1}{phv}{b}{n} \hfill #1 		% Name
+		\par \normalsize \normalfont}
+		
+\newcommand{\MySlogan}[1]{
+		\large \usefont{OT1}{phv}{m}{n}\hfill \textit{#1} % Slogan (optional)
+		\par \normalsize \normalfont}
+
+\newcommand{\NewPart}[1]{\section*{\uppercase{#1}}}
+
+\newcommand{\PersonalEntry}[2]{
+		\noindent\hangindent=2em\hangafter=0 		% Indentation
+		\parbox{\spacebox}{						% Box to align text
+		\textit{#1}}								% Entry name (birth, address, etc.)
+		\hspace{1.5em} #2 \par}					% Entry value
+
+\newcommand{\SkillsEntry}[2]{						% Same as \PersonalEntry
+		\noindent\hangindent=2em\hangafter=0 		% Indentation
+		\parbox{\spacebox}{						% Box to align text
+		\textit{#1}}								% Entry name (birth, address, etc.)
+		\hspace{1.5em} #2 \par}					% Entry value	
+		
+\newcommand{\EducationEntry}[4]{
+		\noindent \textbf{#1} \hfill 					% Study
+		\colorbox{White}{%
+			\parbox{10em}{%
+			\hfill\color{Black}#2}} \par				% Duration
+		\noindent \textit{#3} \par					% School
+		\noindent\hangindent=2em\hangafter=0 \small #4 	% Description
+		\normalsize \par}
+
+\newcommand{\WorkEntry}[4]{						% Same as \EducationEntry
+		\noindent \textbf{#1} \hfill 					% Jobname
+		\colorbox{White}{\color{Black}#2} \par		% Duration
+		\noindent \textit{#3} \par					% Company
+		\noindent\hangindent=2em\hangafter=0 \small #4 	% Description
+		\normalsize \par}
+\newcommand{\RefEntry}[7]{						% Same as \EducationEntry
+		\noindent \textbf{#1} \par 					% Jobname
+		\noindent \textit{#2} \par	% Duration
+		\noindent \textit{#3} \par
+		\noindent \textit{#4} \par% Company 	% Description
+		\noindent \textit{#5} \par
+		\noindent \textit{#6} \par
+		\noindent \textit{#7} \par
+		}
+
+\newcommand{\ServiceEntry}[2]{					% Same as \EducationEntry
+		\noindent \textit{#1} \par					% Company
+		\noindent\hangindent=2em\hangafter=0 \small #2 	% Description
+		\normalsize \par}
+\newcommand{\codeEntry}[2]{						% Same as \EducationEntry
+		\noindent \textbf{#1} \hfill 					% Jobname
+		\colorbox{White}{\color{Black}#2} \par		% Duration
+		%\noindent \textit{#2} \par					% Company
+		%\noindent\hangindent=2em\hangafter=0 \small #4 	% Description
+		%\normalsize \par}
+		}
+\newcommand{\talkEntry}[2]{						% Same as \EducationEntry
+		\noindent #1 \hfill 					% Jobname
+		\colorbox{White}{\color{Black}#2} \par		% Duration
+		%\noindent \textit{#2} \par					% Company
+		%\noindent\hangindent=2em\hangafter=0 \small #4 	% Description
+		%\normalsize \par}
+		}
+        
+\def\FormatName#1{%
+  \def\myname{Simon Renny-Byfield}%
+  \edef\name{#1}%
+  \ifx\name\myname
+    \textbf{#1}%
+  \else
+    #1%
+  \fi
+}
+
+%%% ------------------------------------------------------------
+%%% BEGIN DOCUMENT
+%%% ------------------------------------------------------------
+\begin{document}
+%\bibliographystyle{nature}
+%\bibliographystyle{apalike}
+%\bibliographystyle{mystyle}
+%\begin{comment}
+%\begin{wrapfigure}{l}{0.5\textwidth}
+%	\vspace*{-2em}
+%		\includegraphics[width=0.15\textwidth]{photo}
+%\end{wrapfigure}
+%\end{comment}
+
+%\begin{shaded}\color{shader}\MyName{Simon\color{gray}Renny-Byfield}\end{shaded}
+\MyName{Joseph \color{gray}Bak-Coleman}
+%\MySlogan{\textit{Try not to become a man of success but a man of value.}}
+%\MySlogan{\textit{---- Albert Einstein}}
+\color{black}
+\sepspace
+
+%%% Personal details
+%%% ------------------------------------------------------------
+\NewPart{Personal details}{}
+%\includegraphics{myphoto.jpg}
+%\PersonalEntry{Birth}{December 20, 1986} 
+\begin{minipage}{0.9\textwidth}\raggedright
+\PersonalEntry{Address}{Department of Ecology and Evolutionary Biology}
+\PersonalEntry{}{Guyot Hall}
+\PersonalEntry{}{Princeton University}
+\PersonalEntry{}{Princeton, NJ, 08540}
+\PersonalEntry{Mobile}{(609) 746-0235}
+\PersonalEntry{E-Mail}{\href{mailto:josephbb@princeton.edu}{\color{blue}{josephbb@princeton.edu}}}
+%\PersonalEntry{Website}{www.githubZZZ.com}
+\end{minipage}
+\begin{minipage}{0.3\textwidth}\raggedleft% adapt widths of minipages to your needs
+%\includegraphics[scale=0.025]{myphoto}
+\end{minipage}
+%\PersonalEntry{Webpage}{\href{https://wiki.qut.edu.au/display/cyphy/Hu+He}{\color{red}{https://wiki.qut.edu.au/display/cyphy/Hu+He}}}
+%\PersonalEntry{}{\href{http://hehuvision.blogspot.com}{\color{red}{http://hehuvision.blogspot.com}}}
+
+%%% Education %%%%%
+%%% ------------------------------------------------------------
+\NewPart{Education}{} 
+
+\EducationEntry{Ph.D. Ecology and Evolutionary Biology}{2014-Present}{Princeton University}{Supervisors: Professor Iain Couzin, Professor Dan Rubenstein\\
+Thesis Title: Collective wisdom in the anthropocene}
+\sepspace
+
+\EducationEntry{M.S. Biology}{2011-2014}{Bowling Green State University}{Supervisor: Professor Sheryl Coombs\\
+Thesis Title: Comparing the role of the lateral line during rheotaxis in a sedentary and mobile fish species}
+\sepspace
+
+\EducationEntry{B.S. Neuroscience}{2005-2011}{Bowling Green State University}
+
+
+\NewPart{Manuscripts}{}
+\begin{refsection}[manuscripts]
+    \DeclareFieldFormat{labelnumberwidth}{#1}
+    \nocite{Li2018}
+    \nocite{Grobis2018}
+    \nocite{BakColeman2018}
+\printbibliography[heading=none]{}
+\end{refsection}
+
+\NewPart{Publications}{}
+\begin{refsection}[published]
+    \nocite{Kao2018}
+    \nocite{Kulpa2015a}
+    \nocite{Bak-Coleman2015b}
+    \nocite{Chicoli2015}
+    \nocite{Bak-Coleman2014}
+    \nocite{Chicoli2014}
+    \nocite{Bak-Coleman2013}
+\printbibliography[heading=none]{}
+
+\end{refsection}
+
+%\renewcommand\refname{\vskip -1cm}
+%\bibliographystyle{siam}
+%\nocite{Bak-Coleman2013}
+%\nocite{Chicoli2014}
+%\nocite{Bak-Coleman2015b}
+
+%\bibliography{cv.template}
+%\bibliographystyle{plain}
+%\printbibliography
+
+\vspace{7 mm}
+%\text{\textsuperscript{\dag} joint first author}
+
+\NewPart{Awards and Grants}{}
+\WorkEntry{Travel Award}{Flow Sensing in Air and Water}{\textit{\$2000}}{2011}
+\WorkEntry{Summer Research Fellowship}{Center for Undergraduate Research and Scholarship}{\textit{\$2500}}{2011}
+\WorkEntry{Summer Research Fellowship}{Science, Engineering, Technology Gateway Ohio}{\textit{\$3500}}{2010}
+\WorkEntry{Bioinformatics Scholarship}{Choose Ohio First for Bioinformatics}{\textit{\$4000 per annum}}{2009-2011}
+
+\NewPart{Popular Press Articles}{}
+The ignorance of the crowd. \textit{Scientific American}, Nov. 2017\\
+Why did Donald Trump get elected? Ask the bees. \textit{Wired}, Dec. 2016
+
+
+\NewPart{Seminars and Conference Participation}
+\talkEntry{Collective Behavior, Social Media and Systemic Risk (Princeton University)}{{\small\raisebox{4pt}[0pt]{\dag}}2018}
+\talkEntry{Yale Institute For Network Science (Yale University)}{{\small\raisebox{4pt}[0pt]{\dag}}2018}
+\talkEntry{Distributed, Collective Computation in Biological and Artificial Systems (Janelia Farm)}{2018}
+\talkEntry{Integrated Behavioral Research Group (Princeton University)}{2018}
+\talkEntry{Metropolitan Society of Natural Historians (AMNH)}{{\small\raisebox{4pt}[0pt]{\dag}}2016}
+\talkEntry{Integrated Behavioral Research Group (Princeton University)}{2016}
+\talkEntry{Animal Behavior Society (Bloomington, IN)}{2012}
+\talkEntry{International Congress of Neuroethology (College Park, MD)}{2012}
+\talkEntry{Ecological And Evolutionary Ecology of Fishes (Windsor, ON)}{2012}
+\talkEntry{J.P. Scott Seminar (BGSU)}{2011}
+\talkEntry{Flow Sensing in Air and Water (Bonn, Germany)}{{\small\raisebox{4pt}[0pt]{\dag}}2011}
+\talkEntry{Undergraduate Honors Society Seminar (BGSU)}{{\small\raisebox{4pt}[0pt]{\dag}}2011}
+\talkEntry{SETGO Symposium (BGSU)}{2011}
+\talkEntry{J.P. Scott Seminar (BGSU)}{2010}
+\talkEntry{}{\small\raisebox{4pt}[0pt]{\dag} invited}
+
+
+\NewPart{Teaching}{}
+\WorkEntry{Guest Lecturer}{Princeton University}{Comparative Physiology}{2017-2018}
+\WorkEntry{Assistant in Instruction}{Princeton University}{Comparative Physiology\\Conservation Biology \\ Life on Earth: Chaos and Clockwork of Biological Design}{2014-2018}
+\WorkEntry{Instructor}{Owens Community College}{Introductory Biology}{2014}
+
+
+
+\NewPart{Service to Profession}{}
+CBSMSR Conference Organizer, Princeton \\
+Graduate Representative, Princeton\\
+ABRCMS Recruiter, Phoenix AZ\\
+Prospective Student Week Organizer, Princeton \\
+IBRG Seminar Series Organizer, Princeton\\
+Graduate Retreat Organizer, Princeton\\
+President of BGSA, BGSU\\
+
+\NewPart{Technical Skills}
+\codeEntry{Python}{Advanced}
+\codeEntry{Bayesian Inference}{Advanced}
+\codeEntry{Machine Learning}{Proficient}
+\codeEntry{R}{Proficient}
+\codeEntry{Computer Vision}{Proficient}
+\codeEntry{Matlab}{Proficient}
+\codeEntry{AWS}{Proficient}
+\codeEntry{Deep Learning}{Familiar}
+
+\NewPart{Peer review}{}
+Animal Behavior\\
+Biology Open \\
+Journal of Experimental Biology\\
+Proceedings B\\
+PLOS Computational Biology\\
+
+\NewPart{References}
+%\address{42 Apartment complex}{Street}{City\\Country}
+\RefEntry{Prof. Iain Couzin}{Max Planck Institute of Ornithology}{Department of Collective Behavior}{University of Konstanz Z8}{Konstanz, DE}{icouzin@orn.mpg.de}{}
+\RefEntry{Prof. Sheryl Coombs,\textit{Emeritus}}{Bowling Green State University}{Biology Department}{Biological Sciences Building}{Bowling Green, OH 43402}{scoombs@bgsu.edu}{}
+\RefEntry{Prof. Dan Rubenstein}{Princeton University}{Eno Hall}{Department of Ecology and Evolutionary Biology}{Princeton, NJ}{dir@princeton.edu}{}
+%\WorkEntry{Post-Doctoral Research}{Queen Mary University of London}{Supervisor: Prof. Andrew R. Leitch}{2012}
+%%% Publications
+%%% ------------------------------------------------------------
+%\NewPart{Publications}{}
+%\begin{enumerate}
+%\item \bibentry{he2012measuring}
+%\item \bibentry{he2011towards}
+%\item \bibentry{he2010graphcut}
+%\item \bibentry{mckinnon2011towards}
+%\item \bibentry{warren2012large}
+%\item \bibentry{warren2010unaided}
+%\end{enumerate}
+%
+%{\color{red}{\textit{Manuscripts under Review}:}}
+%\begin{enumerate}
+%\item \bibentry{hu2013ietcv}
+%\item \bibentry{hu2013sensors}
+%\item \bibentry{hu2013aim}
+%\item \bibentry{hu2013IROS}
+%\item \bibentry{inkyu2013aim}
+%\item \bibentry{Ferrari2013mee}
+%\end{enumerate}
+%
+%
+%%%% Work experience
+%%%% ------------------------------------------------------------
+%\NewPart{Experience}{}
+%\WorkEntry{Teaching Assistant}{Mar 2012 - Jul 2012}{Queensland University of Technology}{\textbf{ENB244} Microprocessors and Digital Systems}
+%\sepspace
+%\WorkEntry{Research Assistant}{Aug 2009 - Dec 2010}{The University of Queensland}{Working for CRCMining on multiple sensors fusion using EKF}
+%\sepspace
+%\WorkEntry{Teaching Assistant}{Mar 2010 - Dec 2010}{The University of Queensland}{\textbf{MECH3750} Numerical Analysis and Python Programming\\
+%\textbf{MECH2301/2300} Structure Mechanics}
+%\sepspace
+%\WorkEntry{Mentoring}{Sep 2008 - Jun 2009}{Central South University}{Mentoring 30 first year undergraduates in College of Mechanical and Electrical Engineering}
+%
+%
+%%%% Skills
+%%%% ------------------------------------------------------------
+%\NewPart{Skills}{}
+%\SkillsEntry{Languages}{English (fluent)}
+%\SkillsEntry{}{\textbf{CET\footnote{CET: Chinese College English Test}-4, CET-6 and IELTS\footnote{IELTS: International English Language Testing System} 6.5}}
+%\SkillsEntry{Programming}{\textsc{Matlab}, \LaTeX, \textsc{C++}, \textsc{Python}}
+%\SkillsEntry{Softwares}{Solid Edge, Solid Works, AutoCAD, Final Cut Pro}
+%\SkillsEntry{OS}{Windows, Linux, Mac OS X}
+%
+%%%% Services
+%%%% ------------------------------------------------------------
+%\NewPart{Academic Services}{}
+%\ServiceEntry{Conference Reviewer}{IEEE/RSJ International Conference on Intelligent Robots and Systems (\textbf{IROS}) 2013\\
+%IAPR International Conference on Pattern Recognition (\textbf{ICPR}) 2012\\
+%IEEE International Conference of Robotics and Automation (\textbf{ICRA}) 2011,2012\\
+%IEEE Intelligent Vehicles Symposium (\textbf{IV}) 2012\\
+%Australasian Conference on Robotics and Automation (\textbf{ACRA}) 2010\\
+%Marine Robotics Workshop at Robotics: Science and Systems (\textbf{RSS}) 2011}
+%
+%
+%%%% Honors and Awards
+%%%% ------------------------------------------------------------
+%\NewPart{Honors \& Awards}{}
+%\begin{itemize}
+%\item Vice-Chancellor Initiative Top Up Scholarship funded by QUT (2011 - 2012)
+%\item Queensland University of Technology Tuition Fee Waiver Scholarship (2011 - 2013)
+%\item The University of Queensland Research Scholar scholarship (2009 - 2010)
+%\item The University of Queensland International Research Tuition Awards (2009 - 2010)
+%\item Chinese Scholarship Council (CSC) Scholarship (2009-2013)
+%\item State Scholarship, Ministry of Education of China (2007)
+%\item Tanghan Scholarship funded by Guangxi Tanghan Zinc \& Indium Co., Ltd (2007)
+%\item First-Class Scholarship for Outstanding Student funded by CSU (2005-2007)
+%\end{itemize}
+%
+%
+%%%% References
+%%%% ------------------------------------------------------------
+%\NewPart{References}{}
+%Available upon request
+%
+%\nobibliography{hu}
+\end{document}
