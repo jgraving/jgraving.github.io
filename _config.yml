@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Jake Graving"
 title_separator          : "-"
 name                     : &name "Jake Graving"
-description              : &description "PhD Student Max Planck Institute of Animal Behaviour"
+description              : &description "PhD Student Max Planck Institute for Ornithology"
 url                      : https://jgraving.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "jgraving/jgraving.github.io"
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Jake Graving"
   avatar           : "profile.png"
-  bio              : "PhD Student<br />Max Planck Institute of Animal Behaviour"
+  bio              : "PhD Student<br />Max Planck Institute for Ornithology"
   location         : "Konstanz, Germany"
   employer         :
   googlescholar    : "https://scholar.google.com/citations?user=ybpKXnEAAAAJ"
