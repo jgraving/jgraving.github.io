@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  19 JUN 2019 14:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  19 JUN 2019 14:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -345,9 +345,10 @@ ger, B., Costel-loe, B.R., Couzin,
  []
 
 
-Underfull \hbox (badness 2990) in paragraph at lines 82--84
-\OT1/cmr/m/n/9 I.D. Fast and ro-bust an-i-mal pose es-ti-ma-tion. bioRxiv, 6202
-45 []bioR$\OML/cmm/m/it/9 ^^_$\OT1/cmr/m/n/9 iv preprint:
+Underfull \hbox (badness 2856) in paragraph at lines 82--84
+\OT1/cmr/m/n/9 I.D. Fast and ro-bust an-i-mal pose es-ti-ma-tion. bioR$\OML/cmm
+/m/it/9 ^^_$\OT1/cmr/m/n/9 iv, 620245 []bioR$\OML/cmm/m/it/9 ^^_$\OT1/cmr/m/n/9
+ iv preprint:
  []
 
 
@@ -412,7 +413,7 @@ r10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr1
 fb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pf
 b></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
 
-Output written on jacob_graving_cv.pdf (4 pages, 149727 bytes).
+Output written on jacob_graving_cv.pdf (4 pages, 150101 bytes).
 PDF statistics:
  88 PDF objects out of 1000 (max. 8388607)
  71 compressed objects within 1 object stream
