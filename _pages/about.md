@@ -7,7 +7,6 @@ redirect_from:
   - /about/
   - /about.html
   - /about
-  - 
 ---
 
 Jake is a Ph.D. student in the [Department of Collective Behaviour](http://collectivebehaviour.com) at the [Max Planck Institute of Animal Behavior](https://www.ab.mpg.de/) working with [Iain Couzin](http://twitter.com/icouzin).
