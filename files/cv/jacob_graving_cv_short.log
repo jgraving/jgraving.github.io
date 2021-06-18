@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  18 JUN 2021 09:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  18 JUN 2021 12:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -279,11 +279,11 @@ e
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(36.135pt, 542.02501pt, 36.135pt)
+* h-part:(L,W,R)=(36.135pt, 523.9575pt, 54.2025pt)
 * v-part:(T,H,B)=(54.2025pt, 686.56499pt, 54.2025pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
-* \textwidth=542.02501pt
+* \textwidth=523.9575pt
 * \textheight=686.56499pt
 * \oddsidemargin=-36.135pt
 * \evensidemargin=-36.135pt
@@ -325,53 +325,54 @@ t line 39.
 (/usr/local/texlive/2019/texmf-dist/tex/latex/fontawesome/ufontawesomethree.fd
 File: ufontawesomethree.fd 2016/05/22 Font definitions for U/fontawesomethree.
 )
-Overfull \hbox (18.27928pt too wide) in alignment at lines 48--84
- [] [] [] 
- []
-
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 87.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 60.
 (/usr/local/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 87.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 91.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 91.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 60.
 
-Overfull \hbox (18.27928pt too wide) in alignment at lines 84--117
+Overfull \hbox (14.66556pt too wide) in alignment at lines 48--86
+ [] [] [] 
+ []
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 95.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 95.
+
+Overfull \hbox (14.66556pt too wide) in alignment at lines 86--117
  [] [] [] 
  []
 
 
-Overfull \hbox (18.27928pt too wide) in alignment at lines 117--172
+Overfull \hbox (14.66556pt too wide) in alignment at lines 117--174
  [] [] [] 
  []
 
 [1
 
 {/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 178.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 180.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.178 \end{document}
+l.180 \end{document}
                      [2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 178.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 180.
  (./jacob_graving_cv_short.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 178.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 178.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 180.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 180.
 Package rerunfilecheck Info: File `jacob_graving_cv_short.out' has not changed.
 
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 178.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 180.
  ) 
 Here is how much of TeX's memory you used:
  7085 strings out of 492616
  103967 string characters out of 6129482
- 207283 words of memory out of 5000000
+ 208281 words of memory out of 5000000
  10958 multiletter control sequences out of 15000+600000
  8427 words of font info for 30 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -388,10 +389,10 @@ mr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
 pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pf
 b></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
 >
-Output written on jacob_graving_cv_short.pdf (2 pages, 122698 bytes).
+Output written on jacob_graving_cv_short.pdf (2 pages, 121937 bytes).
 PDF statistics:
- 75 PDF objects out of 1000 (max. 8388607)
- 61 compressed objects within 1 object stream
+ 74 PDF objects out of 1000 (max. 8388607)
+ 60 compressed objects within 1 object stream
  3 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

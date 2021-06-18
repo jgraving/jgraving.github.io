@@ -6,14 +6,14 @@
 \usepackage{hyperref}
 \usepackage{longtable}
 \usepackage{fontawesome}
-\newcommand{\tabitem}{~~\hspace{5mm}\llap{ \textbullet}~~}
+\newcommand{\tabitem}{\hspace{2mm}\textbullet\hspace{2mm}}
 
 \usepackage{graphicx}
 
 % set font for main text
 
 %Change the margins to fit your CV/resume content
-\usepackage[left=0.5in, right=0.5in, bottom=0.75in, top=0.75in]{geometry}
+\usepackage[left=0.5in, right=0.75in, bottom=0.75in, top=0.75in]{geometry}
 
 %Changes the page numbers - {arabic}=arabic numerals, {gobble}=no page numbers, {roman}=Roman numerals
 \pagenumbering{gobble}
@@ -34,7 +34,7 @@
 \begin{center}
 \begin{tabular}{l l}
  Max Planck Institute of Animal Behavior		& \hspace{2in} \href{mailto:jgraving@gmail.com}{\faEnvelope{ } jgraving@gmail.com} \\
- University of Konstanz, Department of Biology	& \hspace{2in}  \href{tel:+4917620710858 }{\faPhone{ } +49 176 207 10858 }  \\
+ University of Konstanz, Department of Biology	\\ %& \hspace{2in}  \href{tel:+4917620710858 }{\faPhone{ } +49 176 207 10858 }  \\
   Centre for the Advanced Study of Collective Behaviour    & \hspace{2in}  \href{http://jakegraving.com/}{\faGlobe{ } jakegraving.com}   \\
   Universit\"{a}tsstr. 10  & \hspace{2in}  \href{https://twitter.com/jgraving}{\faTwitter{ }  twitter.com/jgraving}   \\
    Konstanz, Germany 78464         & \hspace{2in} \href{https://github.com/jgraving}{\faGithub{ }  github.com/jgraving} \\
@@ -45,55 +45,59 @@
 %%%%%%%%%%%%%%%%% MAIN BODY %%%%%%%%%%%%%%%%%%%%%%%%%%%
 % The main body is contained in a tabular environment. To move sections onto the next page, simply end the tabular environment and begin a new tabular environment.
 \begin{small}
-\noindent \begin{longtable}{@{} l p{5.3in}l}
+\noindent \begin{longtable}{@{} l p{5in}l}
 
 \large{\textbf{Research Interests}}
-& Computational models of collective animal behavior, Bayesian statistical inference, deep learning, probabilistic programming, nonlinear dynamics \vspace{2mm}\\ 
+& Computational models of individual and collective behavior, Bayesian statistical inference, deep learning, probabilistic programming, nonlinear dynamics \vspace{2mm}\\ 
 
-\Large{\textbf{Positions}} \vspace{5mm} \\
+\Large{\textbf{Experience}} \vspace{2mm} \\
 \large{2020--present} 
 & \textbf{Research Scientist} \\
 %& Focus: Collective Behavior
 & {Max Planck Institute of Animal Behavior} \\
 %& {Department of Biology, University of Konstanz} \\
 %& {Centre for the Advanced Study Collective Behaviour, University of Konstanz} \vspace{0.5mm} \\
-& \textbf{Role:} Head of central machine learning research group for developing advanced, general-purpose methods for the measurement and analysis of animal behavior in laboratory and field environments using computer vision, deep learning, and modern statistical methods, such as Bayesian causal inference. \\
+& \tabitem Head of a central machine learning research group focused on developing advanced, general-purpose methods for the measurement and analysis of animal behavior in laboratory and field environments using computer vision, deep learning, and modern statistical methods, such as Bayesian causal inference.\vspace{5mm} \\
 
-\Large{\textbf{Education}} \vspace{5mm} \\
+\Large{\textbf{Education}} \vspace{2mm} \\
  \large{2021} 
  & \textbf{Dr.rer.nat., Biology} (0,0 ``summa cum laude")\\
- & ``Deep Learning and Computer Vision Methods for Measuring and Modeling Animal Behavior" \\
- & {Department of Collective Behaviour, Max Planck Institute of Animal Behavior} \\
-  & {Department of Biology, University of Konstanz} \\
-    & {Centre for the Advanced Study Collective Behaviour, University of Konstanz} \\
- 	& {International Max Planck Research School (IMPRS) for Organismal Biology} \\
+  &   {Department of Collective Behaviour, Max Planck Institute of Animal Behavior} \\
+ &   {Department of Biology, University of Konstanz} \\
+ &  {Centre for the Advanced Study Collective Behaviour, University of Konstanz} \\
+ &   {International Max Planck Research School (IMPRS) for Organismal Biology} \\
+ & \tabitem Thesis Title: ``Deep Learning and Computer Vision Methods for Measuring and Modeling Animal Behavior" \vspace{2mm} \\
+
      
      & \\
  \large{2015} 
   & \textbf{M.Sc., Biology} \\
-    & Focus: Ethology, Neuroscience \\
-     & {Department of Biological Sciences, Bowling Green State University} \\
+      & {Department of Biological Sciences, Bowling Green State University} \\
+    &  \tabitem Focus: Ethology, Neuroscience \\
+
     
      & \\
  \large{2013} 
   &\textbf{B.Sc., Biology} \\
 % & Focus: Ethology, Neuroscience \\
-      & {Department of Biological Sciences, Bowling Green State University} \\
+      &  {Department of Biological Sciences, Bowling Green State University} \\
     
-     & \\
- \Large{\textbf{Relevant Publications}}  \vspace{5mm} \\
-\large{In Revision}
-& Bath, D.E., \textbf{Graving, J.M.}, Walter, T., Sridhar, V.H.,  Vizcaíno, J.P., Couzin, I.D. Collective detection and processing of distributed information by fish schools. In revision.  \vspace{2mm}\\
-& 	\tabitem Collaborated with researchers from multiple disciplines to test the collective intelligence of large schools of fish using computer vision, deep learning, and Bayesian inference \vspace{2mm}\\
-& 	\tabitem Developed and applied a generative Bayesian statistical model using JAX, Numpyro, and Tensorflow Probability to analyze an extremely large and complex time series data set (approx. 3 billion observations across and 400+ experimental conditions)  \vspace{2mm}\\
+     & \vspace{5mm}\\
+ \Large{\textbf{Relevant Publications}}  \vspace{2mm} \\
 
 \large{In Review}
-& \textbf{Graving, J.M.}, Couzin, I.D. (2020).  VAE-SNE: a deep generative model for simultaneous dimensionality reduction and clustering. \vspace{1mm} \href{https://doi.org/10.1101/2020.07.17.207993}{bioR$\chi$iv: https://doi.org/10.1101/2020.07.17.207993} \\
-& 	\tabitem Developed a deep generative model using PyTorch to reveal the structure of biological data including the stereotyped dynamical motifs in high-dimensional body posture data measured from animals ( \href{https://youtu.be/JlbSdKzvLfk}{https://youtu.be/JlbSdKzvLfk}), as well as  single cell transcriptomic data and natural images.)  \vspace{2mm}\\
+& Bath, D.E., \textbf{Graving, J.M.}, Walter, T., Sridhar, V.H.,  Vizcaíno, J.P., Couzin, I.D. Collective detection and processing of distributed information by fish schools. In revision. \\
+& \\
+& \tabitem Collaborated with researchers from multiple disciplines to test the collective intelligence of large schools of fish using computer vision, deep learning, and Bayesian inference \\
+& \\
+& \tabitem Developed and applied a generative Bayesian statistical model using JAX, Numpyro, and Tensorflow Probability to analyze an extremely large and complex time series data set (approx. 3 billion observations across and 400+ experimental conditions) \\
+& \\
+& \textbf{Graving, J.M.}, Couzin, I.D.  VAE-SNE: a deep generative model for simultaneous dimensionality reduction and clustering. \href{https://doi.org/10.1101/2020.07.17.207993}{bioR$\chi$iv: https://doi.org/10.1101/2020.07.17.207993}  \vspace{2mm}\\
+& 	\tabitem Developed a deep generative model using PyTorch to reveal the structure of biological data including unsupervised action recognition of stereotyped dynamical motifs in high-dimensional body posture data measured from animals ( \href{https://youtu.be/JlbSdKzvLfk}{https://youtu.be/JlbSdKzvLfk}), as well as single cell transcriptomic data and natural images. \vspace{2mm}\\
 \large{2020}
-& Li, L., Nagy, M., \textbf{Graving, J.M.}, Bak-Coleman, J., Guangming X., Couzin, I.D. (2020). Vortex phase matching as a strategy for schooling in robots and in fish. Nature Communications 11, 5408 \href{https://doi.org/10.1038/s41467-020-19086-0 }{https://doi.org/10.1038/s41467-020-19086-0} \vspace{1mm} \\
-& 	\tabitem Collaborated with researchers from multiple disciplines to test theoretical predictions developed using robots for how schooling fish might collectively optimize their swim pattern to maximize energy savings in flow environments \\
-& 	\tabitem Measured and analyzed detailed body posture data of schooling fish using computer vision, deep learning, and mechanistic models of behavior to show that fish adopt optimal swimming patterns\\
+& Li, L., Nagy, M., \textbf{Graving, J.M.}, Bak-Coleman, J., Guangming X., Couzin, I.D. (2020). Vortex phase matching as a strategy for schooling in robots and in fish. Nature Communications 11, 5408 \href{https://doi.org/10.1038/s41467-020-19086-0 }{https://doi.org/10.1038/s41467-020-19086-0} \vspace{2mm} \\
+& 	\tabitem Collaborated with researchers from multiple disciplines to test theoretical predictions from robotic experiments for how schooling fish collectively optimize their swim patterns to maximize energy savings in flow environments \vspace{1mm} \\
+& 	\tabitem Measured and analyzed detailed body posture data of schooling fish using computer vision and deep learning, as well as mechanistic and statistical models of behavior to show that fish adopt optimal swimming patterns\vspace{5mm}\\
 
 \large{2019}
  &\textbf{Graving, J.M.}, Chae, D., Naik, H., Li, L., Koger, B., Costelloe, B.R., Couzin, I.D. (2019). DeepPoseKit, a software toolkit for fast and robust animal pose estimation using deep learning. eLife, 8. \href{https://doi.org/10.7554/elife.47994}{https://doi.org/10.7554/elife.47994}  \href{https://doi.org/10.1101/620245}{bioR$\chi$iv: https://doi.org/10.1101/620245} Code: \href{https://github.com/jgraving/deepposekit}{ https://github.com/jgraving/deepposekit} \\
@@ -102,24 +106,22 @@
  \href{https://doi.org/10.1038/d41586-019-02942-5}{Nature News \& Views},
  \href{https://elifesciences.org/digests/47994/machine-learning-animal-poses-to-understand-behavior}{eLife Science Digests}
  \vspace{2mm} \\
- & 	\tabitem Collaborated with researchers from multiple disciplines to develop a general purpose few-shot deep learning toolkit for measuring the body posture of animals using TensorFlow (\href{https://youtu.be/hCa2zaoUWhs}{https://youtu.be/hCa2zaoUWhs}; \href{https://youtu.be/dSjaphoGHAY}{https://youtu.be/dSjaphoGHAY}).  \\
-  & 	\tabitem Supervised Daniel Chae, a visiting Bachelor's student from Princeton University, to develop a keypoint annotation GUI and custom data augmentation methods for the toolkit\\
+ & 	\tabitem Led the development of a general-purpose few-shot deep learning toolkit for measuring the body posture of animals using TensorFlow (\href{https://youtu.be/hCa2zaoUWhs}{https://youtu.be/hCa2zaoUWhs} \hspace{1mm}; \href{https://youtu.be/dSjaphoGHAY}{https://youtu.be/dSjaphoGHAY}). \vspace{1mm}  \\
+  & 	\tabitem Supervised Daniel Chae, a visiting Bachelor's student from Princeton University, to develop a keypoint annotation GUI and custom data augmentation methods \vspace{5mm}\\
 
-\Large{\textbf{Teaching}}  \vspace{5mm} \\
+\Large{\textbf{Teaching}}  \vspace{2mm} \\
  \large{2019}
 	& \textbf{ASAB 2019 Summer Conference, University of Konstanz} \\
 	& Workshop Organizer and Lecturer\\
-	& – Seminar on "Machine Learning in the Behavioral Sciences" \\
-	& – Practical Workshop on "Quantifying Behavior with Machine Learning" \\
+	& \textbullet \, Led a seminar on ``"Machine Learning in the Behavioral Sciences" with over 400 participants\\
+	& \textbullet \, Co-organized a practical workshop on ``Quantifying Behavior with Machine Learning" with 27 participants \\
 	& \\
  \large{2016–2020}
     & \textbf{University of Konstanz, Department of Biology} \\
-     & Lecturer and Project Advisor, Intensive Research Course for Master's Students \\
-     & – Measuring Animal Behavior with Computer Vision \\
-     & – Analyzing Behavioral Data \\
-     & – Introduction to Programming in Python\\
-     & \\
- & \\
+     & Co-organized an intensive research course for Master's students on the collective animal behavior research \\
+     & \textbullet \, Served as project advisor for 5 Master's students \\
+     & \textbullet \, Led lectures and workshops on the topics of ``Measuring Animal Behavior with Computer Vision", ``Analyzing Behavioral Data", and ``Introduction to Programming in Python" \\
+   & \\
  %\large{2009-2012}
  %& \textbf{Bowling Green State University, Department of Biological Sciences} \\
  %& Student Coordinator and Teaching Assistant, Marine Biology Laboratory \\
@@ -159,7 +161,7 @@
 %& Bowling Green State University, College of Arts and Sciences \\
 %& \\
 
-\Large{\textbf{Skills}} \vspace{5mm} \\
+\Large{\textbf{Skills}} \vspace{2mm} \\
 %\large{\textbf{Computational}} \\
 \normalsize{\textit{Languages: }}
 & Python \vspace{1mm}\\ %\LaTeX \\
