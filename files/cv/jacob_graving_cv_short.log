@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  18 JUN 2021 08:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  18 JUN 2021 09:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**jacob_graving_cv.tex
-(./jacob_graving_cv.tex
+**jacob_graving_cv_short.tex
+(./jacob_graving_cv_short.tex
 LaTeX2e <2018-12-01>
 (/usr/local/texlive/2019/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
@@ -204,25 +204,25 @@ Package: geometry 2018/04/16 v5.8 Page Geometry
 \Gm@layoutvoffset=\dimen117
 \Gm@dimlist=\toks18
 )
-(./jacob_graving_cv.aux)
-\openout1 = `jacob_graving_cv.aux'.
+(./jacob_graving_cv_short.aux)
+\openout1 = `jacob_graving_cv_short.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
 \AtBeginShipoutBox=\box31
-Package hyperref Info: Link coloring OFF on input line 22.
+Package hyperref Info: Link coloring OFF on input line 23.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -232,13 +232,13 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count106
 )
-LaTeX Info: Redefining \ref on input line 22.
-LaTeX Info: Redefining \pageref on input line 22.
-LaTeX Info: Redefining \nameref on input line 22.
+LaTeX Info: Redefining \ref on input line 23.
+LaTeX Info: Redefining \pageref on input line 23.
+LaTeX Info: Redefining \nameref on input line 23.
 
-(./jacob_graving_cv.out) (./jacob_graving_cv.out)
+(./jacob_graving_cv_short.out) (./jacob_graving_cv_short.out)
 \@outlinefile=\write3
-\openout3 = `jacob_graving_cv.out'.
+\openout3 = `jacob_graving_cv_short.out'.
 
 
 (/usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -306,96 +306,92 @@ e
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 27--29
+Underfull \hbox (badness 10000) in paragraph at lines 28--30
 
  []
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 34.
+(Font)              <7> on input line 35.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 34.
+(Font)              <5> on input line 35.
 LaTeX Font Info:    Try loading font information for U+fontawesometwo on input 
-line 35.
+line 36.
 (/usr/local/texlive/2019/texmf-dist/tex/latex/fontawesome/ufontawesometwo.fd
 File: ufontawesometwo.fd 2016/05/22 Font definitions for U/fontawesometwo.
 )
 LaTeX Font Info:    Try loading font information for U+fontawesomethree on inpu
-t line 38.
+t line 39.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/fontawesome/ufontawesomethree.fd
 File: ufontawesomethree.fd 2016/05/22 Font definitions for U/fontawesomethree.
 )
+Overfull \hbox (18.27928pt too wide) in alignment at lines 48--84
+ [] [] [] 
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 87.
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 87.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <9> on input line 91.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 91.
 
-Underfull \hbox (badness 2846) in paragraph at lines 111--112
-[]|\OT1/cmr/m/n/9 Wiegmann, D.D., He-bets, E.A., Gro-nen-berg, W., \OT1/cmr/bx/
-n/9 Grav-ing, J.M.\OT1/cmr/m/n/9 , and Bing-man,
+Overfull \hbox (18.27928pt too wide) in alignment at lines 84--117
+ [] [] [] 
  []
 
 
-Underfull \hbox (badness 1354) in paragraph at lines 111--112
-\OT1/cmr/m/n/9 V.P. (2016). Am-blypy-gids: model or-gan-isms for the study of a
-rthro-pod nav-i-ga-tion
- []
-
-
-Underfull \hbox (badness 1496) in paragraph at lines 111--112
-\OT1/cmr/m/n/9 mech-a-nisms in com-plex en-vi-ron-ments. Fron-tiers in Be-hav-i
-oral Neu-ro-science, 10, 47.
+Overfull \hbox (18.27928pt too wide) in alignment at lines 117--172
+ [] [] [] 
  []
 
 [1
 
-{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]pdfTeX w
-arning (ext4): destination with the same identifier (name{page.}) has been alre
-ady used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.286 \end{longtable}
-                      [2]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 320.
+{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 178.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.320 \end{document}
-                     [3]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 320.
- (./jacob_graving_cv.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 320.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 320.
-Package rerunfilecheck Info: File `jacob_graving_cv.out' has not changed.
+l.178 \end{document}
+                     [2]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 178.
+ (./jacob_graving_cv_short.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 178.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 178.
+Package rerunfilecheck Info: File `jacob_graving_cv_short.out' has not changed.
+
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 320.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 178.
  ) 
 Here is how much of TeX's memory you used:
- 7074 strings out of 492616
- 103641 string characters out of 6129482
- 208316 words of memory out of 5000000
- 10947 multiletter control sequences out of 15000+600000
- 9080 words of font info for 32 fonts, out of 8000000 for 9000
+ 7085 strings out of 492616
+ 103967 string characters out of 6129482
+ 207283 words of memory out of 5000000
+ 10958 multiletter control sequences out of 15000+600000
+ 8427 words of font info for 30 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 28i,7n,25p,518b,455s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 28i,7n,25p,519b,455s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometh
 ree.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/fontawesome/fontawe
 sometwo.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/fontawesome/
 FontAwesome.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmbx9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmmi9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr1
-2.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.p
-fb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pf
-b></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-
-Output written on jacob_graving_cv.pdf (3 pages, 146559 bytes).
+/cm/cmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmbx9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmmi9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
+12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.
+pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pf
+b></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
+>
+Output written on jacob_graving_cv_short.pdf (2 pages, 122698 bytes).
 PDF statistics:
- 94 PDF objects out of 1000 (max. 8388607)
- 78 compressed objects within 1 object stream
- 4 named destinations out of 1000 (max. 500000)
+ 75 PDF objects out of 1000 (max. 8388607)
+ 61 compressed objects within 1 object stream
+ 3 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
