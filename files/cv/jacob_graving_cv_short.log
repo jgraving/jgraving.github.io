@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  30 MAY 2022 11:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  18 OCT 2023 11:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -319,13 +319,8 @@ line 35.
 (/usr/local/texlive/2019/texmf-dist/tex/latex/fontawesome/ufontawesometwo.fd
 File: ufontawesometwo.fd 2016/05/22 Font definitions for U/fontawesometwo.
 )
-LaTeX Font Info:    Try loading font information for U+fontawesomethree on inpu
-t line 38.
-
-(/usr/local/texlive/2019/texmf-dist/tex/latex/fontawesome/ufontawesomethree.fd
-File: ufontawesomethree.fd 2016/05/22 Font definitions for U/fontawesomethree.
-)
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 60.
+
 (/usr/local/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
@@ -336,92 +331,93 @@ Overfull \hbox (14.66556pt too wide) in alignment at lines 47--84
  [] [] [] 
  []
 
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 101.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 101.
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--102
-[]|\OT1/cmr/bx/n/9 Graving, J.M.\OT1/cmr/m/n/9 , Heins, C., Couzin, I.D. Prob-a
--bilis-tic self-supervised
+Underfull \hbox (badness 5490) in paragraph at lines 90--91
+[]|\OT1/cmr/bx/n/9 Graving, J.M.\OT1/cmr/m/n/9 , Heins, C., Couzin, I.D. Vari-a
+-tional Di-ver-gence Es-ti-ma-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--102
-\OT1/cmr/m/n/9 deep learn-ing re-veals the struc-ture of high-dimensional data 
-[]bioR$\OML/cmm/m/it/9 ^^_$\OT1/cmr/m/n/9 iv:
+Underfull \hbox (badness 3281) in paragraph at lines 90--91
+\OT1/cmr/m/n/9 as a Uni-fy-ing Frame-work for Con-trastive Rep-re-sen-ta-tion L
+earn-ing. Code: []
  []
 
 
-Underfull \hbox (badness 1389) in paragraph at lines 102--103
-[]| \OMS/cmsy/m/n/9 ^^O \OT1/cmr/m/n/9 De-vel-oped a gen-er-al-ist self-supervi
-sed deep learn-ing model to com-press high-
- []
-
-
-Overfull \hbox (14.66556pt too wide) in alignment at lines 84--115
+Overfull \hbox (14.66556pt too wide) in alignment at lines 84--111
  [] [] [] 
  []
 
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 113.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 113.
 
-Overfull \hbox (14.66556pt too wide) in alignment at lines 115--179
+Overfull \hbox (14.66556pt too wide) in alignment at lines 111--153
  [] [] [] 
  []
 
 [1
 
-{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]pdfTeX w
-arning (ext4): destination with the same identifier (name{page.}) has been alre
-ady used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.181 \newpage
-               [2]
-Overfull \hbox (63.66124pt too wide) in alignment at lines 186--209
- [] [] [] [] 
+{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (14.66556pt too wide) in alignment at lines 153--191
+ [] [] [] 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 212.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.212 \end{document}
-                     [3]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 212.
+l.191 \end{longtable}
+                      [2]pdfTeX warning (ext4): destination with the same ident
+ifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.193 \newpage
+               [3]
+Overfull \hbox (63.66124pt too wide) in alignment at lines 198--221
+ [] [] [] [] 
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 224.
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.224 \end{document}
+                     [4]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 224.
  (./jacob_graving_cv_short.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 212.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 212.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 224.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 224.
 Package rerunfilecheck Info: File `jacob_graving_cv_short.out' has not changed.
 
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 212.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 224.
  ) 
 Here is how much of TeX's memory you used:
- 7090 strings out of 492616
- 104018 string characters out of 6129482
- 210349 words of memory out of 5000000
- 10961 multiletter control sequences out of 15000+600000
- 8735 words of font info for 31 fonts, out of 8000000 for 9000
+ 7081 strings out of 492616
+ 103697 string characters out of 6129482
+ 210343 words of memory out of 5000000
+ 10956 multiletter control sequences out of 15000+600000
+ 8557 words of font info for 30 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  28i,7n,25p,519b,455s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometh
-ree.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/fontawesome/fontawe
-sometwo.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/fontawesome/
-FontAwesome.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmbx9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmmi9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr1
-2.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.p
-fb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb
-></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-
-Output written on jacob_graving_cv_short.pdf (3 pages, 138107 bytes).
+{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometw
+o.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/fontawesome/FontAw
+esome.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+bx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmb
+x12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx
+9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.
+pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pf
+b></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
+</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></u
+sr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr
+/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on jacob_graving_cv_short.pdf (4 pages, 139615 bytes).
 PDF statistics:
  95 PDF objects out of 1000 (max. 8388607)
- 79 compressed objects within 1 object stream
+ 78 compressed objects within 1 object stream
  4 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
