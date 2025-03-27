@@ -1,216 +1,224 @@
-%%%%%%%%%%%%%%%%% PREAMBLE %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%Change the font size of your document - 10pt, 12.1pt, etc.
-\documentclass[letterpaper,10pt,oneside]{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PREAMBLE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[10pt,letterpaper]{article}
+
+% Encoding and fonts
 \usepackage[utf8]{inputenc}
-\usepackage{setspace}
-\usepackage{hyperref}
-\usepackage{longtable}
-\usepackage{fontawesome}
-\newcommand{\tabitem}{\hspace{2mm}\textbullet\hspace{2mm}}
-\usepackage{graphicx}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
 
-% set font for main text
+% Page layout
+\usepackage[margin=2.5cm]{geometry}
+\setlength{\parindent}{0pt}    % No paragraph indentation
+\setlength{\parskip}{6pt}      % Space between paragraphs
+\pagenumbering{gobble}         % No page numbers
 
-%Change the margins to fit your CV/resume content
-\usepackage[left=0.5in, right=0.75in, bottom=0.75in, top=0.75in]{geometry}
+% Useful packages
+\usepackage{hyperref}          % Clickable URLs
+\usepackage{enumitem}          % Better lists
+\usepackage{fontawesome}       % For GitHub, Envelope icons, etc.
 
-%Changes the page numbers - {arabic}=arabic numerals, {gobble}=no page numbers, {roman}=Roman numerals
-\pagenumbering{gobble}
+% Make itemize spacing tighter
+\setlist[itemize]{topsep=2pt, itemsep=2pt, leftmargin=*, parsep=0pt}
 
-%%%%%%%%%%%%%%%%% END OF PREAMBLE %%%%%%%%%%%%%%%%%%%%%
+% Custom section heading
+\usepackage{titlesec}
+\titleformat{\section}{\large\bfseries}{}{0pt}{}[\titlerule]
+\titlespacing{\section}{0pt}{1em}{0.5em}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% DOCUMENT START
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
-
-
-%%%%%%%%%%%%%%%%% NAME OF APPLICANT %%%%%%%%%%%%%%%%%%%
-
-\LARGE{\textbf{Jacob M. Graving}}  \\
-\normalsize
-
-%%%%%%%%%%%%%%%%% CONTACT INFORMATION %%%%%%%%%%%%%%%%%
-
-
+	
+	%-------------------- HEADER -----------------------%
 \begin{center}
-\begin{tabular}{l l}
- Max Planck Institute of Animal Behavior		& \hspace{2in} \href{mailto:jgraving@gmail.com}{\faEnvelope{ } jgraving@gmail.com} \\
- University of Konstanz, Department of Biology	\\ %& \hspace{2in}  \href{tel:+4917620710858 }{\faPhone{ } +49 176 207 10858 }  \\
-  Centre for the Advanced Study of Collective Behaviour    & \hspace{2in}  \href{http://jakegraving.com/}{\faGlobe{ } jakegraving.com}   \\
-  Universit\"{a}tsstr. 10  & \hspace{2in}   \\
-   Konstanz, Germany 78464         & \hspace{2in} \href{https://github.com/jgraving}{\faGithub{ }  github.com/jgraving} \\
- 
-\end{tabular}
+	{\Huge \textbf{Jacob M. Graving}}\\[6pt]
+	\href{mailto:jgraving@gmail.com}{\faEnvelope\ jgraving@gmail.com}
+	\quad | \quad
+	\href{http://jakegraving.com/}{\faGlobe\ jakegraving.com}
+	\quad | \quad
+	\href{https://github.com/jgraving}{\faGithub\ github.com/jgraving}\\[8pt]
+	
+	% Use a smaller font size for the long affiliation line:
+	{\small
+		Max Planck Institute of Animal Behavior \quad $\cdot$ \quad
+		University of Konstanz, Department of Biology \quad $\cdot$ \quad \\
+		Centre for the Advanced Study of Collective Behaviour \quad $\cdot$ \quad
+		Universit\"{a}tsstr. 10, Konstanz, Germany 78464
+	}
 \end{center}
 
-%%%%%%%%%%%%%%%%% MAIN BODY %%%%%%%%%%%%%%%%%%%%%%%%%%%
-% The main body is contained in a tabular environment. To move sections onto the next page, simply end the tabular environment and begin a new tabular environment.
-\begin{small}
-\noindent \begin{longtable}{@{} l p{5in}l}
+	%-------------------- RESEARCH INTERESTS -----------------------%
+\section*{Research Interests}
+Interpretable and scalable machine learning for computational behavioral science, including self-supervised representation learning, Bayesian and causal inference, and probabilistic modeling of complex systems.
 
-\large{\textbf{Research Interests}}
-& Machine learning, self-supervised learning, Bayesian statistical inference, deep learning, causal inference, probabilistic models \vspace{2mm}\\ 
+	
+	%-------------------- EXPERIENCE -----------------------%
+	\section*{Experience}
+	\textbf{2020--present}\\
+	\textbf{Research Scientist}\\
+	Advanced Research Technology Unit, Max Planck Institute of Animal Behavior
+	\begin{itemize}
+		\item Led independent research at the interface of machine learning and behavioral science, developing general-purpose tools for measuring and modeling animal behavior in both laboratory and field environments.
+		\item Designed and maintained scalable ETL pipelines for multimodal behavioral datasets, ensuring data integrity and reproducibility across experimental systems.
+		\item Worked closely with interdisciplinary collaborators—including software engineers, neuroscientists, and field biologists—to build AI-driven tools for behavior analysis and experimental optimization.
+		\item Applied Bayesian inference, causal modeling, and uncertainty quantification to large-scale time series and experimental datasets to generate interpretable, data-driven insights.
+		\item Provided technical guidance and mentorship across multiple collaborative projects, promoting reproducible science and statistical rigor.
+	\end{itemize}
+	
+\section*{Education}
+\begin{tabular}{@{}p{1.5cm}p{15cm}@{}}
+	\textbf{2021} & \textbf{Dr.rer.nat., Biology} (0,0 `summa cum laude')\\[4pt]
+	& Department of Collective Behaviour, Max Planck Institute of Animal Behavior\\
+	& Department of Biology, University of Konstanz\\
+	& Centre for the Advanced Study Collective Behaviour, University of Konstanz\\
+	& International Max Planck Research School (IMPRS) for Organismal Biology\\[2pt]
+	& \textbf{Thesis:} \href{http://nbn-resolving.de/urn:nbn:de:bsz:352-2-dgcbudqch6ix8}{`Deep Learning and Computer Vision Methods for Measuring and Modeling Animal Behavior'} \quad \textbf{Supervisor:} Prof. Iain Couzin\\[8pt]
+	\textbf{2015} & \textbf{M.Sc., Biology} \quad \textit{Department of Biological Sciences, Bowling Green State University}\\[2pt]
+	& \textbf{Focus:} Quantitative Behavior, Neuroscience\\[8pt]
+	\textbf{2013} & \textbf{B.Sc., Biology} \quad \textit{Department of Biological Sciences, Bowling Green State University}
+\end{tabular}
 
-\Large{\textbf{Experience}} \vspace{2mm} \\
-\large{2020--present} 
-& \textbf{Research Scientist} \\
-%& Focus: Collective Behavior
-& {Advanced Research Technology Unit} \\
-& {Max Planck Institute of Animal Behavior} \\
-%& {Department of Biology, University of Konstanz} \\
-%& {Centre for the Advanced Study Collective Behaviour, University of Konstanz} \vspace{0.5mm} \\
-& \tabitem Head of a central machine learning research group focused on developing advanced, general-purpose methods for the measurement and analysis of animal behavior in laboratory and field environments using computer vision, deep learning, and modern statistical methods, such as Bayesian causal inference.\vspace{5mm} \\
 
-\Large{\textbf{Education}} \vspace{2mm} \\
- \large{2021} 
- & \textbf{Dr.rer.nat., Biology} (0,0 ``summa cum laude")\\
-  &   {Department of Collective Behaviour, Max Planck Institute of Animal Behavior} \\
- &   {Department of Biology, University of Konstanz} \\
- &  {Centre for the Advanced Study Collective Behaviour, University of Konstanz} \\
- &   {International Max Planck Research School (IMPRS) for Organismal Biology} \\ 
- &  \tabitem Thesis: ``Deep Learning and Computer Vision Methods for Measuring and Modeling Animal Behavior" \href{http://nbn-resolving.de/urn:nbn:de:bsz:352-2-dgcbudqch6ix8}{http://nbn-resolving.de/urn:nbn:de:bsz:352-2-dgcbudqch6ix8} \\
- & \tabitem Supervisor: Iain Couzin \vspace{2mm}  \\
 
-     
-     & \\
- \large{2015} 
-  & \textbf{M.Sc., Biology} \\
-      & {Department of Biological Sciences, Bowling Green State University} \\
-    &  \tabitem Focus: Ethology, Neuroscience \\
+	
+	%-------------------- PUBLICATIONS -----------------------%
+	\section*{Publications}
+	\textbf{In Prep}\\
+	\textbf{Graving, J.M.} and Foster, J.J. (in prep). Unwrapping Circular Statistics: Bayesian Linear Models for Circular Data.
+	\begin{itemize}
+		\item Introduces a novel Bayesian generalized linear model framework for circular data by incorporating the von Mises distribution.
+		\item Jointly models mean direction and variance to improve interpretability of circular outcomes.
+		\item Provides practical guidelines and implementations using Bayesian toolkits such as PyMC and Stan.
+	\end{itemize}
+	
+	\textbf{Graving, J.M.}, Heins, C., Couzin, I.D. Revealing the Structure of Time-Series Data with Context Attraction-Repulsion Embeddings.
+	\begin{itemize}
+		\item Developed a generalized contrastive learning framework for dimensionality reduction and visualization of time-series data using transformer-based sequence modeling.
+		\item Demonstrated recovery of latent factors and interpretable structure from high-dimensional behavioral and synthetic datasets.
+		\item Provides a general tool for exploratory analysis and hypothesis generation in time-series modeling.
+	\end{itemize}
+	
+	\vspace{4pt}
+	\textbf{In Review}\\
+	Bath, D.E., \textbf{Graving, J.M.}, Walter, T., Sridhar, V.H., Vizcaíno, J.P., Couzin, I.D. Collective detection and processing of distributed information by fish schools. In revision for \textit{Current Biology}. \\ Code: \href{https://github.com/jgraving/bayesian_beta_regression}{github.com/jgraving/bayesian\_beta\_regression}
+	\begin{itemize}
+		\item Led development of a Bayesian model to analyze collective information processing in fish schools.
+		\item Modeled ~3 billion behavioral observations across 400+ conditions using JAX and NumPyro.
+		\item Revealed how distributed sensing shapes group-level responses to environmental signals.
+	\end{itemize}
+	
+	\vspace{4pt}
+	\textbf{2025}\\
+	Sayin, S., Couzin-Fuchs, E., Petelski, I., G\"unzel, Y., Salahshour, M., Lee, C.-Y., \textbf{Graving, J.M.}, Li, L., Deussen, O., Sword, G.A., Couzin, I.D. (2025). The behavioral mechanisms governing collective motion in swarming locusts. \textit{Science}, 387(6737), 995–1000. \href{https://doi.org/10.1126/science.adq7832}{https://doi.org/10.1126/science.adq7832}
+	\begin{itemize}
+		\item Led Bayesian modeling and statistical analysis of VR behavioral data from locusts.
+		\item Identified and solved a key methodological flaw in prior work—confounding of group coordination with group size.
+		\item Helped validate the core findings and strengthen the paper's quantitative rigor.
+	\end{itemize}
+	
+	\vspace{4pt}
+	\textbf{2023}\\
+	Koger, B., Deshpande, A., Kerby, J.T., \textbf{Graving, J.M.}, Costelloe, B. R., Couzin, I.D. (2023). Quantifying the movement, behaviour and environmental context of group‐living animals using drones and computer vision. \textit{Journal of Animal Ecology}. \href{https://doi.org/10.1111/1365-2656.13904}{doi:10.1111/1365-2656.13904} Code: \href{https://github.com/benkoger/overhead-video-worked-examples}{github.com/benkoger/overhead-video-worked-examples}
+	\begin{itemize}
+		\item Co-developed a computer vision pipeline combining drone footage and deep learning to extract 3D behavioral and environmental data from animal groups in natural settings.
+		\item Integrated spatial context reconstruction with fine-scale movement tracking to support large-scale behavioral ecology studies.
+	\end{itemize}
+	
+	\vspace{4pt}
+	\textbf{2020}\\
+	Li, L., Nagy, M., \textbf{Graving, J.M.}, Bak-Coleman, J., Guangming X., Couzin, I.D. (2020). Vortex phase matching as a strategy for schooling in robots and in fish. \textit{Nature Communications}, 11, 5408. \href{https://doi.org/10.1038/s41467-020-19086-0}{doi:10.1038/s41467-020-19086-0}
+	\begin{itemize}
+		\item Analyzed high-resolution posture data of schooling fish to test energy-optimization strategies predicted by robotic models.
+		\item Applied deep learning–based pose estimation and mechanistic modeling to quantify fluid-mediated interactions and coordinated motion patterns.
+	\end{itemize}
+	
+	\vspace{4pt}
+	\textbf{2019}\\
+	\textbf{Graving, J.M.}, Chae, D., Naik, H., Li, L., Koger, B., Costelloe, B.R., Couzin, I.D. (2019). DeepPoseKit, a software toolkit for fast and robust animal pose estimation using deep learning. \textit{eLife}, 8. \href{https://doi.org/10.7554/elife.47994}{doi:10.7554/elife.47994} \\
+	Press: \href{https://www.quantamagazine.org/to-decode-the-brain-scientists-automate-the-study-of-behavior-20191210/}{Quanta Magazine}, 
+	\href{https://doi.org/10.1038/s41592-019-0678-2}{Nature Methods},
+	\href{https://doi.org/10.1038/d41586-019-02942-5}{Nature News \& Views},
+	\href{https://elifesciences.org/digests/47994/machine-learning-animal-poses-to-understand-behavior}{eLife Science Digests} \\
+	Code: \href{https://github.com/jgraving/deepposekit}{github.com/jgraving/deepposekit}
+	\begin{itemize}
+		\item Created a general-purpose, few-shot deep learning framework for high-speed, high-accuracy animal pose tracking in Python/TensorFlow.
+		\item Supervised development of key components including a custom annotation GUI and augmentation tools for low-data regimes.
+	\end{itemize}
+	
+	%-------------------- TEACHING -----------------------%
+	\section*{Teaching}
+	\textbf{2023}\\
+	Konstanz School of Collective Behavior, University of Konstanz
+	\begin{itemize}
+		\item Designed and led a workshop on “Probabilistic Machine Learning” for 30+ international PhD students, covering Bayesian inference, causal inference, and information theory in practice. \href{https://www.exc.uni-konstanz.de/kscb/}{https://www.exc.uni-konstanz.de/kscb/}
+	\end{itemize}
+	
+	\vspace{4pt}
+	\textbf{2022}\\
+	Deep Learning Workshop, Max Planck Institute of Animal Behavior
+	\begin{itemize}
+		\item Led an applied workshop introducing PyTorch and deep learning fundamentals to 15 researchers.
+	\end{itemize}
+	
+	\vspace{4pt}
+	\textbf{2019}\\
+	ASAB 2019 Summer Conference, University of Konstanz
+	\begin{itemize}
+		\item Gave an invited seminar on “Machine Learning in the Behavioral Sciences” to an audience of 400+.
+		\item Co-organized a workshop on behavioral quantification and modeling using ML methods (27 participants).
+	\end{itemize}
+	
+	\vspace{4pt}
+	\textbf{2016--2020}\\
+	University of Konstanz, Department of Biology
+	\begin{itemize}
+		\item Co-developed and taught an intensive research course on collective behavior for Master’s students.
+		\item Supervised five Master’s thesis projects across behavior, computation, and data science.
+		\item Delivered lectures and practicals on computer vision for behavior analysis, data processing, and Python programming.
+	\end{itemize}
+	
+	%-------------------- SKILLS -----------------------%
+	\section*{Skills}
+	\textbf{Programming Languages:} Python
+	
+	\textbf{Core Expertise:} Bayesian inference, causal inference, statistical modeling, machine learning, deep learning, computer vision, image analysis, data visualization
+	
+	\textbf{Libraries \& Frameworks:} PyTorch, JAX, NumPyro, Stan, TensorFlow, scikit-learn, OpenCV
+	
+	\textbf{Tools:} Git, LaTeX, Jupyter
+	
+	%-------------------- (COMMENTED REFERENCES EXAMPLE) -----------------------%
+	% \section*{References}
+	% (Optional references section, currently commented out)
+	% \begin{itemize}
+	%     \item ...
+	% \end{itemize}
+	
+\end{document}
 
-    
-     & \\
- \large{2013} 
-  &\textbf{B.Sc., Biology} \\
-% & Focus: Ethology, Neuroscience \\
-      &  {Department of Biological Sciences, Bowling Green State University} \\
-    
-     & \vspace{5mm}\\
- \Large{\textbf{Relevant Publications}}  \vspace{2mm} \\
-
-\large{In Prep}
-& \textbf{Graving, J.M.}, Heins, C., Couzin, I.D. Variational Divergence Estimation as a Unifying Framework for Contrastive Representation Learning. Code: \href{https://github.com/jgraving/selfsne}{ https://github.com/jgraving/selfsne} \vspace{2mm} \\
-& 	\tabitem Developed a generalist self-supervised deep learning model that unifies much of the contrastive learning literature into a single model class. \vspace{2mm}\\
-& \\
-\large{In Review}
-& Bath, D.E., \textbf{Graving, J.M.}, Walter, T., Sridhar, V.H.,  Vizcaíno, J.P., Couzin, I.D. Collective detection and processing of distributed information by fish schools. In revision for Current Biology.  Code: \href{https://github.com/jgraving/bayesian\_beta\_regression/blob/main/bath\_bayesian\_beta\_regression\_numpyro.ipynb}{https://github.com/jgraving/bayesian\_beta\_regression} \\
-& \\
-& \tabitem Collaborated with researchers from multiple disciplines to test the collective intelligence of large schools of fish using computer vision, deep learning, and Bayesian inference \\
-& \\
-& \tabitem Developed and applied a generative Bayesian statistical model using JAX, Numpyro, and Tensorflow Probability to analyze an extremely large and complex time series data set (approx. 3 billion observations across 400+ experimental conditions) \\
-& \\
-
-\large{2023}
-& Koger, B., Deshpande, A., Kerby, J.T., \textbf{Graving, J.M.}, Costelloe, B. R.,  Couzin, I.D. Quantifying the movement, behaviour and environmental context of group‐living animals using drones and computer vision (2023). Journal of Animal Ecology. \href{https://doi.org/10.1111/1365-2656.13904}{doi:10.1111/1365-2656.13904} Code: \href{https://github.com/benkoger/overhead-video-worked-examples}{ https://github.com/benkoger/overhead-video-worked-examples}  \\
-& \\
-& \tabitem Helped develop a data collection pipeline using state-of-the-art deep learning and computer vision algorithms combined with aerial drone imaging to measure detailed behavioral data from groups of individuals, and synchronously reconstruct accurate 3D models of the natural environment \\
-&\\\\
-
-\large{2020}
-& Li, L., Nagy, M., \textbf{Graving, J.M.}, Bak-Coleman, J., Guangming X., Couzin, I.D. (2020). Vortex phase matching as a strategy for schooling in robots and in fish. Nature Communications 11, 5408 \href{https://doi.org/10.1038/s41467-020-19086-0 }{https://doi.org/10.1038/s41467-020-19086-0} \vspace{2mm} \\
-& 	\tabitem Collaborated with researchers from multiple disciplines to test theoretical predictions from robotic experiments for how schooling fish collectively optimize their swim patterns to maximize energy savings in flow environments \vspace{1mm} \\
-& 	\tabitem Measured and analyzed detailed body posture data of schooling fish using computer vision and deep learning, as well as mechanistic and statistical models of behavior to show that fish adopt optimal swimming patterns\vspace{5mm}\\
-
-\large{2019}
- &\textbf{Graving, J.M.}, Chae, D., Naik, H., Li, L., Koger, B., Costelloe, B.R., Couzin, I.D. (2019). DeepPoseKit, a software toolkit for fast and robust animal pose estimation using deep learning. eLife, 8. \href{https://doi.org/10.7554/elife.47994}{https://doi.org/10.7554/elife.47994}  \href{https://doi.org/10.1101/620245}{bioR$\chi$iv: https://doi.org/10.1101/620245} Code: \href{https://github.com/jgraving/deepposekit}{ https://github.com/jgraving/deepposekit} \\
- &Press: \href{https://www.quantamagazine.org/to-decode-the-brain-scientists-automate-the-study-of-behavior-20191210/}{Quanta Magazine}, 
- \href{https://doi.org/10.1038/s41592-019-0678-2}{Nature Methods},
- \href{https://doi.org/10.1038/d41586-019-02942-5}{Nature News \& Views},
- \href{https://elifesciences.org/digests/47994/machine-learning-animal-poses-to-understand-behavior}{eLife Science Digests}
- \vspace{2mm} \\
- & 	\tabitem Led the development of a general-purpose few-shot deep learning toolkit for measuring the body posture of animals using TensorFlow (\href{https://youtu.be/hCa2zaoUWhs}{https://youtu.be/hCa2zaoUWhs} \hspace{1mm}; \href{https://youtu.be/dSjaphoGHAY}{https://youtu.be/dSjaphoGHAY}). \vspace{1mm}  \\
-  & 	\tabitem Supervised Daniel Chae, a visiting Bachelor's student from Princeton University, to develop a keypoint annotation GUI and custom data augmentation methods \vspace{5mm}\\
-
-\Large{\textbf{Teaching}}  \vspace{2mm} \\
- \large{2023}
-& \textbf{Konstanz School of Collective Behavior, University of Konstanz} \\
-& \textbullet \, Led a ``Probabilistic Machine Learning'' workshop introducing concepts and practical examples from information theory, Bayesian inference, and causal inference to 30+ international PhD students. \href{https://www.exc.uni-konstanz.de/kscb/}{https://www.exc.uni-konstanz.de/kscb/}\\
-&\\
- \large{2022}
-& \textbf{Deep Learning Workshop, Max Planck Institute of Animal Behavior} \\
-& \textbullet \, Led a practical workshop introducing deep learning concepts and PyTorch to 15 participants.\\
-& \textbullet \, Co-organized a practical workshop on ``Quantifying Behavior with Machine Learning" with 27 participants \\
-& \\
- \large{2019}
-	& \textbf{ASAB 2019 Summer Conference, University of Konstanz} \\
-	& \textbullet \, Led a seminar on ``"Machine Learning in the Behavioral Sciences" with over 400 participants\\
-	& \textbullet \, Co-organized a practical workshop on ``Quantifying Behavior with Machine Learning" with 27 participants \\
-	& \\
- \large{2016–2020}
-    & \textbf{University of Konstanz, Department of Biology} \\
-     & \textbullet \, Co-organized an intensive research course for Master's students on the collective animal behavior research \\
-     & \textbullet \, Served as project advisor for 5 Master's students \\
-     & \textbullet \, Led lectures and workshops on the topics of ``Measuring Animal Behavior with Computer Vision", ``Analyzing Behavioral Data", and ``Introduction to Programming in Python" \\
-   & \\
- %\large{2009-2012}
- %& \textbf{Bowling Green State University, Department of Biological Sciences} \\
- %& Student Coordinator and Teaching Assistant, Marine Biology Laboratory \\
- %& – Introduction to Inland Marine Research \\
- %& – Aquarium Husbandry \\
- %& – Reef Aquarium Husbandry I and II \\
- %& \\
- %\large{2009}
- %& \textbf{Bowling Green State University, Department of Environmental Science} \\
- %& Student Teaching Assistant, Introduction to Environmental Science \\
- %& \\
- 
-% \Large{\textbf{Funding}}  \vspace{5mm} \\
- %\large{2013–2015}
-   %  & \textbf{Graduate Research Fellowship} \\
-    % & 100\% Tuition Waiver and \$45,000 Stipend \\
-    % & Bowling Green State University \\
-    % & \\
- %\large{2013}
-%& \textbf{Undergraduate Research Fellowship} \\
-%& \$5000 Stipend, \$800 Research Funds \\
-%& Bowling Green State University, Center for Undergraduate Research and Scholarship \\
-%& \\
- %\large{2009–2011}
-%& \textbf{T. Richard Fisher Biology Scholarship} \\
-%& \$8000/year Tuition Scholarship \\
-%& Bowling Green State University, Department of Biological Sciences \\
-%& \\
- %\large{2009}
-%& \textbf{Summer Research Fellowship} \\
-%& \$5000 Stipend, \$1000 Research Funds \\
-%& Science, Engineering, Technology Gateway Ohio (SETGO), National Science Foundation \\
-%& \\
- %\large{2009–2013}
-%& \textbf{Award of Scholars} \\
-%& Merit-based 75\% Tuition Scholarship \\
-%& Bowling Green State University, College of Arts and Sciences \\
-%& \\
-
-\Large{\textbf{Skills}} \vspace{2mm} \\
-%\large{\textbf{Computational}} \\
-\normalsize{\textit{Languages: }}
-& Python \vspace{1mm}\\ %\LaTeX \\
-\normalsize{\textit{Applications: }} 
-& Bayesian inference, causal inference, statistical analysis, data visualization, \\ 
-& machine learning, deep learning, computer vision, and image processing \vspace{1mm}\\
-\normalsize{\textit{Libraries: }}
-& JAX, Numpyro, Stan, TensorFlow, PyTorch, scikit-learn, OpenCV \\
-
-\end{longtable}
-\end{small}
-\newpage
+%\newpage
 
 %%%%%%%%%%%%%%%%% REFERENCES %%%%%%%%%%%%%%%%%%%%%%%%%%
 % The reference section has links to your references' websites and email addresses.
 
-\noindent \begin{longtable}{@{} l p{3.5in}l p{3.5in}|}
- \Large{\textbf{References}} \vspace{5mm} \\
- & \href{https://www.ab.mpg.de/couzin}{\textbf{Iain D. Couzin}} & \href{https://www.ab.mpg.de/wikelski}{\textbf{Martin Wikelski}} \\
- & Director, Max Planck Institute of Animal Behavior &  Director, Max Planck Institute of Animal Behavior  \\
- & Professor, University of Konstanz &  Professor, University of Konstanz \\
- & Department of Collective Behaviour  & Department of Migration \\
- & \small{\href{mailto:icouzin@ab.mpg.de}{icouzin@ab.mpg.de}} & \small{\href{mailto:wikelski@ab.mpg.de}{wikelski@ab.mpg.de}} \\
- &\small{+49 7531 88 4928} & \small{+49 7732 1501 25} \\
-&& \\
- & \href{http://www.biology.emory.edu/Berman/index.html}{\textbf{Gordon Berman}} & \href{https://www.cgmi.uni-konstanz.de/personen/prof-dr-oliver-deussen/}{\textbf{Oliver Deussen}} \\
-& Associate Professor  &  Professor \\
-& Emory University & University of Konstanz \\
-& Department of Biology & Visual Computing Group \\
- & \small{\href{mailto:gordon.berman@emory.edu}{gordon.berman@emory.edu}} & \small{\href{mailto:oliver.deussen@uni-konstanz.de}{oliver.deussen@uni-konstanz.de}} \\
- &\small{+1 404-727-0071} & \small{+49 (0) 7531 88-2778} \\
+%\noindent \begin{longtable}{@{} l p{2.5in}l p{2.5in}|}
+ %\Large{\textbf{References}} \vspace{5mm} \\
+ %& \href{https://www.ab.mpg.de/couzin}{\textbf{Iain D. Couzin}} & %\href{https://www.ab.mpg.de/wikelski}{\textbf{Martin Wikelski}} \\
+ %& Director, Max Planck Institute of Animal Behavior &  Director, Max Planck Institute of Animal Behavior  \\
+ %& Professor, University of Konstanz &  Professor, University of Konstanz \\
+ %& Department of Collective Behaviour  & Department of Migration \\
+ %& \small{\href{mailto:icouzin@ab.mpg.de}{icouzin@ab.mpg.de}} & %\small{\href{mailto:wikelski@ab.mpg.de}{wikelski@ab.mpg.de}} \\
+ %&\small{+49 7531 88 4928} & \small{+49 7732 1501 25} \\
+%&& \\
+% & \href{http://www.biology.emory.edu/Berman/index.html}{\textbf{Gordon Berman}} & \href{https://www.cgmi.uni-konstanz.de/personen/prof-dr-oliver-deussen/}{\textbf{Oliver Deussen}} \\
+%& Associate Professor  &  Professor \\
+%& Emory University & University of Konstanz \\
+%& Department of Biology & Visual Computing Group \\
+% & \small{\href{mailto:gordon.berman@emory.edu}{gordon.berman@emory.edu}} & \small{\href{mailto:oliver.deussen@uni-konstanz.de}{oliver.deussen@uni-konstanz.de}} \\
+% &\small{+1 404-727-0071} & \small{+49 (0) 7531 88-2778} \\
 
 % && \\
 %& \%href{https://www.bgsu.edu/arts-and-sciences/biological-sciences/faculty-and-staff/alphabetical-listing/robert-huber.html}{Robert Huber} \\
@@ -219,7 +227,7 @@
 %& Department of Biological Sciences  \\
 %& \small{\href{mailto:rh.bgsu@gmail.com}{rh.bgsu@gmail.com}} \\
 %&\small{+1 (419) 372 7492} \\
-\end{longtable}
+%\end{longtable}
 
 
-\end{document}
+%\end{document}

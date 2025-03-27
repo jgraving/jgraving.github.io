@@ -15,66 +15,27 @@ redirect_from:
 
 Education
 ======
-* 2019 (expected)
-  * Ph.D. in Biology (Collective Behavior)
-    * Department of Collective Behaviour, Max Planck Institute of Animal Behaviour
-    * Department of Biology, University of Konstanz
-    * International Max Planck Research School (IMPRS) for Organismal Biology
-* 2015
-  * M.S. in Biology (Animal Behavior)
-    * Department of Biological Sciences, Bowling Green State University
-* 2013
-  * B.S. in Biology (Neuroscience)
-      * Department of Biological Sciences, Bowling Green State University
+* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* M.S. in Jekyll, GitHub University, 2014
+* B.S. in GitHub, GitHub University, 2012
 
 Research
 ======
-* 2015—
-  * Department of Collective Behaviour, Max Planck Institute of Animal Behaviour
-  * Department of Biology, University of Konstanz
-  * Topic: "Perception and motion in animal groups"
-  * Supervisor: Iain Couzin
+* Spring 2024: Academic Pages Collaborator
+  * GitHub University
+  * Duties includes: Updates and improvements to template
+  * Supervisor: The Users
 
-* 2011—2015
-  * Department of Biological Sciences, Bowling Green State University
-  * Topic: "Sensing and navigation in nocturnal arthropods"
-  * Supervisors: Daniel Wiegmann, Verner Bingman
+* Fall 2015: Research Assistant
+  * GitHub University
+  * Duties included: Merging pull requests
+  * Supervisor: Professor Hub
 
-* 2013
-  * Department of Biological Sciences, Bowling Green State University
-  * Topic: "The sensory basis of rheotaxis in fish"
-  * Supervisor: Sheryl Coombs
-
-* 2009
-  * Department of Biological Sciences, Bowling Green State University
-  * Topic: "Phenotypic plasticity in stony corals"
-  * Supervisor: Matthew Partin
-
-Teaching
-======
-* 2015—
-  * Department of Collective Behaviour, Max Planck Institute of Animal Behaviour
-  * Department of Biology, University of Konstanz
-  * Topic: "Perception and motion in animal groups"
-  * Supervisor: Iain Couzin
-
-* 2011—2015
-  * Department of Biological Sciences, Bowling Green State University
-  * Topic: "Sensing and navigation in nocturnal arthropods"
-  * Supervisors: Daniel Wiegmann, Verner Bingman
-
-* 2013
-  * Department of Biological Sciences, Bowling Green State University
-  * Topic: "The sensory basis of rheotaxis in fish"
-  * Supervisor: Sheryl Coombs
-
-* 2009
-  * Department of Biological Sciences, Bowling Green State University
-  * Topic: "Phenotypic plasticity in stony corals"
-  * Supervisor: Matthew Partin
-
-
-
+* Summer 2015: Research Assistant
+  * GitHub University
+  * Duties included: Tagging issues
+  * Supervisor: Professor Git
+  
 Skills
 ======
 * Skill 1
@@ -86,19 +47,19 @@ Skills
 
 Publications
 ======
-  <ul>{% for post in site.publications %}
+  <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
 Talks
 ======
-  <ul>{% for post in site.talks %}
-    {% include archive-single-talk-cv.html %}
+  <ul>{% for post in site.talks reversed %}
+    {% include archive-single-talk-cv.html  %}
   {% endfor %}</ul>
   
 Teaching
 ======
-  <ul>{% for post in site.teaching %}
+  <ul>{% for post in site.teaching reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
