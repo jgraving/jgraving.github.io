@@ -30,5 +30,5 @@ A study employing deep learning–based pose estimation and mechanistic modeling
 ### DeepPoseKit
 A software toolkit for fast and robust animal pose estimation using deep learning.  
 [View Code on GitHub](https://github.com/jgraving/deepposekit)  
-[View Publication](https://elifesciences.org/articles/47994)
+[View Publication](https://elifesciences.org/articles/47994)  
 *Published in eLife; also featured in [Quanta Magazine](https://www.quantamagazine.org/to-decode-the-brain-scientists-automate-the-study-of-behavior-20191210/), [Nature Methods](https://doi.org/10.1038/s41592-019-0678-2), and [Nature News & Views](https://doi.org/10.1038/d41586-019-02942-5).*
