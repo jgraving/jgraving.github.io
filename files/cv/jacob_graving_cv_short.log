@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  27 MAR 2025 17:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  27 MAR 2025 18:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -388,10 +388,10 @@ Package rerunfilecheck Info: File `jacob_graving_cv_short.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 200.
  ) 
 Here is how much of TeX's memory you used:
- 7070 strings out of 492616
- 104186 string characters out of 6129482
- 200792 words of memory out of 5000000
- 10936 multiletter control sequences out of 15000+600000
+ 7067 strings out of 492616
+ 104169 string characters out of 6129482
+ 200683 words of memory out of 5000000
+ 10933 multiletter control sequences out of 15000+600000
  48181 words of font info for 40 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  28i,8n,33p,508b,426s stack positions out of 5000i,500n,10000p,200000b,80000s

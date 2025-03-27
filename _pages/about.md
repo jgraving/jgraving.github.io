@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
   - /about
 ---
-I am a Research Scientist at the [Max Planck Institute of Animal Behavior](https://www.ab.mpg.de/). I focus on developing advanced, general-purpose methods for quantifying animal behavior in both laboratory and field environments. My research sits at the intersection of machine learning and behavioral science, and I utilize computer vision, deep learning, and modern statistical techniques—such as Bayesian inference and causal modeling- to build innovative tools and scalable data analysis pipelines. I work closely with interdisciplinary teams, including software engineers, neuroscientists, and field biologists, to translate computational insights into scientific discoveries.
+I am a Research Scientist at the [Max Planck Institute of Animal Behavior](https://www.ab.mpg.de/). I develop advanced, general-purpose methods for quantifying and modeling animal behavior in both laboratory and field environments. My research sits at the intersection of AI and behavioral science, and I utilize computer vision, machine learning, and modern statistical techniques—such as Bayesian modeling and causal inference—to build innovative tools and scalable data analysis pipelines. I work closely with interdisciplinary teams, including software engineers, neuroscientists, and field biologists, to translate computational data-driven insights into scientific discoveries.
 
 ## Projects
 
