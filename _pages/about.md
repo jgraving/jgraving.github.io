@@ -23,6 +23,7 @@ Bayesian modeling and statistical analysis of VR behavioral data to reveal the m
 **📄 Citation:**  
 > Sayin, S., Couzin-Fuchs, E., Petelski, I., Günzel, Y., Salahshour, M., Lee, C.-Y., **Graving, J.M.**, Li, L., Deussen, O., Couzin, I.D., et al. (2025). *The behavioral mechanisms governing collective motion in swarming locusts.* **Science**, 387(6737), 995–1000. [https://doi.org/10.1126/science.adq7832](https://www.science.org/doi/10.1126/science.adq7832)
 
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/oBJnY4HKmeY" frameborder="0" allowfullscreen></iframe>
 
 ## 🛸 **Quantifying Group Movement Using Drones and AI**  
 A computer vision pipeline combining drone footage and deep learning to extract 3D behavioral and environmental data for animal groups in the wild.  
