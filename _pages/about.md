@@ -38,8 +38,7 @@ Computer vision methods used to extract 3D movement and environmental data from 
 **📄 Citation:**
 > Koger, B., Deshpande, A., Kerby, J.T., **Graving, J.M.**, Costelloe, B.R., & Couzin, I.D. (2023). *Quantifying the movement, behaviour and environmental context of group-living animals using drones and computer vision.* **Journal of Animal Ecology**, 92(7), 1498–1515. [https://doi.org/10.1111/1365-2656.13904](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/1365-2656.13904)
 
-<img src="https://raw.githubusercontent.com/benkoger/overhead-video-worked-examples/main/pictures/tracks_on_map_observation088.png" alt="Animal Tracks on Map" style="width:100%; margin-top:10px;">
-
+<img src="https://raw.githubusercontent.com/jgraving/jgraving.github.io/master/files/images/tracks_on_map_observation088.png" alt="Animal Tracks on Map" style="width:100%; margin-top:10px;">
 
 ## 🐟 **Vortex Phase Matching in Schooling Fish**  
 This study tested predictions from robot experiments using deep learning-based pose estimation to measure schooling fish behavior. Initially, we used robotic models to simulate vortex phase matching, a strategy for energy-efficient movement in groups. Then, we validated the predictions by measuring real fish with deep learning-based pose estimation. The results provide insight into the dynamics of collective motion, highlighting energy optimization strategies both in fish and in robotic systems designed to mimic their behavior.  
