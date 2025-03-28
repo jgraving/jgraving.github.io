@@ -6,7 +6,7 @@ author_profile: true
 redirect_from:
   - /resume
 ---
-[Google Scholar](https://scholar.google.com/citations?user=ybpKXnEAAAAJ){: .btn}
+[Google Scholar](https://scholar.google.com/citations?user=ybpKXnEAAAAJ){: .btn style="font-size: 1.2em; padding: 0.6em 1.2em;" }
 
 <iframe src="/files/jacob_graving_cv.pdf" width="100%" height="800px">
     This browser does not support PDFs. Please download the PDF to view it: 
