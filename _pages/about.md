@@ -32,7 +32,7 @@ Bayesian modeling and statistical analysis of VR behavioral data to reveal the m
 
 ## 🛸 **Quantifying Group Movement Using Drones and AI**  
 A computer vision pipeline combining drone footage and deep learning to extract 3D behavioral and environmental data for animal groups in the wild.  
-🔗 [Code on GitHub](https://github.com/benkoger/overhead-video-worked-examples) | [Publication](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/1365-2656.13904) | [Press Release](https://www.biologie.uni-konstanz.de/fachbereich/aktuelles/details/observing-group-living-animals-with-drones-and-computer-vision/) | [HerdHover Project](https://herdhover.com/)  
+🔗 [Code on GitHub](https://github.com/benkoger/overhead-video-worked-examples) | [Publication](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/1365-2656.13904) | [Press Release](https://www.campus.uni-konstanz.de/en/science/observing-group-living-animals-with-drones-and-computer-vision) | [HerdHover Project](https://herdhover.com/)
 **📄 Citation:**  
 > Koger, B., Deshpande, A., Kerby, J.T., **Graving, J.M.**, Costelloe, B.R., & Couzin, I.D. (2023). *Quantifying the movement, behaviour and environmental context of group-living animals using drones and computer vision.* **Journal of Animal Ecology**, 92(7), 1498–1515. [https://doi.org/10.1111/1365-2656.13904](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/1365-2656.13904)
 
