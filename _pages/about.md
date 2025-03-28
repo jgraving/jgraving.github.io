@@ -23,7 +23,12 @@ Bayesian modeling and statistical analysis of VR behavioral data to reveal the m
 **📄 Citation:**  
 > Sayin, S., Couzin-Fuchs, E., Petelski, I., Günzel, Y., Salahshour, M., Lee, C.-Y., **Graving, J.M.**, Li, L., Deussen, O., Couzin, I.D., et al. (2025). *The behavioral mechanisms governing collective motion in swarming locusts.* **Science**, 387(6737), 995–1000. [https://doi.org/10.1126/science.adq7832](https://www.science.org/doi/10.1126/science.adq7832)
 
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/oBJnY4HKmeY" frameborder="0" allowfullscreen></iframe>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; width: 85%; max-width: 100%; margin: 1em auto;">
+  <iframe src="https://www.youtube.com/embed/oBJnY4HKmeY" 
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
+          frameborder="0" allowfullscreen>
+  </iframe>
+</div>
 
 ## 🛸 **Quantifying Group Movement Using Drones and AI**  
 A computer vision pipeline combining drone footage and deep learning to extract 3D behavioral and environmental data for animal groups in the wild.  
@@ -39,6 +44,13 @@ A study employing deep learning–based pose estimation and mechanistic modeling
 🔗 [Publication](https://www.nature.com/articles/s41467-020-19086-0) | [Press Release](https://www.uni-konstanz.de/en/university/news-and-media/current-announcements/news-in-detail/roboter-helfen/)  
 **📄 Citation:**  
 > Li, L., Nagy, M., **Graving, J.M.**, Bak-Coleman, J., Xie, G., & Couzin, I.D. (2020). *Vortex phase matching as a strategy for schooling in robots and in fish.* **Nature Communications**, 11, Article 5408. [https://doi.org/10.1038/s41467-020-19086-0](https://www.nature.com/articles/s41467-020-19086-0)
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; width: 85%; max-width: 100%; margin: 1em auto;">
+  <iframe src="https://www.youtube.com/embed/J4T4hi8RO7s" 
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
+          frameborder="0" allowfullscreen>
+  </iframe>
+</div>
 
 
 ## 🤸‍♂️ **DeepPoseKit**  
@@ -69,6 +81,13 @@ These experiments used radio telemetry, behavioral tracking, and sensory manipul
 > Bingman, V.P., **Graving, J.M.**, Hebets, E.A., & Wiegmann, D.D. (2017). *Importance of the antenniform legs, but not vision, for homing by the neotropical whip spider Paraphrynus laevifrons.* **Journal of Experimental Biology**, 220, 885–890. [https://doi.org/10.1242/jeb.149823](https://doi.org/10.1242/jeb.149823)  
 >  
 > Wiegmann, D.D., Hebets, E.A., Gronenberg, W., **Graving, J.M.**, & Bingman, V.P. (2016). *Amblypygids: Model organisms for the study of arthropod navigation mechanisms in complex environments?* **Frontiers in Behavioral Neuroscience**, 10:47. [https://doi.org/10.3389/fnbeh.2016.00047](https://doi.org/10.3389/fnbeh.2016.00047)
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; width: 85%; max-width: 100%; margin: 1em auto;">
+  <iframe src="https://www.youtube.com/embed/6hY8X-qwyiU" 
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
+          frameborder="0" allowfullscreen>
+  </iframe>
+</div>
 
 <!-- 
 Optional additional gifs:
