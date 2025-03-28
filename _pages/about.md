@@ -74,6 +74,12 @@ This approach enabled automated identification, spatial tracking, and orientatio
 **📄 Citation:**
 > Alarcón-Nieto, G., **Graving, J.M.**, Klarevas-Irby, J.A., Maldonado-Chaparro, A.A., Mueller, I., & Farine, D.R. (2018). *An automated barcode tracking system for behavioural studies in birds.* **Methods in Ecology and Evolution**, 9(6), 1536–1547. [https://doi.org/10.1111/2041-210X.13005](https://doi.org/10.1111/2041-210X.13005)
 
+<div style="text-align: center;">
+  <video width="85%" controls>
+    <source src="https://github.com/jgraving/jgraving.github.io/raw/master/files/videos/zebra_finches_tracked.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
 
 ## 🕷 **Navigation in Whip Spiders**  
 Field and lab studies of spatial behavior and sensory integration in amblypygids (whip spiders), revealing their capacity for goal-directed navigation in complex, light-deprived environments.  
