@@ -15,6 +15,8 @@ My work is deeply interdisciplinary. I collaborate with physicists, neuroscienti
 
 I’m particularly interested in AI systems that go beyond prediction — tools that support scientific inference by uncovering mechanisms, testing hypotheses, and explaining the structure and dynamics of complex systems. While much of my work focuses on behavior, I’m broadly motivated by questions at the interface of data, theory, and explanation across the natural sciences.
 
+You can find a selection of my projects below 👇
+
 # Projects
 
 ## 🦗 **Collective Motion in Locusts**  
