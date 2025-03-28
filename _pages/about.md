@@ -19,7 +19,7 @@ I’m particularly interested in AI systems that go beyond prediction — tools 
 
 ## 🦗 **Collective Motion in Locusts**  
 Bayesian modeling and statistical analysis of VR behavioral data to reveal the mechanisms governing collective motion in swarming locusts.  
-🔗 [Publication](https://www.science.org/doi/10.1126/science.adq7832) | [Perspective](https://doi.org/10.1126/science.adw0733) | [Press Release](https://www.campus.uni-konstanz.de/en/science/scientists-rewrite-the-rules-of-swarming-locusts) | [Model Code](https://github.com/jgraving/sayin_locust_mixture_model)  
+🔗 [Publication](https://www.science.org/doi/10.1126/science.adq7832) | [Perspective](https://doi.org/10.1126/science.adw0733) | [Feature Article](https://www.campus.uni-konstanz.de/en/science/scientists-rewrite-the-rules-of-swarming-locusts) | [Model Code](https://github.com/jgraving/sayin_locust_mixture_model)
 **📄 Citation:**  
 > Sayin, S., Couzin-Fuchs, E., Petelski, I., Günzel, Y., Salahshour, M., Lee, C.-Y., **Graving, J.M.**, Li, L., Deussen, O., Couzin, I.D., et al. (2025). *The behavioral mechanisms governing collective motion in swarming locusts.* **Science**, 387(6737), 995–1000. [https://doi.org/10.1126/science.adq7832](https://www.science.org/doi/10.1126/science.adq7832)
 
@@ -32,7 +32,7 @@ Bayesian modeling and statistical analysis of VR behavioral data to reveal the m
 
 ## 🛸 **Quantifying Group Movement Using Drones and AI**  
 A computer vision pipeline combining drone footage and deep learning to extract 3D behavioral and environmental data for animal groups in the wild.  
-🔗 [Code on GitHub](https://github.com/benkoger/overhead-video-worked-examples) | [Publication](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/1365-2656.13904) | [Press Release](https://www.campus.uni-konstanz.de/en/science/observing-group-living-animals-with-drones-and-computer-vision) | [HerdHover Project](https://herdhover.com/)
+🔗 [Code on GitHub](https://github.com/benkoger/overhead-video-worked-examples) | [Publication](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/1365-2656.13904) | [Press Release](https://www.biologie.uni-konstanz.de/fachbereich/aktuelles/details/observing-group-living-animals-with-drones-and-computer-vision/) | [Feature Article](https://www.campus.uni-konstanz.de/en/science/observing-group-living-animals-with-drones-and-computer-vision) | [HerdHover Project](https://herdhover.com/)
 **📄 Citation:**  
 > Koger, B., Deshpande, A., Kerby, J.T., **Graving, J.M.**, Costelloe, B.R., & Couzin, I.D. (2023). *Quantifying the movement, behaviour and environmental context of group-living animals using drones and computer vision.* **Journal of Animal Ecology**, 92(7), 1498–1515. [https://doi.org/10.1111/1365-2656.13904](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/1365-2656.13904)
 
@@ -55,8 +55,8 @@ A study employing deep learning–based pose estimation and mechanistic modeling
 
 ## 🤸‍♂️ **DeepPoseKit**  
 A software toolkit for fast and robust animal pose estimation using deep learning.  
-🔗 [Code on GitHub](https://github.com/jgraving/DeepPoseKit) | [Publication](https://elifesciences.org/articles/47994) | [Press Release](https://www.campus.uni-konstanz.de/en/science/new-method-improves-measurement-of-animal-behaviour-using-deep-learning)  
-📰 Featured in: [Quanta Magazine](https://www.quantamagazine.org/to-decode-the-brain-scientists-automate-the-study-of-behavior-20191210/) | [Nature Methods](https://doi.org/10.1038/s41592-019-0678-2) | [Nature News & Views](https://doi.org/10.1038/d41586-019-02942-5)  
+🔗 [Code on GitHub](https://github.com/jgraving/DeepPoseKit) | [Publication](https://elifesciences.org/articles/47994) | [Feature Article](https://www.campus.uni-konstanz.de/en/science/new-method-improves-measurement-of-animal-behaviour-using-deep-learning)  
+📰 Featured in: [Quanta Magazine](https://www.quantamagazine.org/to-decode-the-brain-scientists-automate-the-study-of-behavior-20191210/) | [Nature Methods](https://doi.org/10.1038/s41592-019-0678-2) | [Nature News & Views](https://doi.org/10.1038/d41586-019-02942-5)
 **📄 Citation:**  
 > **Graving, J.M.**, Chae, D., Naik, H., Li, L., Koger, B., Costelloe, B.R., Couzin, I.D. (2019). *DeepPoseKit, a software toolkit for fast and robust animal pose estimation using deep learning.* **eLife**, 8, e47994. [https://doi.org/10.7554/eLife.47994](https://elifesciences.org/articles/47994)
 
