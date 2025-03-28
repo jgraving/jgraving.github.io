@@ -6,10 +6,12 @@ author_profile: true
 redirect_from:
   - /resume
 ---
-
-{% include base_path %}
-[Download PDF](/files/jacob_graving_cv.pdf){: .btn}
 [Google Scholar](https://scholar.google.com/citations?user=ybpKXnEAAAAJ){: .btn}
+
+<iframe src="/files/jacob_graving_cv.pdf" width="100%" height="800px">
+    This browser does not support PDFs. Please download the PDF to view it: 
+    <a href="/files/jacob_graving_cv.pdf">Download PDF</a>.
+</iframe>
 
 <!---
 

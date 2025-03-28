@@ -8,9 +8,13 @@ redirect_from:
   - /about
 ---
 
-I am a Research Scientist at the [Max Planck Institute of Animal Behavior](https://www.ab.mpg.de/). I develop advanced, general-purpose methods for quantifying and modeling animal behavior in both laboratory and field environments.  
-My research sits at the intersection of AI and behavioral science, and I utilize computer vision, machine learning, and modern statistical techniques—such as Bayesian modeling and causal inference—to build innovative tools and scalable data analysis pipelines.  
-I work closely with interdisciplinary teams—including software engineers, neuroscientists, and field biologists—to translate computational data-driven insights into scientific discoveries.
+Hi, I’m Jake — a Research Scientist at the [Max Planck Institute of Animal Behavior](https://www.ab.mpg.de/), where I work at the intersection of AI and behavioral science.
+
+I build interpretable and scalable machine learning tools — often grounded in modern AI and deep learning — to study animal behavior across both lab and field settings. My methods draw from computer vision, probabilistic programming, self-supervised learning, and Bayesian causal inference, with the goal of making sense of complex behavioral data.
+
+My work is deeply interdisciplinary. I collaborate with physicists, neuroscientists, field biologists, and engineers to design end-to-end pipelines that span experimental design, data collection, and computational analysis.
+
+I’m particularly interested in AI systems that go beyond prediction — tools that support scientific inference by uncovering mechanisms, testing hypotheses, and explaining the structure and dynamics of complex systems. While much of my work focuses on behavior, I’m broadly motivated by questions at the interface of data, theory, and explanation across the natural sciences.
 
 # Projects
 
@@ -48,6 +52,26 @@ A software toolkit for fast and robust animal pose estimation using deep learnin
 **Graving, J.M.**, Chae, D., Naik, H., Li, L., Koger, B., Costelloe, B.R., Couzin, I.D. (2019). *DeepPoseKit, a software toolkit for fast and robust animal pose estimation using deep learning.* **eLife**, 8, e47994. [https://doi.org/10.7554/eLife.47994](https://elifesciences.org/articles/47994)
 
 <img src="https://raw.githubusercontent.com/jgraving/jgraving.github.io/master/files/images/Figure1video1.gif" alt="Swarm Pose" style="width:100%; margin-top:10px;">
+
+---
+
+### **Automated Barcode Tracking in Birds**
+Development of a low-cost, scalable system for tracking individual birds using backpack-mounted, machine-readable barcodes.  
+This approach enabled automated identification, spatial tracking, and orientation detection in captive zebra finches, supporting the study of fine-scale behavior, social interactions, and network structure over extended timescales. The system integrates hardware, computer vision software, and custom code to process data efficiently and safely across entire groups.  
+🔗 [Publication](https://doi.org/10.1111/2041-210X.13005)  
+**📄 Citation:**  
+Alarcón-Nieto, G., **Graving, J.M.**, Klarevas-Irby, J.A., Maldonado-Chaparro, A.A., Mueller, I., & Farine, D.R. (2018). *An automated barcode tracking system for behavioural studies in birds.* **Methods in Ecology and Evolution**, 9(6), 1536–1547. [https://doi.org/10.1111/2041-210X.13005](https://doi.org/10.1111/2041-210X.13005)
+
+---
+
+### **Navigation in Whip Spiders**
+Field and lab studies of spatial behavior and sensory integration in amblypygids (whip spiders), revealing their capacity for goal-directed navigation in complex, light-deprived environments.  
+These experiments used radio telemetry, behavioral tracking, and sensory manipulation to study how olfactory and tactile cues — primarily from the antenniform legs — support navigation, even in the absence of vision.  
+🔗 [Journal of Experimental Biology (2017)](https://doi.org/10.1242/jeb.149823) | [Journal of Comparative Physiology A (2017)](https://doi.org/10.1007/s00359-017-1169-5) | [Frontiers in Behavioral Neuroscience (2016)](https://doi.org/10.3389/fnbeh.2016.00047)  
+**📄 Citations:**  
+**Graving, J.M.**, Bingman, V.P., Hebets, E.A., & Wiegmann, D.D. (2017). *Development of site fidelity in the nocturnal amblypygid, Phrynus marginemaculatus.* **Journal of Comparative Physiology A**, 203, 313–328. [https://doi.org/10.1007/s00359-017-1169-5](https://doi.org/10.1007/s00359-017-1169-5)  
+Bingman, V.P., **Graving, J.M.**, Hebets, E.A., & Wiegmann, D.D. (2017). *Importance of the antenniform legs, but not vision, for homing by the neotropical whip spider Paraphrynus laevifrons.* **Journal of Experimental Biology**, 220, 885–890. [https://doi.org/10.1242/jeb.149823](https://doi.org/10.1242/jeb.149823)  
+Wiegmann, D.D., Hebets, E.A., Gronenberg, W., **Graving, J.M.**, & Bingman, V.P. (2016). *Amblypygids: Model organisms for the study of arthropod navigation mechanisms in complex environments?* **Frontiers in Behavioral Neuroscience**, 10:47. [https://doi.org/10.3389/fnbeh.2016.00047](https://doi.org/10.3389/fnbeh.2016.00047)
 
 <!-- 
 Optional additional gifs:
