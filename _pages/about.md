@@ -7,7 +7,7 @@ redirect_from:
   - /about
 ---
 
-Hi, I’m Jake 👋 — I'm currently a Research Scientist at the [Max Planck Institute of Animal Behavior](https://www.ab.mpg.de/), where I work at the intersection of AI and behavioral science.
+Hi, I’m Jake 👋 — I’m currently a Research Scientist at the [Max Planck Institute of Animal Behavior](https://www.ab.mpg.de/), where I work at the intersections of AI, data science, and animal behavior.
 
 I build interpretable and scalable machine learning tools — often grounded in modern AI and deep learning — to study animal behavior across both lab and field settings. I develop methods that draw from computer vision, probabilistic programming, self-supervised learning, and Bayesian causal inference, with the goal of measuring and making sense of behavioral data.
 
