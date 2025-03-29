@@ -7,20 +7,25 @@ redirect_from:
   - /about
 ---
 
-Hi, I’m Jake 👋 — I’m currently a Research Scientist at the [Max Planck Institute of Animal Behavior](https://www.ab.mpg.de/), where I work at the intersections of AI, data science, and animal behavior.
+Hi, I’m Jake 👋 — I’m currently a Research Scientist at the [Max Planck Institute of Animal Behavior](https://www.ab.mpg.de/), working at the intersection of AI, data science, and animal behavior.
 
-I build interpretable and scalable machine learning tools — often grounded in modern AI and deep learning — to study animal behavior across both lab and field settings. I develop methods that draw from computer vision, probabilistic programming, self-supervised learning, and Bayesian causal inference, with the goal of measuring and making sense of behavioral data.
+I build scalable, interpretable tools for collecting and analyzing behavioral data, across both lab and field settings. My work draws from machine learning, computer vision, probabilistic programming, and Bayesian inference to uncover structure in complex systems.
 
-My work is deeply interdisciplinary. I collaborate with physicists, neuroscientists, field biologists, and engineers to design end-to-end pipelines that span experimental design, data collection, and computational analysis.
+My research is highly interdisciplinary — I collaborate with neuroscientists, biologists, physicists, and engineers to develop end-to-end pipelines spanning experimental design, data collection, and computational analysis.
 
-I’m particularly interested in AI systems that go beyond prediction — tools that support scientific inference by uncovering mechanisms, testing hypotheses, and explaining the structure and dynamics of complex systems. While much of my work focuses on behavior, I’m broadly motivated by questions at the interface of data, theory, and explanation across the natural sciences.
+A central focus of my work is building AI systems that *go beyond prediction* — tools that help test hypotheses, reveal mechanisms, and support scientific understanding — with the goal of turning computational insights into scientific discoveries.
 
-You can find a selection of my projects below 👇
+👇 Check out some of my projects below:
 
 # Projects
 
 ## 🦗 **Collective Motion in Locusts**  
-Statistical and Bayesian modeling used to test predictions from a mechanistic model of collective behavior in swarming locusts. This work combines field observations, laboratory experiments, and a virtual reality (VR) setup to study how individual locusts respond to social cues. The findings challenge classical self-propelled particle models by showing that locusts do not align with neighbors in the way those models assume. Instead, collective motion emerges from a minimal cognitive framework, where individuals rely on internal consensus dynamics and neural representations of neighbor bearing — rather than simple rules like alignment.  
+Analyzed behavioral data from lab, and VR experiments to test a mechanistic model of swarming. I developed a Bayesian model that helps explain collective motion in locusts without relying on alignment-based rules.  
+
+Key findings:
+- Locusts don’t align with neighbors as classical models suggest.
+- Collective motion arises from internal decision-making and cognitive representations of neighbor bearing.  
+
 🔗 [Publication](https://www.science.org/doi/10.1126/science.adq7832) | [Perspective](https://doi.org/10.1126/science.adw0733) | [Feature Article](https://www.campus.uni-konstanz.de/en/science/scientists-rewrite-the-rules-of-swarming-locusts) | [Model Code](https://github.com/jgraving/sayin_locust_mixture_model)  
 
 **📄 Citation:**
@@ -34,7 +39,11 @@ Statistical and Bayesian modeling used to test predictions from a mechanistic mo
 </div>
 
 ## 🛸 **Quantifying Group Movement Using Drones and AI**  
-Computer vision methods used to extract 3D movement and environmental data from drone footage of free-ranging animal groups in the wild. This project combines aerial video with deep learning–based detection and tracking to reconstruct the fine-scale behavior of entire groups, along with detailed topography of their surroundings. The pipeline enables non-invasive, scalable observation of social interactions and decision-making in complex natural environments — bridging the gap between lab-based tracking and real-world animal ecology.  
+Built the *first-of-its-kind* computer vision pipeline to extract 3D movement and environmental data from drone footage of wild animal groups. I contributed models and analysis to track individuals and reconstruct group behavior in complex natural settings.
+
+- Combines drone video with deep learning–based detection and tracking  
+- Enables large-scale, non-invasive observation of social behavior in the wild  
+
 🔗 [Code on GitHub](https://github.com/benkoger/overhead-video-worked-examples) | [Publication](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/1365-2656.13904) | [Press Release](https://www.biologie.uni-konstanz.de/fachbereich/aktuelles/details/observing-group-living-animals-with-drones-and-computer-vision/) | [Feature Article](https://www.campus.uni-konstanz.de/en/science/observing-group-living-animals-with-drones-and-computer-vision) | [HerdHover Project](https://herdhover.com/)  
 
 **📄 Citation:**
@@ -43,7 +52,8 @@ Computer vision methods used to extract 3D movement and environmental data from 
 <img src="https://raw.githubusercontent.com/jgraving/jgraving.github.io/master/files/images/tracks_on_map_observation088.png" alt="Animal Tracks on Map" style="width:100%; margin-top:10px;">
 
 ## 🐟 **Vortex Phase Matching in Schooling Fish**  
-This study tested predictions from robot experiments using deep learning-based pose estimation to measure schooling fish behavior. Initially, we used robotic models to simulate vortex phase matching, a strategy for energy-efficient movement in groups. Then, we validated the predictions by measuring real fish with deep learning-based pose estimation. The results provide insight into the dynamics of collective motion, highlighting energy optimization strategies both in fish and in robotic systems designed to mimic their behavior.  
+Used deep learning–based pose estimation to test predictions from robotic models of energy-efficient schooling. I helped analyze fish movement to validate a vortex-phase matching strategy originally observed in robots.  
+
 🔗 [Publication](https://www.nature.com/articles/s41467-020-19086-0) | [Press Release](https://www.uni-konstanz.de/en/university/news-and-media/current-announcements/news-in-detail/roboter-helfen/)  
 
 **📄 Citation:**
@@ -58,7 +68,8 @@ This study tested predictions from robot experiments using deep learning-based p
 
 
 ## 🤸‍♂️ **DeepPoseKit**  
-A software toolkit for fast and robust animal pose estimation using deep learning. DeepPoseKit leverages deep learning models to estimate the posture of animals from video footage, enabling precise tracking of movement and behavior across a wide range of species. The toolkit is designed to be both accurate and fast, with the ability to learn from minimal data.  
+Created an open-source toolkit for animal pose estimation using deep learning. The models support fast, accurate posture tracking across species — even with small datasets.  
+
 🔗 [Code on GitHub](https://github.com/jgraving/DeepPoseKit) | [Publication](https://elifesciences.org/articles/47994) | [Feature Article](https://www.campus.uni-konstanz.de/en/science/new-method-improves-measurement-of-animal-behaviour-using-deep-learning)  
 📰 Featured in: [Quanta Magazine](https://www.quantamagazine.org/to-decode-the-brain-scientists-automate-the-study-of-behavior-20191210/) | [Nature Methods](https://doi.org/10.1038/s41592-019-0678-2) | [Nature News & Views](https://doi.org/10.1038/d41586-019-02942-5)  
 
@@ -69,8 +80,8 @@ A software toolkit for fast and robust animal pose estimation using deep learnin
 
 
 ## 🐦 **Automated Barcode Tracking in Birds**  
-Development of a low-cost, scalable system for tracking individual birds using backpack-mounted, machine-readable barcodes.  
-This approach enabled automated identification, spatial tracking, and orientation detection in captive zebra finches, supporting the study of fine-scale behavior, social interactions, and network structure over extended timescales. The system integrates hardware, computer vision software, and custom code to process data efficiently and safely across entire groups.  
+Helped build a low-cost system for tracking individual zebra finches using backpack-mounted barcodes. The pipeline enables automated identification, position, and orientation tracking — supporting long-term, fine-scale studies of behavior and social networks.  
+
 🔗 [Publication](https://doi.org/10.1111/2041-210X.13005)  
 
 **📄 Citation:**
@@ -84,9 +95,12 @@ This approach enabled automated identification, spatial tracking, and orientatio
 </div>
 
 ## 🕷 **Navigation in Whip Spiders**  
-Field and lab studies of spatial behavior and sensory integration in amblypygids (whip spiders), revealing their capacity for goal-directed navigation in complex, light-deprived environments.  
-These experiments used radio telemetry, behavioral tracking, and sensory manipulation to study how olfactory and tactile cues — primarily from the antenniform legs — support navigation, even in the absence of vision.  
-🔗 [Journal of Experimental Biology (2017)](https://doi.org/10.1242/jeb.149823) | [Journal of Comparative Physiology A (2017)](https://doi.org/10.1007/s00359-017-1169-5) | [Frontiers in Behavioral Neuroscience (2016)](https://doi.org/10.3389/fnbeh.2016.00047)  
+Led lab and field experiments on spatial behavior and sensory integration in whip spiders. We used radio telemetry, sensory manipulation, and behavioral tracking to study how these nocturnal arachnids navigate complex environments.
+
+- Demonstrated goal-directed navigation without vision
+- Showed that antenniform legs provide key tactile and olfactory cues
+
+[Journal of Experimental Biology (2017)](https://doi.org/10.1242/jeb.149823) | [Journal of Comparative Physiology A (2017)](https://doi.org/10.1007/s00359-017-1169-5) | [Frontiers in Behavioral Neuroscience (2016)](https://doi.org/10.3389/fnbeh.2016.00047)  
 
 **📄 Citations:**
 > **Graving, J.M.**, Bingman, V.P., Hebets, E.A., & Wiegmann, D.D. (2017). *Development of site fidelity in the nocturnal amblypygid, Phrynus marginemaculatus.* **Journal of Comparative Physiology A**, 203, 313–328. [https://doi.org/10.1007/s00359-017-1169-5](https://doi.org/10.1007/s00359-017-1169-5)  
