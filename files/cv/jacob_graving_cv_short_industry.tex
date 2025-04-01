@@ -1,18 +1,31 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% PREAMBLE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PREAMBLE (Updated for modern, professional font)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \documentclass[10pt,letterpaper]{article}
 
 % Encoding and fonts
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage{lmodern}
+\usepackage[scaled]{helvet}
+\renewcommand{\familydefault}{\sfdefault} % Use Helvetica as default font
 
 % Page layout
-\usepackage[margin=2.5cm]{geometry}
+\usepackage[margin=2cm]{geometry}
 \setlength{\parindent}{0pt}    % No paragraph indentation
 \setlength{\parskip}{6pt}      % Space between paragraphs
-\pagenumbering{gobble}         % No page numbers
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+% Set footer
+\fancyfoot[L]{Jacob M. Graving}   % Left-aligned name
+\fancyfoot[C]{}                   % Center (empty)
+\fancyfoot[R]{\thepage}          % Right-aligned page number
+
+\renewcommand{\headrulewidth}{0pt} % Remove header line
+\renewcommand{\footrulewidth}{0pt} % Optional: add a line at the bottom
+\pagenumbering{arabic}             % Turn page numbers back on
 
 % Useful packages
 \usepackage{hyperref}          % Clickable URLs
@@ -51,20 +64,25 @@
 
 %-------------------- SUMMARY -----------------------%
 \section*{Summary}
-Experienced research scientist and machine learning engineer with a strong foundation in \textit{data-driven modeling}, \textit{statistical thinking}, and \textit{problem-solving at scale}. Comfortable moving between research and engineering, theory and practice. Passionate about building systems that turn complex data into actionable insight.
+Research scientist and machine learning engineer with extensive experience in \textit{statistical modeling}, \textit{Bayesian inference}, and scalable \textit{AI systems}. My work focuses on building interpretable models and reproducible pipelines to analyze high-dimensional, multimodal data—often in uncertain or noisy environments. I bring a strong record of leading cross-disciplinary research, mentoring teams, and translating complex data into interpretable, decision-relevant results. Experienced in collaborating with engineers and domain experts to deliver robust, deployable solutions grounded in scientific rigor.
 
 %-------------------- SKILLS -----------------------%
 \section*{Skills}
+\textbf{Core strengths:} Bayesian modeling, probabilistic programming, uncertainty quantification, deep learning, causal inference, time-series analysis
+
+\textbf{Tools:} PyMC, NumPyro, Stan, PyTorch, JAX, TensorFlow, Git, Jupyter, R
+
 \begin{itemize}
-	\item Design and implementation of \textbf{probabilistic models} and \textbf{Bayesian inference} pipelines for complex, uncertain data
-	\item Development of \textbf{custom deep learning models} for behavior, vision, and sequences using \textbf{PyTorch}, and \textbf{JAX}
-	\item Building \textbf{scalable, reproducible pipelines} for multimodal and high-dimensional data (ETL, analysis, visualization)
-	\item Creating \textbf{interpretable ML tools} that support scientific discovery and real-world decision-making
-	\item Leading and contributing to \textbf{open-source software} projects in Python; experienced with \textbf{PyMC}, \textbf{NumPyro}, \textbf{Stan}, \textbf{scikit-learn}, and more
-	\item Strong communicator and collaborator across disciplines—biology, neuroscience, engineering, and data science
+	\item Built scalable pipelines for multimodal datasets and developed interpretable models for noisy real-world data
+	\item Designed transformers and contrastive learning architectures for representation learning in behavioral time-series
+	\item Mentored researchers on applied ML and open-source tools for behavioral science and neuroscience
+	\item Proven ability to quickly adopt new technologies and apply them to real-world scientific problems
 \end{itemize}
 
-\vspace{-8pt}  % Pull Experience section up tight
+
+
+
+
 
 %-------------------- EXPERIENCE -----------------------%
 \section*{Experience}
@@ -79,9 +97,6 @@ Advanced Research Technology Unit, Max Planck Institute of Animal Behavior
 	\item Provide technical guidance and mentorship across collaborative projects, promoting reproducible science and statistical rigor.
 \end{itemize}
 
-\vspace{-10pt}  % Pull Education up from next page
-\enlargethispage{1.5cm}  % Let LaTeX stretch the page slightly
-
 %-------------------- EDUCATION -----------------------%
 \section*{Education}
 
@@ -90,7 +105,7 @@ Advanced Research Technology Unit, Max Planck Institute of Animal Behavior
 Max Planck Institute of Animal Behavior \& University of Konstanz — \textit{Germany} \\
 International Max Planck Research School (IMPRS) \\
 \textit{Thesis:} \href{http://nbn-resolving.de/urn:nbn:de:bsz:352-2-dgcbudqch6ix8}{Deep Learning and Computer Vision Methods for Measuring and Modeling Animal Behavior} \\
-
+\newpage
 \textbf{2015} \\
 \textbf{M.Sc., Biology} — Bowling Green State University — \textit{USA} \\
 \textit{Focus:} Animal Behavior, Neuroscience \\
@@ -110,42 +125,43 @@ International Max Planck Research School (IMPRS) \\
 	\begin{itemize}
 		\item Introduces a novel Bayesian generalized linear model framework for circular data by incorporating the von Mises distribution.
 		\item Jointly models mean direction and variance to improve interpretability of circular outcomes.
-		\item Provides practical guidelines and implementations using Bayesian toolkits such as PyMC and Stan.
+		\item Offers practical guidelines and implementations using Bayesian toolkits such as PyMC and Stan.
 	\end{itemize}
 	
 	\textbf{Graving, J.M.}, Heins, C., Couzin, I.D. Revealing the Structure of Time-Series Data with Context Attraction-Repulsion Embeddings.
 	\begin{itemize}
-		\item Developed a generalized contrastive learning framework for dimensionality reduction and visualization of time-series data using transformer-based sequence modeling.
-		\item Demonstrated recovery of latent factors and interpretable structure from high-dimensional behavioral and synthetic datasets.
-		\item Provides a general tool for exploratory analysis and hypothesis generation in time-series modeling.
+		\item Proposes a generalized contrastive learning framework for dimensionality reduction and visualization of time-series data using transformer-based sequence modeling.
+		\item Demonstrates recovery of latent factors and interpretable structure from high-dimensional behavioral and synthetic datasets.
+		\item Introduces a general tool for exploratory analysis and hypothesis generation in time-series modeling.
 	\end{itemize}
+
 	
 	\vspace{4pt}
 	\textbf{In Review}\\
-	Bath, D.E., \textbf{Graving, J.M.}, Walter, T., Sridhar, V.H., Vizcaíno, J.P., Couzin, I.D. Collective detection and processing of distributed information by fish schools. In revision for \textit{Current Biology}. \\ Code: \href{https://github.com/jgraving/bayesian_beta_regression}{github.com/jgraving/bayesian\_beta\_regression}
+	Bath, D.E., \textbf{Graving, J.M.}, Walter, T., Sridhar, V.H., Vizcaíno, J.P., Couzin, I.D. Collective detection and processing of distributed information by fish schools. In revision for \textit{Current Biology}. \\ \textit{Code}: \href{https://github.com/jgraving/bayesian_beta_regression}{github.com/jgraving/bayesian\_beta\_regression}
 	\begin{itemize}
-		\item Led development of a Bayesian model to analyze collective information processing in fish schools.
+		\item Developed a Bayesian model to analyze collective information processing in fish schools.
 		\item Modeled ~3 billion behavioral observations across 400+ conditions using JAX and NumPyro.
 		\item Revealed how distributed sensing shapes group-level responses to environmental signals.
 	\end{itemize}
 	
 	\vspace{4pt}
 	\textbf{2025}\\
-	Sayin, S., Couzin-Fuchs, E., Petelski, I., G\"unzel, Y., Salahshour, M., Lee, C.-Y., \textbf{Graving, J.M.}, Li, L., Deussen, O., Sword, G.A., Couzin, I.D. (2025). The behavioral mechanisms governing collective motion in swarming locusts. \textit{Science}, 387(6737), 995–1000. \href{https://doi.org/10.1126/science.adq7832}{https://doi.org/10.1126/science.adq7832}
+	Sayin, S., Couzin-Fuchs, E., Petelski, I., G\"unzel, Y., Salahshour, M., Lee, C.-Y., \textbf{Graving, J.M.}, Li, L., Deussen, O., Sword, G.A., Couzin, I.D. (2025). The behavioral mechanisms governing collective motion in swarming locusts. \textit{Science}, 387(6737), 995–1000. \href{https://doi.org/10.1126/science.adq7832}{https://doi.org/10.1126/science.adq7832} \\ \textit{Code}: \href{https://github.com/jgraving/sayin_locust_mixture_model}{https://github.com/jgraving/sayin\_locust\_mixture\_model}
 	\begin{itemize}
-		\item Led Bayesian modeling and statistical analysis of VR behavioral data from locusts.
+		\item Led Bayesian modeling and statistical analysis of virtual reality (VR) behavioral data from locusts.
 		\item Identified and solved a key methodological flaw in prior work—confounding of group coordination with group size.
 		\item Helped validate the core findings and strengthen the paper's quantitative rigor.
 	\end{itemize}
 	
 	\vspace{4pt}
 	\textbf{2023}\\
-	Koger, B., Deshpande, A., Kerby, J.T., \textbf{Graving, J.M.}, Costelloe, B. R., Couzin, I.D. (2023). Quantifying the movement, behaviour and environmental context of group‐living animals using drones and computer vision. \textit{Journal of Animal Ecology}. \href{https://doi.org/10.1111/1365-2656.13904}{doi:10.1111/1365-2656.13904} Code: \href{https://github.com/benkoger/overhead-video-worked-examples}{github.com/benkoger/overhead-video-worked-examples}
+	Koger, B., Deshpande, A., Kerby, J.T., \textbf{Graving, J.M.}, Costelloe, B. R., Couzin, I.D. (2023). Quantifying the movement, behaviour and environmental context of group‐living animals using drones and computer vision. \textit{Journal of Animal Ecology}. \href{https://doi.org/10.1111/1365-2656.13904}{doi:10.1111/1365-2656.13904} \textit{Code}: \href{https://github.com/benkoger/overhead-video-worked-examples}{github.com/benkoger/overhead-video-worked-examples}
 	\begin{itemize}
 		\item Co-developed a computer vision pipeline combining drone footage and deep learning to extract 3D behavioral and environmental data from animal groups in natural settings.
 		\item Integrated spatial context reconstruction with fine-scale movement tracking to support large-scale behavioral ecology studies.
 	\end{itemize}
-	
+	\newpage
 	\vspace{4pt}
 	\textbf{2020}\\
 	Li, L., Nagy, M., \textbf{Graving, J.M.}, Bak-Coleman, J., Guangming X., Couzin, I.D. (2020). Vortex phase matching as a strategy for schooling in robots and in fish. \textit{Nature Communications}, 11, 5408. \href{https://doi.org/10.1038/s41467-020-19086-0}{doi:10.1038/s41467-020-19086-0}
@@ -157,11 +173,11 @@ International Max Planck Research School (IMPRS) \\
 	\vspace{4pt}
 	\textbf{2019}\\
 	\textbf{Graving, J.M.}, Chae, D., Naik, H., Li, L., Koger, B., Costelloe, B.R., Couzin, I.D. (2019). DeepPoseKit, a software toolkit for fast and robust animal pose estimation using deep learning. \textit{eLife}, 8. \href{https://doi.org/10.7554/elife.47994}{doi:10.7554/elife.47994} \\
-	Press: \href{https://www.quantamagazine.org/to-decode-the-brain-scientists-automate-the-study-of-behavior-20191210/}{Quanta Magazine}, 
+	\textit{Press}: \href{https://www.quantamagazine.org/to-decode-the-brain-scientists-automate-the-study-of-behavior-20191210/}{Quanta Magazine}, 
 	\href{https://doi.org/10.1038/s41592-019-0678-2}{Nature Methods},
 	\href{https://doi.org/10.1038/d41586-019-02942-5}{Nature News \& Views},
 	\href{https://elifesciences.org/digests/47994/machine-learning-animal-poses-to-understand-behavior}{eLife Science Digests} \\
-	Code: \href{https://github.com/jgraving/deepposekit}{github.com/jgraving/deepposekit}
+	\textit{Code}: \href{https://github.com/jgraving/deepposekit}{github.com/jgraving/deepposekit}
 	\begin{itemize}
 		\item Created a general-purpose, few-shot deep learning framework for high-speed, high-accuracy animal pose tracking in Python/TensorFlow.
 		\item Supervised development of key components including a custom annotation GUI and augmentation tools for low-data regimes.
