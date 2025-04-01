@@ -6,24 +6,23 @@ redirect_from:
   - /about.html
   - /about
 ---
+<h1 style="font-size: 2.5em; margin-bottom: 0.5em;">Hi, I’m Jake 👋</h1>
 
-Hi, I’m Jake 👋 — I’m currently a Research Scientist at the [Max Planck Institute of Animal Behavior](https://www.ab.mpg.de/), working at the intersection of AI, data science, and animal behavior.
-
+<p style="font-size: 1em; line-height: 1.6; max-width: 750px;">
+I’m currently a Research Scientist at the <a href="https://www.ab.mpg.de/">Max Planck Institute of Animal Behavior</a>, working at the intersection of AI, data science, and animal behavior.
+<br><br>
 I build scalable, interpretable tools for collecting and analyzing behavioral data, across both lab and field settings. My work draws from machine learning, computer vision, probabilistic programming, and Bayesian inference to uncover structure in complex systems.
-
+<br><br>
 My research is highly interdisciplinary — I collaborate with neuroscientists, biologists, physicists, and engineers to develop end-to-end pipelines spanning experimental design, data collection, and computational analysis.
+<br><br>
+A central focus of my work is building AI systems that <em>go beyond prediction</em> — tools that help test hypotheses, reveal mechanisms, and support scientific understanding — with the goal of turning computational insights into scientific discoveries.
+</p>
 
-A central focus of my work is building AI systems that *go beyond prediction* — tools that help test hypotheses, reveal mechanisms, and support scientific understanding — with the goal of turning computational insights into scientific discoveries.
-
-👇 Check out some of my projects below:
-
-# Projects
+<p style="font-size: 1.6em; font-weight: 500; margin: 2em 0 1em 0;">👇 Check out some of my projects below</p>
 
 ## 🦗 **Collective Motion in Locusts**  
-Analyzed behavioral data from lab and virtual reality experiments to test a mechanistic model of swarming. I developed a Bayesian model that helps explain collective motion in locusts, showing that:
-
-- Locusts don’t align with neighbors as classical models suggest.  
-- Collective motion arises from internal decision-making and neural representations of neighbors.  
+This study revealed that locust swarming behavior emerges from internal decision-making processes rather than alignment with nearby individuals.
+I collaborated with colleagues to analyze behavioral data from controlled lab and immersive virtual reality experiments, developing a Bayesian model to test competing mechanistic hypotheses of collective motion. Our results challenged classical alignment-based theories, showing that group coordination emerges from individual decision-making informed by neural representations of neighboring locusts.
 
 ### 🔗 **Links**  
 [Publication](https://www.science.org/doi/10.1126/science.adq7832) · [Perspective](https://doi.org/10.1126/science.adw0733) · [Feature Article](https://www.campus.uni-konstanz.de/en/science/scientists-rewrite-the-rules-of-swarming-locusts) · [Model Code](https://github.com/jgraving/sayin_locust_mixture_model)
@@ -40,10 +39,8 @@ Analyzed behavioral data from lab and virtual reality experiments to test a mech
 
 
 ## 🛸 **Quantifying Group Movement Using Drones and AI**  
-Built the *first-of-its-kind* computer vision pipeline to extract 3D movement and environmental data from drone footage of wild animal groups. I contributed models and analysis to track individuals and reconstruct group behavior in complex natural settings.
-
-- Combines drone video with deep learning–based detection and tracking  
-- Enables large-scale, non-invasive observation of social behavior in the wild  
+This work introduced a drone- and computer vision–based system for high-resolution tracking of animal groups in the wild.
+I helped build and refine a scalable pipeline that combines drone video with deep learning and computer vision algorithms to detect, track, and reconstruct 3D movement and environmental context for wild animals. Working with an interdisciplinary team, we enabled large-scale, non-invasive behavioral analysis in natural settings — advancing tools for behavioral ecology and conservation.
 
 ### 🔗 **Links**  
 [Code on GitHub](https://github.com/benkoger/overhead-video-worked-examples) · [Publication](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/1365-2656.13904) · [Press Release](https://www.biologie.uni-konstanz.de/fachbereich/aktuelles/details/observing-group-living-animals-with-drones-and-computer-vision/) · [Feature Article](https://www.campus.uni-konstanz.de/en/science/observing-group-living-animals-with-drones-and-computer-vision) · [HerdHover Project](https://herdhover.com/)
@@ -55,7 +52,8 @@ Built the *first-of-its-kind* computer vision pipeline to extract 3D movement an
 
 
 ## 🐟 **Vortex Phase Matching in Schooling Fish**  
-Used deep learning–based pose estimation to test predictions from robotic models of energy-efficient schooling. I helped analyze fish movement to validate a vortex-phase matching strategy originally observed in robots.  
+This paper identified a schooling strategy where fish synchronize their tailbeats to exploit hydrodynamic advantages, matching behavior previously seen in bio-inspired robots.
+I contributed to the analysis pipeline, applying deep learning–based pose estimation to track fish movement and test predictions from robotic models. The findings showed that real fish use similar vortex-phase matching strategies to gain energetic benefits during coordinated swimming.
 
 ### 🔗 **Links**  
 [Publication](https://www.nature.com/articles/s41467-020-19086-0) · [Press Release](https://www.uni-konstanz.de/en/university/news-and-media/current-announcements/news-in-detail/roboter-helfen/)
@@ -72,7 +70,8 @@ Used deep learning–based pose estimation to test predictions from robotic mode
 
 
 ## 🤸‍♂️ **DeepPoseKit**  
-Created an open-source toolkit for animal pose estimation using deep learning. The models support fast, accurate posture tracking across species — even with small datasets.  
+DeepPoseKit is an open-source software toolkit for fast, accurate animal pose estimation using a deep learning–based, multi-scale model.
+I led the development of DeepPoseKit to make deep learning–based posture tracking more accessible and efficient for behavioral researchers. The toolkit supports fast, accurate pose estimation across species — even with small training datasets — and has been adopted by labs working in both lab and field contexts.
 
 ### 🔗 **Links**  
 [Code on GitHub](https://github.com/jgraving/DeepPoseKit) · [Publication](https://elifesciences.org/articles/47994) · [Feature Article](https://www.campus.uni-konstanz.de/en/science/new-method-improves-measurement-of-animal-behaviour-using-deep-learning)
@@ -87,7 +86,8 @@ Created an open-source toolkit for animal pose estimation using deep learning. T
 
 
 ## 🐦 **Automated Barcode Tracking in Birds**  
-Helped build a low-cost system for tracking individual zebra finches using backpack-mounted barcodes. The pipeline enables automated identification, position, and orientation tracking — supporting long-term, fine-scale studies of behavior and social networks.  
+This system uses barcode-equipped backpacks to enable automated, individual-level tracking of birds for behavioral research.
+As part of a collaborative project, I helped design and implement the computer vision pipeline used to detect and track barcoded zebra finches. The system provides continuous identity, position, and orientation data, supporting long-term studies of behavior and social networks at high resolution.
 
 ### 🔗 **Links**  
 [Publication](https://doi.org/10.1111/2041-210X.13005)
@@ -104,10 +104,8 @@ Helped build a low-cost system for tracking individual zebra finches using backp
 
 
 ## 🕷 **Navigation in Whip Spiders**  
-Led lab and field experiments on spatial behavior and sensory integration in whip spiders. We used radio telemetry, sensory manipulation, and behavioral tracking to study how these nocturnal arachnids navigate complex environments.
-
-- Demonstrated goal-directed navigation without vision  
-- Showed that antenniform legs provide key tactile and olfactory cues  
+Our studies revealed that whip spiders use tactile and olfactory cues — not vision — to navigate complex environments with impressive spatial precision.
+I led experimental design and data collection across both lab and field settings, collaborating with colleagues to combine radio telemetry, behavioral tracking, and sensory manipulations. Together, we showed that antenniform legs provide essential multisensory input for goal-directed navigation in the absence of visual cues.
 
 ### 🔗 **Links**  
 [Journal of Experimental Biology (2017)](https://doi.org/10.1242/jeb.149823) · [Journal of Comparative Physiology A (2017)](https://doi.org/10.1007/s00359-017-1169-5) · [Frontiers in Behavioral Neuroscience (2016)](https://doi.org/10.3389/fnbeh.2016.00047)
