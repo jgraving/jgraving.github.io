@@ -24,5 +24,3 @@ I study how animals move, make decisions, and coordinate with one another. My re
 
 I collaborate with neuroscientists, biologists, physicists, and engineers, connecting experimental design with computational analysis. The goal is to build AI systems that go **beyond prediction**: tools that test hypotheses, reveal mechanisms, and turn computational insights into scientific understanding.
 
-
-I’m based at the [Max Planck Institute of Animal Behavior](https://www.ab.mpg.de/) and am a member of the [Centre for the Advanced Study of Collective Behaviour (CASCB)](https://www.exc.uni-konstanz.de/collective-behaviour/) and the [Department of Biology](https://www.biologie.uni-konstanz.de/en/) at the University of Konstanz.
