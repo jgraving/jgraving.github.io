@@ -2,8 +2,8 @@
 layout: home
 permalink: /
 title: Jake Graving
-headline: Hi, I’m Jake 👋
-intro: I’m a research scientist working at the intersection of AI, data science, and animal behavior.
+headline: Understanding how animals move and decide.
+intro: Hi, I’m Jake 👋 I’m a research scientist working at the intersection of AI, data science, and animal behavior.
 role: Research Scientist
 institution: Max Planck Institute of Animal Behavior
 institution_url: https://www.ab.mpg.de/
