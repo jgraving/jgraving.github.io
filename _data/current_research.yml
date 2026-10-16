@@ -2,20 +2,23 @@
   status: In progress
   description: New Bayesian methods for understanding direction and variability in
     animal behavior.
+  collaboration: In collaboration with [James Foster](https://www.neurobiology.uni-konstanz.de/foster/), Neurobiology, University of Konstanz.
   image: circular-statistics.png
   image_alt: Animal tracks, circular distributions, and Bayesian model summaries.
 - title: Normative decision making
   status: In progress
   description: Exploring how movement, beliefs, and spatial geometry shape animal
     decisions.
+  collaboration: In collaboration with [Iain Couzin](https://www.ab.mpg.de/couzin/), Max Planck Institute of Animal Behavior and University of Konstanz.
   image: spatial-decisions.webp
   image_alt: Spatial decision model comparing posterior belief, Fisher information,
     and belief entropy around two alternative targets.
   video_file: /assets/videos/spatial-decisions.mp4
 - title: Step selection in the wild
   status: In progress
-  description: Using HerdHover data from Grévy’s and plains zebras to study how
+  description: Using [HerdHover](https://www.herdhover.com/) data from Grévy’s and plains zebras to study how
     terrain and social surroundings shape movement choices.
+  collaboration: In collaboration with [Blair Costelloe](https://blaircostelloe.com/).
   image: zebra-step-selection.webp
   image_alt: 3D reconstruction of zebras moving across natural terrain.
   image_width: 1400
