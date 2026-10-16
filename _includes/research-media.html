@@ -1,10 +1,10 @@
 {% assign image_src = project.image %}{% unless image_src contains '://' %}{% assign image_src = '/assets/images/research/' | append: image_src | relative_url %}{% endunless %}
 <div class="project-image{% if project.youtube or project.video_file %} film-preview{% endif %}">
   {% if project.youtube or project.video_file %}
-  <a class="research-film" href="{{ project.video | relative_url }}" {% if project.youtube %}data-youtube="{{ project.youtube }}"{% else %}data-video="{{ project.video_file | relative_url }}"{% endif %} data-title="{{ project.title | escape }}" aria-label="Play research video: {{ project.title | escape }}">
+  <button class="research-film" type="button" {% if project.youtube %}data-youtube="{{ project.youtube }}"{% else %}data-video="{{ project.video_file | relative_url }}"{% endif %} data-title="{{ project.title | escape }}" aria-label="Play research video: {{ project.title | escape }}">
     <img src="{{ image_src }}" alt="{{ project.image_alt | escape }}" width="{% if project.video_file %}800{% else %}480{% endif %}" height="{% if project.video_file %}450{% else %}360{% endif %}" loading="lazy" decoding="async">
-    <span class="play-label"><span aria-hidden="true">▶</span> Watch research film</span>
-  </a>
+    <span class="play-label"><span aria-hidden="true">▶</span> Play video here</span>
+  </button>
   {% else %}
   <a class="research-figure" href="{{ project.image_full | relative_url }}" aria-label="View full research figure: {{ project.title | escape }}"><img src="{{ image_src }}" alt="{{ project.image_alt | escape }}" width="1600" height="556" loading="lazy" decoding="async"></a>
   {% endif %}

@@ -34,3 +34,4 @@
 @media(max-width:640px){.navigation{justify-content:space-between}.nav-links{width:100%;justify-content:space-between;gap:8px}.wordmark{font-size:20px}.header .navigation{min-height:105px}html{scroll-padding-top:125px}.theme-toggle{min-height:37px;padding:5px 10px}.hero{padding-top:33px}.illustration-panel{grid-template-columns:1fr}.illustration-panel figcaption{padding:26px 25px 4px}.illustration-panel h2{font-size:29px}.illustration-graphic{padding:0 15px}.illustration-graphic svg{height:230px}}
 @media print{:root[data-theme=dark]{--paper:#fff;--ink:#222;--muted:#444;--surface:#fff;--soft:#fff;--line:#bbb;--green:#222;--secondary-text:#444}.research-illustration{display:none}}
 .illustration-panel{margin:0}
+button.research-film{padding:0;border:0;background:transparent;font:inherit;text-align:left;cursor:pointer}button.research-film:focus-visible{outline:3px solid var(--art-accent);outline-offset:-5px}
