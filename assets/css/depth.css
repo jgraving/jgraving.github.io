@@ -1,0 +1,16 @@
+/* Expressive depth stays local to the portrait; research figures stay exact. */
+.hero-portrait{position:relative;transform:perspective(1000px) rotateX(var(--tilt-x,0deg)) rotateY(var(--tilt-y,0deg));transform-origin:50% 45%;isolation:isolate;transition:box-shadow 450ms var(--ease-settle)}
+.hero-portrait::after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;opacity:0;background:radial-gradient(ellipse at var(--light-x,50%) var(--light-y,50%),#ffffff25,transparent 62%);box-shadow:inset 0 1px 0 #ffffff28;transition:opacity 450ms var(--ease-settle)}
+.hero-portrait.is-handled{box-shadow:0 14px 24px #0002,0 34px 64px #0003}
+.hero-portrait.is-handled::after{opacity:1}
+.hero-portrait figcaption{position:relative;border-top:1px solid var(--line)}
+.hero-portrait figcaption::before{content:"";position:absolute;top:0;left:26px;width:42px;height:3px;border-radius:0 0 3px 3px;background:var(--green)}
+.trajectory-traveler{opacity:0;pointer-events:none}
+.theme-toggle [aria-hidden]{display:inline-block;transition:transform 500ms var(--ease-expressive)}
+.theme-toggle:hover [aria-hidden]{transform:rotate(90deg)}
+html.theme-reveal::view-transition-old(root),html.theme-reveal::view-transition-new(root){animation:none;mix-blend-mode:normal}
+html.theme-reveal::view-transition-old(root){z-index:1}
+html.theme-reveal::view-transition-new(root){z-index:2}
+@media(hover:hover) and (pointer:fine){.button:hover{border-radius:18px}.button:active{border-radius:14px}}
+@media(prefers-reduced-motion:reduce){.hero-portrait{transform:none}.hero-portrait::after{display:none}.theme-toggle:hover [aria-hidden]{transform:none}}
+@media print{.hero-portrait{transform:none}.hero-portrait::after{display:none}}
