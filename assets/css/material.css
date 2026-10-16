@@ -70,3 +70,11 @@
 @media(max-width:760px){.current-project,.current-project:last-child{gap:22px;padding-block:30px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.project:hover,.button:hover,.theme-toggle:hover,.research-film:hover .play-label{transform:none}}
 @media print{.project,.hero-portrait,.current-visual{box-shadow:none;transform:none}.contact-section{display:none}.about-section{background:transparent}}
+
+/* Plain-text collaboration credits remain editable in the research YAML. */
+.current-description{margin-top:18px;color:var(--muted);font-size:16px;line-height:1.8}
+.current-collaboration{margin-top:18px;color:var(--muted);font-size:13px;line-height:1.7}
+.current-description a,.current-collaboration a{color:var(--green)}
+.portrait-affiliations{list-style:none;margin:10px 0;padding:0;display:grid;gap:6px}
+.hero-portrait .portrait-affiliations a{line-height:1.6;text-decoration:underline;text-decoration-color:var(--chip-line);text-underline-offset:3px}
+.hero-portrait .portrait-affiliations a:hover{text-decoration-color:currentColor}
