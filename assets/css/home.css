@@ -37,3 +37,7 @@
 button.research-film{padding:0;border:0;background:transparent;font:inherit;text-align:left;cursor:pointer}button.research-film:focus-visible{outline:3px solid var(--art-accent);outline-offset:-5px}
 
 #drones .research-film img{object-fit:contain;background:var(--image-surface)}
+
+/* Personal mark: nearby movement trajectories diverging into distinct choices. */
+.wordmark{gap:14px}.trajectory-mark{display:block;width:96px;height:50px;flex:none;overflow:visible}
+@media(max-width:640px){.wordmark{gap:11px}.trajectory-mark{width:76px;height:40px}}
