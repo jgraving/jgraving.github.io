@@ -50,4 +50,4 @@ Edit `_data/current_research.yml` for the short descriptions of work in progress
 
 ## Color themes
 
-Dark is the default. The header's Light/Dark button saves the visitor's choice in their browser. Both palettes are defined as CSS variables in `home.css`; `assets/js/theme.js` controls the toggle. The portrait is a prominent part of the introduction, with the graphical abstract retained below it.
+Dark is the default. The header's Light/Dark button saves the visitor's choice in their browser. Both palettes are defined as CSS variables in `home.css`; `assets/js/theme.js` controls the toggle. The portrait is a prominent part of the introduction, followed directly by the research projects.
