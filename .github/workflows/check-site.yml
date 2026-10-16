@@ -1,0 +1,22 @@
+name: Check Jekyll site
+on:
+  pull_request:
+    branches: [master]
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build with GitHub Pages
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site
+      - name: Upload preview files
+        uses: actions/upload-artifact@v4
+        with:
+          name: website-preview
+          path: _site/
+          retention-days: 7

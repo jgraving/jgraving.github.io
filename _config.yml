@@ -126,6 +126,7 @@ include:
   - _pages
   - files
 exclude:
+  - EDITING.md
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache
@@ -181,6 +182,8 @@ kramdown:
 
 # These settings control the types of collections used by the template
 collections:
+  research:
+    output: false
   teaching:
     output: true
     permalink: /:collection/:path/

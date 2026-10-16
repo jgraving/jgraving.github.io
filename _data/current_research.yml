@@ -1,0 +1,14 @@
+- title: Circular statistics
+  status: In progress
+  description: New Bayesian methods for understanding direction and variability in
+    animal behavior.
+  image: circular-statistics.png
+  image_alt: Animal tracks, circular distributions, and Bayesian model summaries.
+- title: Normative decision making
+  status: In progress
+  description: Exploring how movement, beliefs, and spatial geometry shape animal
+    decisions.
+  image: spatial-decisions.webp
+  image_alt: Spatial decision model comparing posterior belief, Fisher information,
+    and belief entropy around two alternative targets.
+  video_file: /assets/videos/spatial-decisions.mp4

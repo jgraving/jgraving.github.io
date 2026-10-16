@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title | escape }} — Animal Behavior, Computation &amp; Theory</title>
+  <meta name="description" content="{{ page.intro | escape }}">
+  <meta name="theme-color" content="#141c18">
+  <meta name="color-scheme" content="dark light">
+  <script>try{var t=localStorage.getItem('portfolio-theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t;}catch(e){}</script>
+  <script src="{{ '/assets/js/theme.js' | relative_url }}" defer></script>
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <meta property="og:title" content="Jake Graving — Animal Behavior, Computation &amp; Theory">
+  <meta property="og:description" content="{{ page.intro | escape }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:image" content="{{ '/images/profile.png' | absolute_url }}">
+  <link rel="icon" href="{{ '/images/favicon.svg' | relative_url }}" type="image/svg+xml">
+  <script src="{{ "/assets/js/research-media.js" | relative_url }}" defer></script>
+  <link rel="stylesheet" href="{{ '/assets/css/home.css' | relative_url }}">
+</head>
+<body id="top">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="header">
+  <nav class="navigation wrap" aria-label="Main navigation">
+    <a class="wordmark" href="#top">{% include trajectory-mark.html %}<span>Jake Graving</span></a>
+    <div class="nav-links"><a href="#work">Research</a><a href="#about">About</a><a href="#contact">Contact</a><a class="nav-cv" href="{{ '/files/jacob_graving_cv.pdf' | relative_url }}">CV <span aria-hidden="true">↗</span></a><button class="theme-toggle" id="theme-toggle" type="button" aria-label="Use light theme"><span aria-hidden="true">☼</span><span class="theme-label">Light</span></button></div>
+  </nav>
+</header>
+<main id="main">
+  <section class="hero wrap" aria-labelledby="hero-title">
+    <div class="hero-copy">
+      <p class="eyebrow">Animal behavior + computation</p>
+      <h1 id="hero-title">{{ page.headline | escape }}</h1>
+      <p class="intro">{{ page.intro | escape }}</p>
+      <div class="hero-actions"><a class="button button-primary" href="#work">Explore my work <span aria-hidden="true">↓</span></a><a class="button button-secondary" href="{{ site.author.googlescholar }}">Google Scholar <span aria-hidden="true">↗</span></a></div>
+    </div>
+    <figure class="hero-portrait"><img src="{{ '/assets/images/research/portrait-large.webp' | relative_url }}" srcset="{{ '/assets/images/research/portrait.webp' | relative_url }} 320w, {{ '/assets/images/research/portrait-large.webp' | relative_url }} 900w" sizes="(max-width: 640px) 85vw, 42vw" width="900" height="900" alt="Jake Graving outdoors" fetchpriority="high"><figcaption><strong>Jake Graving</strong><span>{{ page.role | escape }}</span><a href="{{ page.institution_url }}">{{ page.institution | escape }} ↗</a><span>{{ page.location | escape }}</span></figcaption></figure>
+  </section>
+
+  {% assign projects = site.research | sort: 'order' %}
+  <section class="work-section wrap" id="work" aria-labelledby="work-title">
+    <div class="section-heading"><div><h2 id="work-title">Selected research</h2></div><p>Experiments, models, and methods for understanding<br class="desktop-break"> behavior, across scales and species.</p></div>
+    <div class="featured-grid">
+    {% for project in projects %}{% if project.featured %}
+      <article class="project featured" id="{{ project.slug }}">
+        {% include research-media.html %}
+        <div class="project-body"><p class="project-meta">{{ project.category | escape }} <span>{{ project.year }}</span></p><h3>{{ project.title | escape }}</h3><p class="project-summary">{{ project.summary | escape }}</p>
+        {% include research-details.html %}</div>
+      </article>
+    {% endif %}{% endfor %}
+    </div>
+    <div class="research-heading"><h3>Other projects</h3><span>Research / 2016–2025</span></div>
+    <div class="research-grid">
+    {% for project in projects %}{% unless project.featured or project.legacy %}
+      <article class="project visual-project" id="{{ project.slug }}">
+        {% include research-media.html %}
+        <div class="project-body"><p class="project-meta">{{ project.category | escape }} <span>{{ project.year }}</span></p><h3>{{ project.title | escape }}</h3><p class="project-summary">{{ project.summary | escape }}</p>{% include research-details.html %}</div>
+      </article>
+    {% endunless %}{% endfor %}
+    </div>
+    {% for project in projects %}{% if project.legacy %}
+    <article class="legacy-project" id="{{ project.slug }}"><img src="{{ '/assets/images/research/' | append: project.image | relative_url }}" alt="{{ project.image_alt | escape }}" width="768" height="384" loading="lazy" decoding="async"><div><p class="project-meta">Earlier software · {{ project.year }}</p><h3>{{ project.title | escape }}</h3><p class="project-summary">{{ project.summary | escape }}</p>{% include research-details.html %}</div></article>
+    {% endif %}{% endfor %}
+    <a class="text-link all-publications" href="{{ site.author.googlescholar }}">All publications on Google Scholar <span aria-hidden="true">↗</span></a>
+  </section>
+  <section class="current-section wrap" id="current" aria-labelledby="current-title"><div class="section-heading"><div><h2 id="current-title">Current research</h2></div></div><div class="current-grid">{% for direction in site.data.current_research %}{% include current-research.html %}{% endfor %}</div></section>
+  <section class="about-section" id="about" aria-labelledby="about-title"><div class="wrap about-grid"><div><h2 id="about-title">About me</h2></div><div class="about-copy">{{ content }}<a class="button button-secondary" href="{{ '/files/jacob_graving_cv.pdf' | relative_url }}">View my CV <span aria-hidden="true">↗</span></a></div></div></section>
+  <section class="contact-section wrap" id="contact" aria-labelledby="contact-title"><h2 id="contact-title">Contact</h2><p>Email me about research or collaborations.</p><a class="button button-secondary" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></section>
+</main>
+<footer class="footer wrap"><span>© {{ 'now' | date: '%Y' }} Jake Graving</span><nav aria-label="Social links"><a href="https://github.com/{{ site.author.github }}">GitHub ↗</a><a href="https://bsky.app/profile/{{ site.author.bluesky }}">Bluesky ↗</a><a href="{{ site.author.googlescholar }}">Scholar ↗</a></nav><div><a href="{{ '/privacy/' | relative_url }}">Privacy</a><a href="{{ '/impressum/' | relative_url }}">Impressum</a></div></footer>
+</body>
+</html>
