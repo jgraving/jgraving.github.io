@@ -1,7 +1,7 @@
 {% assign image_src = project.image %}{% unless image_src contains '://' %}{% assign image_src = '/assets/images/research/' | append: image_src | relative_url %}{% endunless %}
 <div class="project-image{% if project.youtube or project.video_file %} film-preview{% endif %}">
   {% if project.youtube or project.video_file %}
-  <button class="research-film" type="button" {% if project.youtube %}data-youtube="{{ project.youtube }}"{% else %}data-video="{{ project.video_file | relative_url }}"{% endif %} data-title="{{ project.title | escape }}" aria-label="Play research video: {{ project.title | escape }}">
+  <button class="research-film" type="button" {% if project.youtube %}data-youtube="{{ project.youtube }}" aria-describedby="video-privacy-{{ project.slug }}"{% else %}data-video="{{ project.video_file | relative_url }}"{% endif %} data-title="{{ project.title | escape }}" aria-label="Play research video: {{ project.title | escape }}">
     <img src="{{ image_src }}" alt="{{ project.image_alt | escape }}" width="{% if project.video_file %}800{% else %}480{% endif %}" height="{% if project.video_file %}450{% else %}360{% endif %}" loading="lazy" decoding="async">
     <span class="play-label"><span aria-hidden="true">▶</span> Play video</span>
   </button>
@@ -10,4 +10,4 @@
   {% endif %}
 </div>
 
-{% if project.youtube %}<p class="media-privacy">By selecting Play video, you consent to loading YouTube: Google receives your IP address and may use cookies or device storage. <a href="{{ '/privacy/#youtube' | relative_url }}">Privacy details</a>.</p>{% endif %}
+{% if project.youtube %}<p class="media-privacy" id="video-privacy-{{ project.slug }}">By playing, you allow YouTube (Google) to process data and use cookies. <a href="{{ '/privacy/#youtube' | relative_url }}">Privacy</a>.</p>{% endif %}
