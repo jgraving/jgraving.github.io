@@ -24,4 +24,4 @@ My research focuses on **modeling and theory**, using computational models, Baye
 
 I collaborate with neuroscientists, biologists, physicists, and engineers, connecting **theory with data** from experiments and observations in the lab and in the wild.
 
-The goal is to build AI systems that go *beyond prediction*: testing hypotheses, revealing mechanisms, and turning computational insights into **scientific understanding**.
+My goal is to turn computational insights into **scientific understanding**, using AI and mathematical models to go *beyond prediction*: testing hypotheses and revealing the mechanisms behind animal behavior.
