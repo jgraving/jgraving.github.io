@@ -40,7 +40,7 @@
 
   {% assign projects = site.research | sort: 'order' %}
   <section class="work-section wrap" id="work" aria-labelledby="work-title">
-    <div class="section-heading"><div><p class="eyebrow">Selected work</p><h2 id="work-title">From observation<br>to understanding.</h2></div><p>Experiments, models, and methods for understanding<br class="desktop-break"> behavior, across scales and species.</p></div>
+    <div class="section-heading"><div><h2 id="work-title">Selected research</h2></div><p>Experiments, models, and methods for understanding<br class="desktop-break"> behavior, across scales and species.</p></div>
     <div class="featured-grid">
     {% for project in projects %}{% if project.featured %}
       <article class="project featured" id="{{ project.slug }}">
@@ -50,7 +50,7 @@
       </article>
     {% endif %}{% endfor %}
     </div>
-    <div class="research-heading"><h3>More questions. More perspectives.</h3><span>Research / 2016–2025</span></div>
+    <div class="research-heading"><h3>Other projects</h3><span>Research / 2016–2025</span></div>
     <div class="research-grid">
     {% for project in projects %}{% unless project.featured or project.legacy %}
       <article class="project visual-project" id="{{ project.slug }}">
@@ -64,9 +64,9 @@
     {% endif %}{% endfor %}
     <a class="text-link all-publications" href="{{ site.author.googlescholar }}">All publications on Google Scholar <span aria-hidden="true">↗</span></a>
   </section>
-  <section class="current-section wrap" id="current" aria-labelledby="current-title"><div class="section-heading"><div><p class="eyebrow">Current directions</p><h2 id="current-title">Questions I’m working on.</h2></div></div><div class="current-grid">{% for direction in site.data.current_research %}<article class="current-project"><p class="project-meta">{{ direction.status | escape }}</p><h3>{{ direction.title | escape }}</h3><p>{{ direction.description | escape }}</p></article>{% endfor %}</div></section>
-  <section class="about-section" id="about" aria-labelledby="about-title"><div class="wrap about-grid"><div><p class="eyebrow">How I work</p><h2 id="about-title">Beyond<br>prediction.</h2><div class="disciplines"><span>Machine learning</span><span>Computer vision</span><span>Bayesian inference</span><span>Behavioral science</span></div></div><div class="about-copy">{{ content }}<a class="text-link" href="{{ '/files/jacob_graving_cv.pdf' | relative_url }}">View my CV <span aria-hidden="true">↗</span></a></div></div></section>
-  <section class="contact-section wrap" id="contact" aria-labelledby="contact-title"><p class="eyebrow">Get in touch</p><h2 id="contact-title">Science is collaborative.</h2><p>Interested in animal behavior, statistical methods, or the theory of decision making? Let’s talk.</p><a class="button button-primary" href="mailto:{{ site.author.email }}">Say hello <span aria-hidden="true">↗</span></a><a class="contact-email" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></section>
+  <section class="current-section wrap" id="current" aria-labelledby="current-title"><div class="section-heading"><div><h2 id="current-title">Current research</h2></div></div><div class="current-grid">{% for direction in site.data.current_research %}<article class="current-project"><p class="project-meta">{{ direction.status | escape }}</p><h3>{{ direction.title | escape }}</h3><p>{{ direction.description | escape }}</p></article>{% endfor %}</div></section>
+  <section class="about-section" id="about" aria-labelledby="about-title"><div class="wrap about-grid"><div><h2 id="about-title">About me</h2></div><div class="about-copy">{{ content }}<a class="text-link" href="{{ '/files/jacob_graving_cv.pdf' | relative_url }}">View my CV <span aria-hidden="true">↗</span></a></div></div></section>
+  <section class="contact-section wrap" id="contact" aria-labelledby="contact-title"><h2 id="contact-title">Contact</h2><p>For research questions or collaborations, you can reach me by email.</p><a class="contact-email" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></section>
 </main>
 <footer class="footer wrap"><span>© {{ 'now' | date: '%Y' }} Jake Graving</span><nav aria-label="Social links"><a href="https://github.com/{{ site.author.github }}">GitHub ↗</a><a href="https://bsky.app/profile/{{ site.author.bluesky }}">Bluesky ↗</a><a href="{{ site.author.googlescholar }}">Scholar ↗</a></nav><div><a href="{{ '/privacy/' | relative_url }}">Privacy</a><a href="{{ '/impressum/' | relative_url }}">Impressum</a></div></footer>
 </body>
