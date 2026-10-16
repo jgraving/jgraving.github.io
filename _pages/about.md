@@ -20,7 +20,8 @@ redirect_from:
   - /about.html
   - /about
 ---
-I study how animals move, make decisions, and coordinate with one another. My research combines behavioral experiments and observations with computational models, machine learning, and Bayesian statistics, in the lab and in the wild.
+My research combines **behavioral experiments and observations** with computational models, machine learning, and Bayesian statistics—in the lab and in the wild.
 
-I collaborate with neuroscientists, biologists, physicists, and engineers, connecting experimental design with computational analysis. The goal is to build AI systems that go **beyond prediction**: tools that test hypotheses, reveal mechanisms, and turn computational insights into scientific understanding.
+I collaborate with neuroscientists, biologists, physicists, and engineers, connecting **experimental design with computational analysis**.
 
+The goal is to build AI systems that go *beyond prediction*: testing hypotheses, revealing mechanisms, and turning computational insights into **scientific understanding**.
