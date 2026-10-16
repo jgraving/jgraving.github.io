@@ -1,63 +1,74 @@
 ---
-layout: archive
-title: "Data Privacy Policy"
+layout: legal
+title: "Privacy policy"
+description: "How this personal research website handles visitor data."
 permalink: /privacy/
-author_profile: true
+lang: en
+author_profile: false
 redirect_from:
   - /data
 ---
 
-## TLDR
+Last updated: 17 October 2026
 
-- The website owner doesn't steal or sell any of your data.
-- The website uses Google Analytics in a GDPR compliant way.
-- Cookies are used where necessary.
-- Local storage is used where necessary.
-- The site is hosted by GitHub Pages.
+## Who is responsible?
 
-## Introduction
+Jacob Graving is responsible for this website at **jakegraving.com**, also reachable through **jgraving.github.io**.
 
-This policy sets out the different areas where user privacy is concerned and outlines the obligations & requirements of the users, the website and website owner. Furthermore the way this website processes, stores and protects user data and information will also be detailed within this policy.
+Jacob Graving  
+Universitätsstr. 10  
+78464 Konstanz, Germany  
+Email: [jgraving@gmail.com](mailto:jgraving@gmail.com)
 
-## The Website
+## At a glance
 
-This website and its owner take a proactive approach to user privacy and ensure the necessary steps are taken to protect the privacy of its users throughout their visiting experience.
+- Google Analytics and other visitor-analytics scripts are not enabled by the website owner.
+- GitHub Pages hosts the website and processes technical request data, including IP addresses.
+- Your chosen dark or light theme is saved in your browser, not sent to the website owner.
+- Some video preview images are loaded from YouTube. YouTube players are loaded only when you select **Play video**.
+- Email links open your email application; there is no contact form on the homepage.
 
-## Access logs
+## Hosting and access data
 
-The service hosting the **jgraving.github.io** website stores access logs. This data is not accessible to and not readable for the owner of this website. The hosting service, GitHub, has their privacy policy is available here: [https://docs.github.com/en/github/site-policy/github-privacy-statement](https://docs.github.com/en/github/site-policy/github-privacy-statement)
+Pages and locally hosted images, documents, and videos are served by GitHub Pages. GitHub processes technical information needed to deliver and secure the service, including visitors' IP addresses. Requests can also include the requested URL, time, browser information, and referring page.
 
-## About cookies
+The purpose is reliable delivery of this website and protection against misuse. The website owner's legal basis is the legitimate interest in operating a secure research website under Article 6(1)(f) GDPR. GitHub also processes data for its own service and security purposes. The website owner does not receive individual visitor access logs through GitHub Pages.
 
-### Cookie consent
+The hosting provider is GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA. GitHub describes its processing, retention criteria, and privacy contacts in its [General Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement). Its policy explains transfers outside the EEA, including to the United States, and safeguards including standard contractual clauses and the EU–US Data Privacy Framework. GitHub determines retention of its hosting logs; this website does not specify or control a separate log-retention period.
 
-This website uses cookies. By using this website and agreeing to this policy, you consent to **jgraving.github.io**'s use of cookies in accordance with the terms of this policy. Cookies are information packets sent by web servers to web browsers, and stored by the web browsers. The information is then sent back to the server each time the browser requests a page from the server. This enables a web server to identify and track web browsers.
+## Theme preference and local storage
 
-In order to comply with your preferences, **jgraving.github.io** may store a small number tiny functional cookies so that you're not asked to make this choice again, to be able to save your settings and to warn you of an updated changelog. Please note that these cookie are only used to guarantee a user-friendly visit and a proper website performance.
+When you choose a theme, the website stores `light` or `dark` under the key `portfolio-theme` in your browser's local storage. It is read on later visits to apply your choice. This value is not an identifier and is not transmitted by the theme script. It remains until you change the preference or clear the website's browser data.
 
-### Google Analytics
+This storage serves the theme preference you explicitly request (§ 25(2)(2) TDDDG). No advertising or analytics storage is added by the theme feature. You can clear site data in your browser settings; the site will then use its default theme.
 
-**jgraving.github.io** uses Google Analytics to analyse the use of this website. Google Analytics generates statistical and other information about website use by means of cookies. The information generated relating to this website is used to create reports about the use of the website. Google will store and use this information. Google's privacy policy is available at: [https://www.google.com/policies/privacy](https://www.google.com/policies/privacy/). To opt-out Of Google Analytics Google created a browser add-on that allows you to turn off Google Analytics trackers, and works for Chrome, Firefox, Safari, Opera, and even Internet Explorer 11.
+## YouTube previews and videos
+{: #youtube }
 
-**jgraving.github.io** does not collect and send any Personal Identifiable Information (PII) to Google Analytics and has taken the following steps to make the use of Google Analytics privacy-friendly (GDPR compliant):
+Some research cards use preview images hosted on `i.ytimg.com`. Loading those images sends a request, including your IP address and browser request information, to Google's servers even if you do not play the video. Their purpose is to identify and illustrate the research videos; the website owner's basis for loading these static previews is its legitimate interest in presenting that research, Article 6(1)(f) GDPR. Your browser can block requests to external image hosts.
 
-- The Google Analytics Data Processing Amendment has been accepted
-- IP addresses are processed anonymously
-- Sharing of data with Google is disabled
-- There is no use of other Google services in combination with the Google Analytics cookies.
+YouTube players are not loaded with the page. Selecting **Play video** on a YouTube card loads a player from `youtube-nocookie.com` using YouTube's privacy-enhanced mode. Google then receives your IP address and technical information about the playback request and may process playback activity, cookies, or browser storage. Privacy-enhanced mode does not make playback anonymous or prevent all data processing. If you are signed in to Google, processing may also depend on your account settings.
 
-### Refusing cookies
+The notice beside the video button explains this before activation. Optional player activation is based on your consent under Article 6(1)(a) GDPR and, where device storage or access requires it, § 25(1) TDDDG. You may leave videos unplayed and still read the website. Reloading or leaving the page removes the active player; the site does not remember a video-consent choice. Clear Google/YouTube site data in your browser to remove any storage already created. Withdrawal does not affect processing that occurred before withdrawal.
 
-If you wish to disable cookies, you may do so through your individual browser options. More detailed information about cookie management with specific web browsers can be found at the browsers' respective websites.
+For visitors in the EEA, Google's services are generally provided by Google Ireland Limited. Data may also be processed outside the EEA, including in the United States. Details of recipients, retention, transfer safeguards, and your controls are in [Google's Privacy Policy](https://policies.google.com/privacy?hl=en). See also [YouTube's explanation of privacy-enhanced mode](https://support.google.com/youtube/answer/171780?hl=en).
 
-## Local Storage
+Videos served directly from this website use the same GitHub Pages hosting described above and do not load a YouTube player.
 
-Certain pages on this website may use your browser's local storage to allow you to store some history. This data is not available to the website owner, or sent to any third parties.
+## Contact by email
 
-## External links
+If you email me, I process your email address, message, and any information you choose to send in order to respond. My email service provider processes the message as part of delivery and storage. The legal basis is my legitimate interest in responding to enquiries, Article 6(1)(f) GDPR, or Article 6(1)(b) where the correspondence is necessary for a contract or steps you request before a contract.
 
-Although this website only looks to include quality, safe and relevant external links users should always adopt a policy of caution before clicking any external web links mentioned throughout this website. The owner of this website cannot guarantee or verify the contents of any externally linked website despite his best efforts. Users should therefore note they click on external links at their own risk and this website and its owner cannot be held liable for any damages or implications caused by visiting any external links mentioned.
+Correspondence is kept for as long as needed to deal with the enquiry and any follow-up, or to meet applicable retention requirements or establish, exercise, or defend legal claims. Please do not send sensitive personal information unless it is needed for your enquiry.
 
-## Changes to policy
+## Your rights
 
-Changes in this policy will be posted on this page. You are advised to check this page regularly to view the most recent privacy policy.
+Subject to the applicable GDPR conditions, you may request access, correction, erasure, restriction of processing, and data portability. You may object to processing based on legitimate interests for reasons relating to your particular situation. Where processing relies on consent, you may withdraw that consent at any time for the future.
+
+Contact me using the details above to exercise rights relating to my processing. You may also complain to a supervisory authority, including the [Landesbeauftragte für den Datenschutz und die Informationsfreiheit Baden-Württemberg](https://www.baden-wuerttemberg.datenschutz.de/beschwerde/), or the authority where you live or work. You are not required to contact me first.
+
+This website does not use your data for automated decisions producing legal or similarly significant effects. You do not have to send an enquiry or activate external videos to browse the site. Technical requests are necessary to deliver pages; without an email address and message, I cannot respond to an email enquiry.
+
+## External links and policy changes
+
+Following a link to another website subjects your visit to that provider's privacy practices. This policy will be updated when the website's features or data processing change.

@@ -21,12 +21,7 @@
 </head>
 <body id="top">
 <a class="skip-link" href="#main">Skip to content</a>
-<header class="header">
-  <nav class="navigation wrap" aria-label="Main navigation">
-    <a class="wordmark" href="#top">{% include trajectory-mark.html %}<span>Jake Graving</span></a>
-    <div class="nav-links"><a href="#about">About</a><a href="#work">Research</a><a href="#contact">Contact</a><a class="nav-cv" href="{{ '/files/jacob_graving_cv.pdf' | relative_url }}">CV <span aria-hidden="true">↗</span></a><button class="theme-toggle" id="theme-toggle" type="button" aria-label="Use light theme"><span aria-hidden="true">☼</span><span class="theme-label">Light</span></button></div>
-  </nav>
-</header>
+{% include site-header.html %}
 <main id="main">
   <section class="hero wrap" aria-labelledby="hero-title">
     <div class="hero-copy">
@@ -70,6 +65,7 @@
   <section class="current-section wrap" id="current" aria-labelledby="current-title"><div class="section-heading"><div><h2 id="current-title">Current research</h2></div></div><div class="current-grid">{% for direction in site.data.current_research %}{% include current-research.html %}{% endfor %}</div></section>
   <section class="contact-section wrap" id="contact" aria-labelledby="contact-title"><h2 id="contact-title">Contact</h2><p>Email me about research or collaborations.</p><a class="button button-secondary" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></section>
 </main>
-<footer class="footer wrap"><span>© {{ 'now' | date: '%Y' }} Jake Graving</span><nav aria-label="Social links"><a href="https://github.com/{{ site.author.github }}">GitHub ↗</a><a href="https://bsky.app/profile/{{ site.author.bluesky }}">Bluesky ↗</a><a href="{{ site.author.googlescholar }}">Scholar ↗</a></nav><div><a href="{{ '/privacy/' | relative_url }}">Privacy</a><a href="{{ '/impressum/' | relative_url }}">Impressum</a></div></footer>
+{% include site-footer.html %}
 </body>
 </html>
+
