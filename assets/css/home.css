@@ -42,5 +42,10 @@ button.research-film{padding:0;border:0;background:transparent;font:inherit;text
 .wordmark{gap:14px}.trajectory-mark{display:block;width:96px;height:50px;flex:none;overflow:visible}
 @media(max-width:640px){.wordmark{gap:11px}.trajectory-mark{width:76px;height:40px}}
 
+/* Research figures keep their original colours and readable proportions. */
+.current-grid{display:block}.current-project,.current-project:last-child{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.65fr);gap:40px;border:0;border-top:1px solid var(--line);padding:32px 0;margin:0}.current-copy{padding-top:8px}.current-copy>p:last-child{margin-top:18px}.current-figure{margin:0;min-width:0}.current-visual{background:#fff;overflow:hidden;border-radius:10px}.current-visual img{width:100%;height:auto;object-fit:contain}.current-visual .research-film{display:block;width:100%;position:relative;background:#fff;padding:0;border:0;cursor:pointer}.current-visual video{display:block;width:100%;height:auto;background:#fff}.current-figure figcaption{font-size:12px;line-height:1.6;color:var(--muted);margin-top:10px}.current-figure figcaption a{white-space:nowrap;margin-left:5px}@media(max-width:760px){.current-project,.current-project:last-child{grid-template-columns:1fr;gap:22px;padding:26px 0}.current-copy{padding:0}}
+
+.about-copy .button{margin-top:22px}
+
 /* Filled buttons navigate the page; outlined buttons open external destinations. */
 .button-secondary{background:transparent;color:var(--ink);border:1px solid var(--chip-line);box-shadow:none}.button-secondary:hover{background:var(--soft);color:var(--ink);border-color:var(--green);box-shadow:none}.hero-actions{flex-wrap:wrap}
