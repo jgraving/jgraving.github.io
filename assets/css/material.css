@@ -1,0 +1,72 @@
+/* Material surfaces and motion; no framework or downloaded fonts. */
+:root{--ease-settle:cubic-bezier(.2,.8,.2,1);--ease-expressive:cubic-bezier(.2,1.25,.35,1);--elevation-1:0 2px 4px #1222190a,0 8px 20px #1222190a;--elevation-2:0 6px 14px #12221912,0 22px 48px #12221914;--elevation-3:0 12px 24px #12221918,0 32px 64px #12221920;--raised:#ffffff;--tonal:#e2ebdb}
+:root[data-theme=dark]{--elevation-1:0 2px 4px #0002,0 8px 20px #0002;--elevation-2:0 6px 14px #0003,0 22px 48px #0003;--elevation-3:0 12px 24px #0004,0 32px 64px #0004;--raised:#26372c;--tonal:#263c2c}
+.header{border-bottom-color:transparent;transition:box-shadow 280ms var(--ease-settle),border-color 280ms}
+.header.is-scrolled{box-shadow:var(--elevation-1);border-bottom-color:var(--line)}
+.nav-links>a{position:relative;border-radius:24px;padding:9px 13px;transition:background 200ms,color 200ms}
+.nav-links>a[aria-current=location]{background:var(--tonal);color:var(--green)}
+.nav-links{gap:8px}
+.hero{padding-top:70px;padding-bottom:60px;gap:64px}
+.hero h1{font-size:clamp(46px,5.4vw,68px);line-height:1.04;letter-spacing:-.055em}
+.hero .intro{line-height:1.7}
+.hero-portrait{border-radius:32px 32px 12px 32px;box-shadow:var(--elevation-2);border-color:var(--line)}
+.hero-portrait figcaption{background:var(--raised);padding:22px 26px 24px}
+.hero-portrait strong{font-size:23px}
+.hero-portrait img{border-radius:0}
+.button,.theme-toggle,.play-label{transition:transform 280ms var(--ease-expressive),box-shadow 240ms var(--ease-settle),background-color 180ms,border-radius 280ms var(--ease-settle),border-color 180ms}
+.button,.theme-toggle{position:relative;isolation:isolate;overflow:hidden;min-height:48px}
+.button{padding:13px 24px;gap:18px;letter-spacing:.01em}
+.button-primary{box-shadow:var(--elevation-1)}
+.button-secondary{border-width:1.5px}
+.button:active,.theme-toggle:active{transform:scale(.96);border-radius:16px;box-shadow:none}
+.button>span{transition:transform 280ms var(--ease-expressive)}
+.button-primary:hover>span{transform:translateY(3px)}
+.button-secondary:hover>span{transform:translate(2px,-2px)}
+.material-ripple{position:absolute;pointer-events:none;border-radius:50%;background:currentColor;opacity:0;z-index:-1}
+.about-section{position:relative;background:var(--soft);border-block:1px solid var(--line);padding-block:62px}
+.about-grid{grid-template-columns:.7fr 1.3fr;gap:64px}
+.about-copy{max-width:660px;line-height:1.85}
+.section-heading h2,.about-grid h2,.contact-section h2{letter-spacing:-.045em}
+.work-section{padding-top:88px}
+.featured-grid,.research-grid{gap:28px}
+.project{border-radius:28px;box-shadow:var(--elevation-1);transition:transform 350ms var(--ease-settle),box-shadow 350ms var(--ease-settle),border-color 250ms;background:var(--surface)}
+.project:focus-within{border-color:var(--art-accent);box-shadow:var(--elevation-2)}
+.project-body,.visual-project .project-body{padding:28px}
+.featured h3{font-size:30px;line-height:1.15}
+.research-details summary{padding-block:17px;min-height:56px;color:var(--green)}
+.research-details summary span{display:grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--tonal);transition:transform 320ms var(--ease-expressive)}
+.research-details[open] summary span{transform:rotate(45deg)}
+.research-details[open] .project-prose{padding-bottom:8px}
+.play-label{min-height:44px;padding:10px 16px;background:#14241deb;box-shadow:0 3px 10px #0003;font-size:12px}
+.research-film:active .play-label{transform:scale(.95)}
+.current-project,.current-project:last-child{padding-block:40px;gap:44px}
+.current-copy h3{font-size:29px;line-height:1.15}
+.current-copy>p:last-child{color:var(--muted);font-size:16px;line-height:1.8}
+.current-visual{border-radius:18px;box-shadow:var(--elevation-1)}
+.current-visual--terrain{background:var(--soft);box-shadow:none}
+.contact-section{max-width:1120px;border-radius:32px;background:var(--tonal);padding-block:65px;margin-bottom:64px;box-shadow:var(--elevation-1)}
+.contact-section h2{font-size:clamp(36px,4.4vw,52px)}
+.contact-section .button{border-color:var(--green)}
+.footer{padding-block:30px}
+.trajectory-mark path{stroke-dasharray:120;stroke-dashoffset:0}
+@media(prefers-reduced-motion:no-preference){
+ .trajectory-mark path{animation:trace-choice 1000ms var(--ease-settle) both}
+ .trajectory-mark path:nth-child(2){animation-delay:100ms}
+ .wordmark:hover .trajectory-mark path,.wordmark:focus-visible .trajectory-mark path{animation:trace-choice 850ms var(--ease-settle) both}
+ .wordmark:hover .trajectory-mark path:nth-child(2){animation-delay:80ms}
+ @keyframes trace-choice{from{stroke-dashoffset:120}to{stroke-dashoffset:0}}
+}
+@media(hover:hover) and (pointer:fine){
+ .project:hover{transform:translateY(-5px);box-shadow:var(--elevation-2);border-color:var(--chip-line)}
+ .button:hover,.theme-toggle:hover{transform:translateY(-2px)}
+ .button-primary:hover{box-shadow:var(--elevation-2)}
+ .button-secondary:hover{box-shadow:var(--elevation-1)}
+ .button:active,.theme-toggle:active{transform:scale(.96)}
+ .research-film:hover .play-label{transform:translateY(-3px);box-shadow:0 8px 20px #0004}
+ .nav-links>a:hover{background:var(--soft)}
+}
+@media(max-width:960px){.hero{gap:32px}.hero h1{font-size:48px}.about-grid{gap:36px}.contact-section{width:calc(100% - 56px)}.nav-links>a{padding-inline:9px}.nav-links{gap:4px}}
+@media(max-width:640px){.hero{padding-top:38px;padding-bottom:40px;gap:32px}.hero h1{font-size:clamp(42px,10.5vw,56px)}.hero-portrait{border-radius:26px 26px 10px 26px}.about-section{padding-block:42px}.about-grid{grid-template-columns:1fr;gap:24px}.work-section{padding-top:54px}.featured-grid,.research-grid{gap:24px}.project{border-radius:24px}.project-body,.visual-project .project-body{padding:24px}.featured h3{font-size:27px}.contact-section{width:calc(100% - 42px);padding:42px 20px;margin-bottom:40px;border-radius:26px}.contact-section .button{font-size:13px;max-width:100%;overflow-wrap:anywhere}.nav-links>a{min-height:44px;padding:9px 7px;display:inline-flex;align-items:center}.nav-links{gap:2px}.theme-toggle{min-height:44px;padding-inline:10px}.hero-actions{gap:12px}.current-copy h3{font-size:26px}}
+@media(max-width:760px){.current-project,.current-project:last-child{gap:22px;padding-block:30px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.project:hover,.button:hover,.theme-toggle:hover,.research-film:hover .play-label{transform:none}}
+@media print{.project,.hero-portrait,.current-visual{box-shadow:none;transform:none}.contact-section{display:none}.about-section{background:transparent}}
