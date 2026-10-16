@@ -41,3 +41,6 @@ button.research-film{padding:0;border:0;background:transparent;font:inherit;text
 /* Personal mark: nearby movement trajectories diverging into distinct choices. */
 .wordmark{gap:14px}.trajectory-mark{display:block;width:96px;height:50px;flex:none;overflow:visible}
 @media(max-width:640px){.wordmark{gap:11px}.trajectory-mark{width:76px;height:40px}}
+
+/* Filled buttons navigate the page; outlined buttons open external destinations. */
+.button-secondary{background:transparent;color:var(--ink);border:1px solid var(--chip-line);box-shadow:none}.button-secondary:hover{background:var(--soft);color:var(--ink);border-color:var(--green);box-shadow:none}.hero-actions{flex-wrap:wrap}

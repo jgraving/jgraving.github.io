@@ -33,7 +33,7 @@
       <p class="eyebrow">Animal behavior + computation</p>
       <h1 id="hero-title">{{ page.headline | escape }}</h1>
       <p class="intro">{{ page.intro | escape }}</p>
-      <div class="hero-actions"><a class="button button-primary" href="#work">Explore my work <span aria-hidden="true">↓</span></a><a class="text-link" href="{{ site.author.googlescholar }}">Google Scholar <span aria-hidden="true">↗</span></a></div>
+      <div class="hero-actions"><a class="button button-primary" href="#work">Explore my work <span aria-hidden="true">↓</span></a><a class="button button-secondary" href="{{ site.author.googlescholar }}">Google Scholar <span aria-hidden="true">↗</span></a></div>
     </div>
     <figure class="hero-portrait"><img src="{{ '/assets/images/research/portrait-large.webp' | relative_url }}" srcset="{{ '/assets/images/research/portrait.webp' | relative_url }} 320w, {{ '/assets/images/research/portrait-large.webp' | relative_url }} 900w" sizes="(max-width: 640px) 85vw, 42vw" width="900" height="900" alt="Jake Graving outdoors" fetchpriority="high"><figcaption><strong>Jake Graving</strong><span>{{ page.role | escape }}</span><a href="{{ page.institution_url }}">{{ page.institution | escape }} ↗</a><span>{{ page.location | escape }}</span></figcaption></figure>
   </section>
@@ -65,8 +65,8 @@
     <a class="text-link all-publications" href="{{ site.author.googlescholar }}">All publications on Google Scholar <span aria-hidden="true">↗</span></a>
   </section>
   <section class="current-section wrap" id="current" aria-labelledby="current-title"><div class="section-heading"><div><h2 id="current-title">Current research</h2></div></div><div class="current-grid">{% for direction in site.data.current_research %}<article class="current-project"><p class="project-meta">{{ direction.status | escape }}</p><h3>{{ direction.title | escape }}</h3><p>{{ direction.description | escape }}</p></article>{% endfor %}</div></section>
-  <section class="about-section" id="about" aria-labelledby="about-title"><div class="wrap about-grid"><div><h2 id="about-title">About me</h2></div><div class="about-copy">{{ content }}<a class="button button-primary" style="margin-top:22px" href="{{ '/files/jacob_graving_cv.pdf' | relative_url }}">View my CV <span aria-hidden="true">↗</span></a></div></div></section>
-  <section class="contact-section wrap" id="contact" aria-labelledby="contact-title"><h2 id="contact-title">Contact</h2><p>Email me about research or collaborations.</p><a class="button button-primary" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></section>
+  <section class="about-section" id="about" aria-labelledby="about-title"><div class="wrap about-grid"><div><h2 id="about-title">About me</h2></div><div class="about-copy">{{ content }}<a class="button button-secondary" style="margin-top:22px" href="{{ '/files/jacob_graving_cv.pdf' | relative_url }}">View my CV <span aria-hidden="true">↗</span></a></div></div></section>
+  <section class="contact-section wrap" id="contact" aria-labelledby="contact-title"><h2 id="contact-title">Contact</h2><p>Email me about research or collaborations.</p><a class="button button-secondary" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></section>
 </main>
 <footer class="footer wrap"><span>© {{ 'now' | date: '%Y' }} Jake Graving</span><nav aria-label="Social links"><a href="https://github.com/{{ site.author.github }}">GitHub ↗</a><a href="https://bsky.app/profile/{{ site.author.bluesky }}">Bluesky ↗</a><a href="{{ site.author.googlescholar }}">Scholar ↗</a></nav><div><a href="{{ '/privacy/' | relative_url }}">Privacy</a><a href="{{ '/impressum/' | relative_url }}">Impressum</a></div></footer>
 </body>
