@@ -1,6 +1,6 @@
 # Editing the one-page website
 
-The homepage uses Jekyll, Markdown, and plain CSS. It needs no JavaScript, external fonts, or client-side framework. GitHub Pages remains the host.
+The homepage uses Jekyll, Markdown, and plain CSS. It uses a small optional script to load research videos on click, and needs no external fonts or client-side framework. GitHub Pages remains the host.
 
 ## Introduction and about section
 
@@ -25,7 +25,7 @@ Use small WebP previews instead of animated GIFs or full-resolution figures. The
 
 ## Layout and appearance
 
-- `_layouts/home.html`: homepage structure and decorative SVG.
+- `_layouts/home.html`: homepage structure and prominent portrait.
 - `_includes/research-details.html`: expandable Markdown content.
 - `assets/css/home.css`: colors, spacing, typography, and mobile layouts.
 
@@ -41,3 +41,9 @@ bundle exec jekyll serve
 ```
 
 The redesign's pull-request workflow builds with GitHub's Jekyll Pages action and uploads the generated site for review. It does not deploy or change the live site.
+
+## Current research and project media
+
+Edit `_data/current_research.yml` for the short descriptions of work in progress. Keep these high level; unpublished manuscripts and detailed theory are intentionally not linked or reproduced.
+
+`legacy: true` places a project in the smaller earlier-software area. `youtube` holds an existing YouTube video ID, while `video_file` is a local MP4 URL. Use an image URL or a local preview filename for `image`. Players load only on click; without JavaScript the preview remains an ordinary link to the original demonstration. Original full-resolution figures can be linked with `image_full`.

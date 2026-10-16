@@ -3,12 +3,13 @@ slug: drones
 title: A new view of life in the wild
 category: Computer vision · Field research
 year: '2023'
-order: 1
+order: 2
 summary: Using drones and computer vision to reconstruct animal movement and environmental
   context.
 image: tracks.webp
 image_alt: Animal trajectories over a reconstructed map of terrain height
 featured: true
+image_full: /files/images/tracks_on_map_observation088.png
 ---
 This work introduced a drone- and computer vision–based system for high-resolution tracking of animal groups in the wild.
 I helped build and refine a scalable pipeline that combines drone video with deep learning and computer vision algorithms to detect, track, and reconstruct 3D movement and environmental context for wild animals. Working with an interdisciplinary team, we enabled large-scale, non-invasive behavioral analysis in natural settings — advancing tools for behavioral ecology and conservation.

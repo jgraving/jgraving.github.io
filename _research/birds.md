@@ -3,10 +3,13 @@ slug: birds
 title: Following individuals, understanding groups
 category: Behavioral tracking
 year: '2018'
-order: 5
+order: 4
 summary: Computer vision and lightweight barcodes for tracking the lives and social
   networks of birds.
 video: /files/videos/zebra_finches_tracked.mp4
+image: birds.webp
+image_alt: Tracked zebra finches with colored position and orientation markers
+video_file: /files/videos/zebra_finches_tracked.mp4
 ---
 This system uses barcode-equipped backpacks to enable automated, individual-level tracking of birds for behavioral research.
 As part of a collaborative project, I helped design and implement the computer vision pipeline used to detect and track barcoded zebra finches. The system provides continuous identity, position, and orientation data, supporting long-term studies of behavior and social networks at high resolution.

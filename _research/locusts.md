@@ -3,11 +3,13 @@ slug: locusts
 title: How a swarm moves
 category: Collective behavior
 year: '2025'
-order: 3
+order: 1
 summary: Testing how individual decisions give rise to collective motion in locusts.
-image: locust.webp
-image_alt: Locust pose estimation from the existing research demonstration
+image: https://i.ytimg.com/vi/oBJnY4HKmeY/hqdefault.jpg
+image_alt: Video preview of the research on collective motion in swarming locusts
 video: https://www.youtube.com/watch?v=oBJnY4HKmeY
+featured: true
+youtube: oBJnY4HKmeY
 ---
 This study revealed that locust swarming behavior emerges from internal decision-making processes rather than alignment with nearby individuals.
 I collaborated with colleagues to analyze behavioral data from controlled lab and immersive virtual reality experiments, developing a Bayesian model to test competing mechanistic hypotheses of collective motion. Our results challenged classical alignment-based theories, showing that group coordination emerges from individual decision-making informed by neural representations of neighboring locusts.

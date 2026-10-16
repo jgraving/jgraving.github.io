@@ -1,0 +1,25 @@
+// Media is fetched only after a visitor chooses to play it.
+document.addEventListener('click', function (event) {
+  const link = event.target.closest('.research-film');
+  if (!link || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+  event.preventDefault();
+  let player;
+  if (link.dataset.youtube) {
+    player = document.createElement('iframe');
+    player.src = 'https://www.youtube-nocookie.com/embed/' + encodeURIComponent(link.dataset.youtube) + '?autoplay=1';
+    player.title = link.dataset.title + ' — research film';
+    player.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
+    player.allowFullscreen = true;
+    player.referrerPolicy = 'strict-origin-when-cross-origin';
+  } else {
+    player = document.createElement('video');
+    player.src = link.dataset.video;
+    player.controls = true;
+    player.autoplay = true;
+    player.playsInline = true;
+    player.setAttribute('aria-label', link.dataset.title + ' — research film');
+  }
+  player.tabIndex = 0;
+  link.replaceWith(player);
+  player.focus();
+});

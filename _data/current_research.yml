@@ -1,0 +1,6 @@
+- title: Circular statistics
+  status: In development
+  description: Developing Bayesian methods for directional data, separating changes in direction from changes in consistency while accounting for variation among individuals.
+- title: Normative decision making
+  status: Ongoing theoretical work
+  description: Exploring animal spatial choices as probabilistic inference, and how beliefs, movement, and the geometry of available options interact to shape decisions.
