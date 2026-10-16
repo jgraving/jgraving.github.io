@@ -24,3 +24,13 @@
   image_width: 1400
   image_height: 739
   terrain: true
+- title: How honeybees organize their nests
+  status: In progress
+  description: Modeling how honeybee colonies organize brood and food stores across
+    three-dimensional nests, and how that organization develops over time.
+  collaboration: In collaboration with [Michael Smith](https://smithbeelab.com/) · [Auburn University](https://www.auburn.edu/).
+  image: honeybee-nest-organization.webp
+  image_alt: Three-dimensional honeybee nest maps comparing cell contents, model
+    predictions, and prediction likelihood.
+  image_width: 2048
+  image_height: 857
