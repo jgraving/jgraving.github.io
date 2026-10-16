@@ -1,11 +1,14 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ page.title | escape }} — Animal Behavior, Computation &amp; Theory</title>
   <meta name="description" content="{{ page.intro | escape }}">
-  <meta name="theme-color" content="#f6f7f2">
+  <meta name="theme-color" content="#141c18">
+  <meta name="color-scheme" content="dark light">
+  <script>try{var t=localStorage.getItem('portfolio-theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t;}catch(e){}</script>
+  <script src="{{ '/assets/js/theme.js' | relative_url }}" defer></script>
   <link rel="canonical" href="{{ page.url | absolute_url }}">
   <meta property="og:title" content="Jake Graving — Animal Behavior, Computation &amp; Theory">
   <meta property="og:description" content="{{ page.intro | escape }}">
@@ -21,7 +24,7 @@
 <header class="header">
   <nav class="navigation wrap" aria-label="Main navigation">
     <a class="wordmark" href="#top">Jake Graving<span class="wordmark-dot" aria-hidden="true"></span></a>
-    <div class="nav-links"><a href="#work">Research</a><a href="#about">About</a><a href="#contact">Contact</a><a class="nav-cv" href="{{ '/files/jacob_graving_cv.pdf' | relative_url }}">CV <span aria-hidden="true">↗</span></a></div>
+    <div class="nav-links"><a href="#work">Research</a><a href="#about">About</a><a href="#contact">Contact</a><a class="nav-cv" href="{{ '/files/jacob_graving_cv.pdf' | relative_url }}">CV <span aria-hidden="true">↗</span></a><button class="theme-toggle" id="theme-toggle" type="button" aria-label="Use light theme"><span aria-hidden="true">☼</span><span class="theme-label">Light</span></button></div>
   </nav>
 </header>
 <main id="main">
@@ -35,6 +38,15 @@
     <figure class="hero-portrait"><img src="{{ '/assets/images/research/portrait-large.webp' | relative_url }}" srcset="{{ '/assets/images/research/portrait.webp' | relative_url }} 320w, {{ '/assets/images/research/portrait-large.webp' | relative_url }} 900w" sizes="(max-width: 640px) 85vw, 42vw" width="900" height="900" alt="Jake Graving outdoors" fetchpriority="high"><figcaption><strong>Jake Graving</strong><span>{{ page.role | escape }}</span><a href="{{ page.institution_url }}">{{ page.institution | escape }} ↗</a><span>{{ page.location | escape }}</span></figcaption></figure>
   </section>
 
+  <div class="research-illustration wrap"><figure class="illustration-panel"><figcaption><span class="eyebrow">Across scales</span><h2>Individual choices.<br>Collective patterns.</h2><p>Connecting observations, statistical models, and theory to understand animal behavior.</p></figcaption><div class="illustration-graphic" aria-hidden="true">      <svg viewBox="0 0 480 370" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs><pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="var(--art-dot)"/></pattern></defs>
+        <rect width="480" height="370" fill="url(#dots)"/>
+        <g stroke="var(--art-line)" stroke-width="1.5"><path d="M-20 310C100 360 80 45 240 80S350 290 510 140"/><path d="M-20 290C100 340 100 35 250 65S380 270 510 120"/><path d="M-20 270C100 320 110 15 270 50S390 250 510 100"/><path d="M-20 250C90 310 130 5 290 40S410 230 510 80"/><path d="M-20 230C90 290 150 0 310 30S430 210 510 60"/></g>
+        <g fill="var(--art-arrow)"><path d="m150 132 20-12-6 22-3-9z"/><path d="m210 63 23 3-19 14 4-11z"/><path d="m288 91 23 7-22 11 6-10z"/><path d="m333 159 21 11-23 7 7-9z"/><path d="m382 202 23-3-15 18 1-11z"/><path d="m97 218 17-16-1 23-6-9z"/></g>
+        <g stroke="var(--art-accent)" stroke-width="1.5"><path d="M0 350C110 170 190 340 310 260S410 100 490 200"/><path d="M0 365C110 185 190 355 310 275S410 115 490 215"/></g>
+        <g fill="var(--art-accent)"><circle cx="195" cy="289" r="5"/><circle cx="290" cy="271" r="5"/><circle cx="362" cy="210" r="5"/></g>
+        <circle cx="240" cy="185" r="106" stroke="var(--art-arrow)" stroke-opacity=".14" stroke-dasharray="4 7"/>
+      </svg></div></figure></div>
   {% assign projects = site.research | sort: 'order' %}
   <section class="work-section wrap" id="work" aria-labelledby="work-title">
     <div class="section-heading"><div><p class="eyebrow">Selected work</p><h2 id="work-title">From observation<br>to understanding.</h2></div><p>Experiments, models, and methods for understanding<br class="desktop-break"> behavior, across scales and species.</p></div>

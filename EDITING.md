@@ -47,3 +47,7 @@ The redesign's pull-request workflow builds with GitHub's Jekyll Pages action an
 Edit `_data/current_research.yml` for the short descriptions of work in progress. Keep these high level; unpublished manuscripts and detailed theory are intentionally not linked or reproduced.
 
 `legacy: true` places a project in the smaller earlier-software area. `youtube` holds an existing YouTube video ID, while `video_file` is a local MP4 URL. Use an image URL or a local preview filename for `image`. Players load only on click; without JavaScript the preview remains an ordinary link to the original demonstration. Original full-resolution figures can be linked with `image_full`.
+
+## Color themes
+
+Dark is the default. The header's Light/Dark button saves the visitor's choice in their browser. Both palettes are defined as CSS variables in `home.css`; `assets/js/theme.js` controls the toggle. The portrait is a prominent part of the introduction, with the graphical abstract retained below it.
