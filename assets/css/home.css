@@ -35,3 +35,5 @@
 @media print{:root[data-theme=dark]{--paper:#fff;--ink:#222;--muted:#444;--surface:#fff;--soft:#fff;--line:#bbb;--green:#222;--secondary-text:#444}.research-illustration{display:none}}
 .illustration-panel{margin:0}
 button.research-film{padding:0;border:0;background:transparent;font:inherit;text-align:left;cursor:pointer}button.research-film:focus-visible{outline:3px solid var(--art-accent);outline-offset:-5px}
+
+#drones .research-film img{object-fit:contain;background:var(--image-surface)}

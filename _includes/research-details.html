@@ -1,6 +1,7 @@
 <details class="research-details">
   <summary>Explore project <span aria-hidden="true">+</span></summary>
   <div class="project-prose">{{ project.content | markdownify }}
+    {% if project.youtube and project.image_full %}<p><a href="{{ project.image_full | relative_url }}">View full-resolution research figure</a></p>{% endif %}
 
   </div>
 </details>

@@ -10,6 +10,8 @@ image: tracks.webp
 image_alt: Animal trajectories over a reconstructed map of terrain height
 featured: true
 image_full: /files/images/tracks_on_map_observation088.png
+youtube: ZSaXJUDuI44
+video: https://www.youtube.com/watch?v=ZSaXJUDuI44
 ---
 This work introduced a drone- and computer vision–based system for high-resolution tracking of animal groups in the wild.
 I helped build and refine a scalable pipeline that combines drone video with deep learning and computer vision algorithms to detect, track, and reconstruct 3D movement and environmental context for wild animals. Working with an interdisciplinary team, we enabled large-scale, non-invasive behavioral analysis in natural settings — advancing tools for behavioral ecology and conservation.
