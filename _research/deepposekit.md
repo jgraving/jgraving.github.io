@@ -1,10 +1,10 @@
 ---
 slug: deepposekit
-title: DeepPoseKit
+title: Measuring animal posture
 category: Animal pose estimation
 year: '2019'
 order: 6
-summary: Deep-learning-based pose estimation for tracking animal posture across species.
+summary: Tracking body landmarks across species with deep learning, using DeepPoseKit.
 image: pose.webp
 image_alt: Examples of animal pose estimation with colored body landmarks
 featured: false
