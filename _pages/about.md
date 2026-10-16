@@ -20,8 +20,8 @@ redirect_from:
   - /about.html
   - /about
 ---
-My research combines **behavioral experiments and observations** with computational models, machine learning, and Bayesian statistics—in the lab and in the wild.
+My research focuses on **modeling and theory**, using computational models, Bayesian statistics, and machine learning to understand animal behavior.
 
-I collaborate with neuroscientists, biologists, physicists, and engineers, connecting **experimental design with computational analysis**.
+I collaborate with neuroscientists, biologists, physicists, and engineers, connecting **theory with data** from experiments and observations in the lab and in the wild.
 
 The goal is to build AI systems that go *beyond prediction*: testing hypotheses, revealing mechanisms, and turning computational insights into **scientific understanding**.
