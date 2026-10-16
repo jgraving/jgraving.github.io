@@ -1,0 +1,6 @@
+<details class="research-details">
+  <summary>Explore project <span aria-hidden="true">+</span></summary>
+  <div class="project-prose">{% if project.image and project.featured != true %}<img src="{{ "/assets/images/research/" | append: project.image | relative_url }}" alt="{{ project.image_alt | escape }}" width="320" height="320" loading="lazy" decoding="async">{% endif %}{{ project.content | markdownify }}
+    {% if project.video %}<p><a class="media-link" href="{{ project.video | relative_url }}">Watch the research demonstration <span aria-hidden="true">↗</span></a></p>{% endif %}
+  </div>
+</details>

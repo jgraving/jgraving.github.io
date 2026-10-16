@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title | escape }} — AI &amp; Animal Behavior</title>
+  <meta name="description" content="{{ page.intro | escape }}">
+  <meta name="theme-color" content="#f6f7f2">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <meta property="og:title" content="Jake Graving — AI &amp; Animal Behavior">
+  <meta property="og:description" content="{{ page.intro | escape }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:image" content="{{ '/images/profile.png' | absolute_url }}">
+  <link rel="icon" href="{{ '/images/favicon.svg' | relative_url }}" type="image/svg+xml">
+  <link rel="stylesheet" href="{{ '/assets/css/home.css' | relative_url }}">
+</head>
+<body id="top">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="header">
+  <nav class="navigation wrap" aria-label="Main navigation">
+    <a class="wordmark" href="#top">Jake Graving<span class="wordmark-dot" aria-hidden="true"></span></a>
+    <div class="nav-links"><a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a><a class="nav-cv" href="{{ '/files/jacob_graving_cv.pdf' | relative_url }}">CV <span aria-hidden="true">↗</span></a></div>
+  </nav>
+</header>
+<main id="main">
+  <section class="hero wrap" aria-labelledby="hero-title">
+    <div class="hero-copy">
+      <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> AI + animal behavior</p>
+      <h1 id="hero-title">{{ page.headline | escape }}</h1>
+      <p class="intro">{{ page.intro | escape }}</p>
+      <div class="hero-actions"><a class="button button-primary" href="#work">Explore my work <span aria-hidden="true">↓</span></a><a class="text-link" href="{{ site.author.googlescholar }}">Google Scholar <span aria-hidden="true">↗</span></a></div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <div class="art-top"><span>INDIVIDUALS → COLLECTIVES</span><span>BEHAVIOR / AI</span></div>
+      <svg viewBox="0 0 480 370" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs><pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#cdd6c9"/></pattern></defs>
+        <rect width="480" height="370" fill="url(#dots)"/>
+        <g stroke="#a4b99c" stroke-width="1.5"><path d="M-20 310C100 360 80 45 240 80S350 290 510 140"/><path d="M-20 290C100 340 100 35 250 65S380 270 510 120"/><path d="M-20 270C100 320 110 15 270 50S390 250 510 100"/><path d="M-20 250C90 310 130 5 290 40S410 230 510 80"/><path d="M-20 230C90 290 150 0 310 30S430 210 510 60"/></g>
+        <g fill="#355b42"><path d="m150 132 20-12-6 22-3-9z"/><path d="m210 63 23 3-19 14 4-11z"/><path d="m288 91 23 7-22 11 6-10z"/><path d="m333 159 21 11-23 7 7-9z"/><path d="m382 202 23-3-15 18 1-11z"/><path d="m97 218 17-16-1 23-6-9z"/></g>
+        <g stroke="#8878a9" stroke-width="1.5"><path d="M0 350C110 170 190 340 310 260S410 100 490 200"/><path d="M0 365C110 185 190 355 310 275S410 115 490 215"/></g>
+        <g fill="#8878a9"><circle cx="195" cy="289" r="5"/><circle cx="290" cy="271" r="5"/><circle cx="362" cy="210" r="5"/></g>
+        <circle cx="240" cy="185" r="106" stroke="#355b42" stroke-opacity=".14" stroke-dasharray="4 7"/>
+      </svg>
+      <div class="art-bottom"><span>Small decisions.<br><strong>Collective patterns.</strong></span><span class="art-symbol">↗</span></div>
+    </div>
+  </section>
+  <div class="affiliation wrap"><img src="{{ '/assets/images/research/portrait.webp' | relative_url }}" width="48" height="48" alt="Jake Graving"><p>{{ page.role | escape }}<br><a href="{{ page.institution_url }}">{{ page.institution | escape }} <span aria-hidden="true">↗</span></a></p><span class="location">{{ page.location | escape }}</span></div>
+  {% assign projects = site.research | sort: 'order' %}
+  <section class="work-section wrap" id="work" aria-labelledby="work-title">
+    <div class="section-heading"><div><p class="eyebrow">Selected work</p><h2 id="work-title">From observation<br>to understanding.</h2></div><p>Tools and research for making sense<br class="desktop-break"> of behavior, across scales and species.</p></div>
+    <div class="featured-grid">
+    {% for project in projects %}{% if project.featured %}
+      <article class="project featured" id="{{ project.slug }}">
+        <div class="project-image"><img src="{{ '/assets/images/research/' | append: project.image | relative_url }}" alt="{{ project.image_alt | escape }}" width="{% if project.slug == 'drones' %}1600{% else %}768{% endif %}" height="{% if project.slug == 'drones' %}556{% else %}384{% endif %}" loading="lazy" decoding="async"></div>
+        <div class="project-body"><p class="project-meta">{{ project.category | escape }} <span>{{ project.year }}</span></p><h3>{{ project.title | escape }}</h3><p class="project-summary">{{ project.summary | escape }}</p>
+        {% include research-details.html %}</div>
+      </article>
+    {% endif %}{% endfor %}
+    </div>
+    <div class="research-heading"><h3>More questions. More perspectives.</h3><span>Research / 2016–2025</span></div>
+    <div class="research-grid">
+    {% for project in projects %}{% unless project.featured %}
+      <article class="project compact" id="{{ project.slug }}">
+        <div class="project-symbol" aria-hidden="true">{% case project.slug %}{% when 'locusts' %}⤴{% when 'fish' %}≈{% when 'birds' %}⌁{% else %}⌖{% endcase %}</div>
+        <div class="project-body"><p class="project-meta">{{ project.category | escape }} <span>{{ project.year }}</span></p><h3>{{ project.title | escape }}</h3><p class="project-summary">{{ project.summary | escape }}</p>{% include research-details.html %}</div>
+      </article>
+    {% endunless %}{% endfor %}
+    </div>
+    <a class="text-link all-publications" href="{{ site.author.googlescholar }}">All publications on Google Scholar <span aria-hidden="true">↗</span></a>
+  </section>
+  <section class="about-section" id="about" aria-labelledby="about-title"><div class="wrap about-grid"><div><p class="eyebrow">How I work</p><h2 id="about-title">Beyond<br>prediction.</h2><div class="disciplines"><span>Machine learning</span><span>Computer vision</span><span>Bayesian inference</span><span>Behavioral science</span></div></div><div class="about-copy">{{ content }}<a class="text-link" href="{{ '/files/jacob_graving_cv.pdf' | relative_url }}">View my CV <span aria-hidden="true">↗</span></a></div></div></section>
+  <section class="contact-section wrap" id="contact" aria-labelledby="contact-title"><p class="eyebrow">Get in touch</p><h2 id="contact-title">Science is collaborative.</h2><p>Interested in animal behavior, AI, or building better research tools? Let’s talk.</p><a class="button button-primary" href="mailto:{{ site.author.email }}">Say hello <span aria-hidden="true">↗</span></a><a class="contact-email" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></section>
+</main>
+<footer class="footer wrap"><span>© {{ 'now' | date: '%Y' }} Jake Graving</span><nav aria-label="Social links"><a href="https://github.com/{{ site.author.github }}">GitHub ↗</a><a href="https://bsky.app/profile/{{ site.author.bluesky }}">Bluesky ↗</a><a href="{{ site.author.googlescholar }}">Scholar ↗</a></nav><div><a href="{{ '/terms/' | relative_url }}">Privacy</a><a href="{{ '/impressum/' | relative_url }}">Impressum</a></div></footer>
+</body>
+</html>
