@@ -9,3 +9,5 @@
   <a class="research-figure" href="{{ project.image_full | relative_url }}" aria-label="View full research figure: {{ project.title | escape }}"><img src="{{ image_src }}" alt="{{ project.image_alt | escape }}" width="1600" height="556" loading="lazy" decoding="async"></a>
   {% endif %}
 </div>
+
+{% if project.youtube %}<p class="media-privacy">By selecting Play video, you consent to loading YouTube: Google receives your IP address and may use cookies or device storage. <a href="{{ '/privacy/#youtube' | relative_url }}">Privacy details</a>.</p>{% endif %}
