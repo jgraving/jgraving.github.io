@@ -81,10 +81,10 @@
 
 /* The opening section combines the personal introduction, bio and actions. */
 .hero{align-items:start}
-.hero-bio{margin-top:22px;font-size:16px;line-height:1.75;color:var(--secondary-text);max-width:600px}
-.hero-bio p+p{margin-top:16px}
+.hero-bio{margin-top:28px;font-size:16px;line-height:1.75;color:var(--secondary-text);max-width:600px}
+.hero-bio p+p{margin-top:22px}
 .hero-bio strong{font-weight:600;color:var(--ink)}
 .hero-actions{gap:10px;margin-top:26px}
 .hero-actions .button{padding-inline:18px;gap:12px}
 .hero+.work-section{padding-top:36px}
-@media(max-width:640px){.hero-bio{font-size:15px;margin-top:20px}.hero+.work-section{padding-top:24px}}
+@media(max-width:640px){.hero-bio{font-size:15px;margin-top:24px}.hero+.work-section{padding-top:24px}}
