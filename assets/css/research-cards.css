@@ -46,13 +46,7 @@
 /* Research context follows the title in ordinary text. */
 .research-grid .project-meta{font-size:12px;font-weight:500;letter-spacing:0;text-transform:none;margin:10px 0 0;line-height:1.5}
 
-/* A brief greeting on mouse hover, then a quiet two-pixel lift. */
+/* Mouse hover adds only a small lift and a soft shadow. */
 @media(hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference){
- .research-masonry>.project:hover,.research-masonry>.current-project:hover{transform:translateY(-2px);animation:card-greet 420ms cubic-bezier(.2,.7,.2,1);box-shadow:var(--elevation-2)}
- @keyframes card-greet{
-  0%{transform:translateY(0) rotate(0)}
-  45%{transform:translateY(-2px) rotate(-.3deg)}
-  75%{transform:translateY(-2px) rotate(.15deg)}
-  100%{transform:translateY(-2px) rotate(0)}
- }
+ .research-masonry>.project:hover,.research-masonry>.current-project:hover{transform:translateY(-2px);box-shadow:var(--elevation-2)}
 }
