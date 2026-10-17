@@ -1,0 +1,24 @@
+{
+  "id": "https://jakegraving.com/",
+  "name": "Jake Graving",
+  "short_name": "Jake Graving",
+  "start_url": "https://jakegraving.com/",
+  "scope": "https://jakegraving.com/",
+  "display": "browser",
+  "background_color": "#141c18",
+  "theme_color": "#141c18",
+  "icons": [
+    {
+      "src": "https://jakegraving.com/images/favicon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "https://jakegraving.com/images/favicon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
