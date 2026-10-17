@@ -1,6 +1,6 @@
 ---
 slug: drones
-title: Movement, behaviour, and environmental context
+title: Quantifying group movement with drones and AI
 category: Computer vision · Field research
 year: '2023'
 order: 2
