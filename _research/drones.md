@@ -1,6 +1,6 @@
 ---
 slug: drones
-title: A new view of life in the wild
+title: Seeing life in the wild from above
 category: Computer vision · Field research
 year: '2023'
 order: 2

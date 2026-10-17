@@ -12,13 +12,13 @@
     const source = video.readyState >= 2 && video.dataset.species === species ? video : poster;
     if (!source) return;
     const size = canvas.width, split = size * Number(wipe.value)/100;
-    // The original figure is a 2x2 panel: footage top-left, overlaid pose bottom-right.
+    // The source figure places the estimated pose in the lower-right panel and footage in the upper-left.
     const width = source.videoWidth || source.naturalWidth;
     const height = source.videoHeight || source.naturalHeight;
     if (!width || !height) return;
-    ctx.drawImage(source,0,0,width/2,height/2,0,0,size,size);
+    ctx.drawImage(source,width/2,height/2,width/2,height/2,0,0,size,size);
     ctx.save();ctx.beginPath();ctx.rect(split,0,size-split,size);ctx.clip();
-    ctx.drawImage(source,width/2,height/2,width/2,height/2,0,0,size,size);ctx.restore();
+    ctx.drawImage(source,0,0,width/2,height/2,0,0,size,size);ctx.restore();
   }
   function label() { play.innerHTML = video.paused ? 'Play sequence <span aria-hidden="true">▶</span>' : 'Pause sequence <span aria-hidden="true">Ⅱ</span>'; }
   function stop() { video.pause();cancelAnimationFrame(raf);raf=0;label(); }
