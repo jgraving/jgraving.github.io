@@ -107,3 +107,20 @@
 @media(max-width:640px){.social-icon{width:44px;height:44px}}
 
 .hero-actions{display:flex;flex-wrap:wrap}.social-glyph{display:grid;place-items:center;width:22px;height:22px;font-weight:700;line-height:1}.social-glyph-bsky{font-size:25px}.social-glyph-linkedin{font-family:Arial,sans-serif;font-size:19px;letter-spacing:-1px}
+
+/* Keep the biography together so the portrait cannot stretch gaps between text rows. */
+@media(min-width:761px){
+ .hero{grid-template-areas:"text portrait";grid-template-rows:auto;align-items:center}
+ .hero-text{grid-area:text;align-self:center;min-width:0;padding-block:20px}
+ .hero-text .hero-copy{margin-bottom:26px}
+ .hero-text .intro{font-size:20px;line-height:1.65;max-width:540px;margin-top:22px}
+ .hero-text .hero-bio{font-size:17px;line-height:1.8;margin-top:0}
+ .hero-text .hero-bio p+p{margin-top:20px}
+ .hero-text .hero-actions{margin-top:28px}
+}
+@media(max-width:760px){
+ .hero-text{display:contents}
+ .hero-text>.hero-copy{grid-area:intro}
+ .hero-text>.hero-bio{grid-area:bio;margin-top:0;max-width:none}
+ .hero-text>.hero-actions{grid-area:actions;margin-top:0}
+}
