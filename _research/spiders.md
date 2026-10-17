@@ -6,9 +6,8 @@ year: 2016–2017
 order: 5
 summary: Exploring how whip spiders navigate using touch and smell.
 video: https://www.youtube.com/watch?v=6hY8X-qwyiU
-image: spider-preview.webp
-image_alt: A whip spider resting on a researcher's hand
-image_credit: © BGSU Marketing & Communications
+image: https://i.ytimg.com/vi/6hY8X-qwyiU/hqdefault.jpg
+image_alt: Video preview of navigation research in whip spiders
 youtube: 6hY8X-qwyiU
 ---
 Our studies revealed that whip spiders use tactile and olfactory cues — not vision — to navigate complex environments with impressive spatial precision.
