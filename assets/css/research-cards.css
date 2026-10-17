@@ -19,7 +19,7 @@
 .current-grid .film-preview .research-film{width:100%;height:100%}
 .current-grid .current-visual video,.current-grid .current-visual iframe{width:100%;height:100%;object-fit:contain}
 .research-masonry.is-masonry{grid-auto-rows:1px;row-gap:0}
-.research-masonry>.project,.research-masonry>.current-project{position:relative;transition:box-shadow 280ms,border-color 280ms}
+.research-masonry>.project,.research-masonry>.current-project{position:relative;transition:transform 220ms ease-out,box-shadow 280ms,border-color 280ms}
 .research-masonry>.project:hover,.research-masonry>.current-project:hover{transform:none}
 @media(max-width:640px){
  .research-grid,.current-grid{grid-template-columns:1fr;gap:24px}
@@ -45,3 +45,14 @@
 
 /* Research context follows the title in ordinary text. */
 .research-grid .project-meta{font-size:12px;font-weight:500;letter-spacing:0;text-transform:none;margin:10px 0 0;line-height:1.5}
+
+/* A brief greeting on mouse hover, then a quiet two-pixel lift. */
+@media(hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference){
+ .research-masonry>.project:hover,.research-masonry>.current-project:hover{transform:translateY(-2px);animation:card-greet 420ms cubic-bezier(.2,.7,.2,1);box-shadow:var(--elevation-2)}
+ @keyframes card-greet{
+  0%{transform:translateY(0) rotate(0)}
+  45%{transform:translateY(-2px) rotate(-.3deg)}
+  75%{transform:translateY(-2px) rotate(.15deg)}
+  100%{transform:translateY(-2px) rotate(0)}
+ }
+}
