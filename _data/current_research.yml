@@ -1,6 +1,6 @@
 - title: Making sense of direction
   status: In progress
-  description: Developing Bayesian circular statistics to model directional patterns and quantify uncertainty in animal behavior.
+  description: Developing Bayesian circular statistics to model directional data and quantify uncertainty in animal behavior.
   collaboration: In collaboration with [James Foster](https://www.neurobiology.uni-konstanz.de/foster/) · [University of Konstanz](https://www.uni-konstanz.de/en/).
   image: circular-statistics.png
   image_alt: Animal tracks, circular distributions, and Bayesian model summaries.
