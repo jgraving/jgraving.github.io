@@ -27,6 +27,8 @@
   <script src="{{ '/assets/js/depth.js' | relative_url }}" defer></script>
   <link rel="stylesheet" href="{{ '/assets/css/research-cards.css' | relative_url }}?v=20261017-compact-bee">
   <script src="{{ '/assets/js/research-cards.js' | relative_url }}?v=20261017-still-cards" defer></script>
+  <link rel="stylesheet" href="{{ '/assets/css/decision-experiment.css' | relative_url }}?v=20261017-decision1">
+  <script type="module" src="{{ '/assets/js/decision-experiment.js' | relative_url }}?v=20261017-decision1"></script>
 </head>
 <body id="top">
 <a class="skip-link" href="#main">Skip to content</a>
@@ -65,6 +67,8 @@ c8.96777 -9.54785 19.4062 -14.3125 31.2656 -14.3125c13.2188 0 23.5469 4.42871 30
       </nav></figcaption></figure>
   </section>
 
+
+  {% include decision-experiment.html %}
 
   {% assign projects = site.research | sort: 'year' | reverse %}
   <section class="work-section wrap" id="work" aria-label="Research">
