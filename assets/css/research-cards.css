@@ -19,12 +19,8 @@
 .current-grid .film-preview .research-film{width:100%;height:100%}
 .current-grid .current-visual video,.current-grid .current-visual iframe{width:100%;height:100%;object-fit:contain}
 .research-masonry.is-masonry{grid-auto-rows:1px;row-gap:0}
-.research-masonry>.project,.research-masonry>.current-project{position:relative;transform-origin:center;transition:transform 380ms var(--ease-settle),box-shadow 380ms var(--ease-settle),border-color 280ms}
-@media(hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference){
- .research-masonry>.project:hover,.research-masonry>.current-project:hover{transform:perspective(1400px) rotateX(var(--card-rx,0deg)) rotateY(var(--card-ry,0deg)) translateY(-5px);box-shadow:0 8px 20px #0002,0 26px 52px #0003}
- .research-masonry>.project::after,.research-masonry>.current-project::after{content:"";position:absolute;inset:0;pointer-events:none;border-radius:inherit;background:radial-gradient(480px circle at var(--card-x,50%) var(--card-y,0%),#ffffff0d,transparent 65%);opacity:0;transition:opacity 280ms}
- .research-masonry>.project:hover::after,.research-masonry>.current-project:hover::after{opacity:1}
-}
+.research-masonry>.project,.research-masonry>.current-project{position:relative;transition:box-shadow 280ms,border-color 280ms}
+.research-masonry>.project:hover,.research-masonry>.current-project:hover{transform:none}
 @media(max-width:640px){
  .research-grid,.current-grid{grid-template-columns:1fr;gap:24px}
  .research-masonry.is-masonry{grid-auto-rows:auto;row-gap:24px}
@@ -35,8 +31,8 @@
 @media(prefers-reduced-motion:reduce){.research-masonry>.project,.research-masonry>.current-project{transition:none;transform:none!important}}
 
 /* Preview crops are presentation-only; full figures remain in the project details. */
-#drones .project-image.film-preview{aspect-ratio:5/2}
-#drones .research-film img{object-fit:cover;object-position:right center;transform:none;background:transparent}
+#drones .project-image.film-preview{aspect-ratio:4/3}
+#drones .research-film img{object-fit:cover;object-position:center;transform:none;background:#472463}
 #fish .project-image.film-preview{aspect-ratio:4/3}
 #fish .research-film img{object-fit:cover;object-position:center 55%;transform:none}
 #spiders .research-film img{object-fit:cover;object-position:center;transform:none}

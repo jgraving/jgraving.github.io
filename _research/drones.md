@@ -5,7 +5,7 @@ category: Computer vision · Field research
 year: '2023'
 order: 2
 summary: Reconstructing individual trajectories and environmental context with computer vision.
-image: tracks.webp
+image: drone-art-preview.webp
 image_alt: Animal trajectories over a reconstructed map of terrain height
 featured: true
 image_full: /files/images/tracks_on_map_observation088.png
