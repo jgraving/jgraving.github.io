@@ -18,7 +18,7 @@
   {% include favicons.html %}
   <script src="{{ "/assets/js/research-media.js" | relative_url }}" defer></script>
   <link rel="stylesheet" href="{{ '/assets/css/home.css' | relative_url }}">
-  <link rel="stylesheet" href="{{ '/assets/css/material.css' | relative_url }}?v=20261017-readability">
+  <link rel="stylesheet" href="{{ '/assets/css/material.css' | relative_url }}?v=20261017-mobile-hero">
   <script src="{{ '/assets/js/material.js' | relative_url }}" defer></script>
   <link rel="stylesheet" href="{{ '/assets/css/depth.css' | relative_url }}">
   <script src="{{ '/assets/js/depth.js' | relative_url }}" defer></script>
@@ -33,10 +33,10 @@
     <div class="hero-copy">
       <h1 id="hero-title">{{ page.headline | escape }}</h1>
       <p class="intro">{{ page.intro | escape }}</p>
-      <div class="hero-bio">{{ content }}</div>
-      <div class="hero-actions"><a class="button button-primary" href="#work">Explore my work <span aria-hidden="true">↓</span></a><a class="button button-secondary" href="{{ site.author.googlescholar }}">Google Scholar <span aria-hidden="true">↗</span></a><a class="button button-secondary" href="{{ '/files/jacob_graving_cv.pdf' | relative_url }}">View my CV <span aria-hidden="true">↗</span></a></div>
     </div>
     <figure class="hero-portrait"><img src="{{ '/assets/images/research/portrait-large.webp' | relative_url }}" srcset="{{ '/assets/images/research/portrait.webp' | relative_url }} 320w, {{ '/assets/images/research/portrait-large.webp' | relative_url }} 900w" sizes="(max-width: 640px) 85vw, 42vw" width="900" height="900" alt="Jake Graving outdoors" fetchpriority="high"><figcaption><strong>Jake Graving</strong><span>{{ page.role | escape }}</span><div class="portrait-affiliations">{% for affiliation in page.affiliations %}<a href="{{ affiliation.url | escape }}">{{ affiliation.name | escape }} <span aria-hidden="true">↗</span></a>{% endfor %}</div><span>{{ page.location | escape }}</span></figcaption></figure>
+      <div class="hero-bio">{{ content }}</div>
+      <div class="hero-actions"><a class="button button-primary" href="#work">Explore my work <span aria-hidden="true">↓</span></a><a class="button button-secondary" href="{{ site.author.googlescholar }}">Google Scholar <span aria-hidden="true">↗</span></a><a class="button button-secondary" href="{{ '/files/jacob_graving_cv.pdf' | relative_url }}">View my CV <span aria-hidden="true">↗</span></a></div>
   </section>
 
 
