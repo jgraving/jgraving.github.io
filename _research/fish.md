@@ -1,6 +1,6 @@
 ---
 slug: fish
-title: Swimming in synchrony
+title: The mechanics of moving together
 category: Collective behavior
 year: '2020'
 order: 3
