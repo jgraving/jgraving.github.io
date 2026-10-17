@@ -16,6 +16,7 @@ document.addEventListener('click', function (event) {
     player.muted = true;
     player.src = link.dataset.video;
     player.controls = true;
+    player.loop = true;
     player.autoplay = true;
     player.playsInline = true;
     player.setAttribute('aria-label', link.dataset.title + ' — research film');
