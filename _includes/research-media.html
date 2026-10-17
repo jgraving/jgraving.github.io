@@ -3,6 +3,7 @@
   {% if project.youtube or project.video_file %}
   <button class="research-film" type="button" {% if project.youtube %}data-youtube="{{ project.youtube }}" aria-describedby="video-privacy-{{ project.slug }}"{% else %}data-video="{{ project.video_file | relative_url }}"{% endif %} data-title="{{ project.title | escape }}" aria-label="Play research video: {{ project.title | escape }}">
     <img src="{{ image_src }}" alt="{{ project.image_alt | escape }}" width="{% if project.video_file %}800{% else %}480{% endif %}" height="{% if project.video_file %}450{% else %}360{% endif %}" loading="lazy" decoding="async">
+    {% if project.image_credit %}<span class="preview-credit">{{ project.image_credit | escape }}</span>{% endif %}
     <span class="play-label"><span aria-hidden="true">▶</span> Play video</span>
   </button>
   {% else %}
