@@ -1,6 +1,6 @@
 ---
 slug: drones
-title: Seeing life in the wild from above
+title: Movement, behaviour, and environmental context
 category: Computer vision · Field research
 year: '2023'
 order: 2
