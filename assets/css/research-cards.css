@@ -35,7 +35,7 @@
 @media(prefers-reduced-motion:reduce){.research-masonry>.project,.research-masonry>.current-project{transition:none;transform:none!important}}
 
 /* Preview crops are presentation-only; full figures remain in the project details. */
-#drones .research-film img{object-fit:cover;object-position:100% 38%;transform:scale(1.7);transform-origin:55% 35%;background:transparent}
-#spiders .research-film img{object-position:70% 95%;transform:scale(1.7);transform-origin:70% 90%}
+#drones .research-film img{object-fit:cover;object-position:100% 38%;transform:scale(2.9);transform-origin:80% 17%;background:transparent}
+#spiders .research-film img{object-position:70% 95%;transform:scale(2.2);transform-origin:70% 90%}
 #fish .research-film img{object-position:center}
 .preview-credit{position:absolute;right:10px;bottom:9px;max-width:55%;padding:3px 6px;border-radius:4px;background:#1020199c;color:#fff;font-size:8px;line-height:1.3;z-index:1}
