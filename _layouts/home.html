@@ -40,31 +40,17 @@
   </section>
 
 
-  {% assign projects = site.research | sort: 'order' %}
+  {% assign projects = site.research | sort: 'year' | reverse %}
   <section class="work-section wrap" id="work" aria-labelledby="work-title">
-    <div class="section-heading"><div><h2 id="work-title">Selected research</h2></div><p>Experiments, models, and methods for understanding<br class="desktop-break"> behavior, across scales and species.</p></div>
-    <div class="featured-grid">
-    {% for project in projects %}{% if project.featured %}
-      <article class="project featured" id="{{ project.slug }}">
-        {% include research-media.html %}
-        <div class="project-body"><p class="project-meta">{{ project.category | escape }} <span>{{ project.year }}</span></p><h3>{{ project.title | escape }}</h3><p class="project-summary">{{ project.summary | escape }}</p>
-        {% include research-details.html %}</div>
-      </article>
-    {% endif %}{% endfor %}
-    </div>
-    <div class="research-heading"><h3>Other projects</h3><span>Research / 2016–2025</span></div>
-    {% assign chronological_projects = site.research | sort: 'year' | reverse %}
+    <div class="section-heading"><div><h2 id="work-title">Research</h2></div><p>Experiments, models, and methods for understanding<br class="desktop-break"> behavior, across scales and species.</p></div>
     <div class="research-grid">
-    {% for project in chronological_projects %}{% unless project.featured or project.legacy %}
+    {% for project in projects %}
       <article class="project visual-project" id="{{ project.slug }}">
         {% include research-media.html %}
         <div class="project-body"><p class="project-meta">{{ project.category | escape }} <span>{{ project.year }}</span></p><h3>{{ project.title | escape }}</h3><p class="project-summary">{{ project.summary | escape }}</p>{% include research-details.html %}</div>
       </article>
-    {% endunless %}{% endfor %}
+    {% endfor %}
     </div>
-    {% for project in projects %}{% if project.legacy %}
-    <article class="legacy-project" id="{{ project.slug }}"><img src="{{ '/assets/images/research/' | append: project.image | relative_url }}" alt="{{ project.image_alt | escape }}" width="768" height="384" loading="lazy" decoding="async"><div><p class="project-meta">Earlier software · {{ project.year }}</p><h3>{{ project.title | escape }}</h3><p class="project-summary">{{ project.summary | escape }}</p>{% include research-details.html %}</div></article>
-    {% endif %}{% endfor %}
     <a class="text-link all-publications" href="{{ site.author.googlescholar }}">All publications on Google Scholar <span aria-hidden="true">↗</span></a>
   </section>
   <section class="current-section wrap" id="current" aria-labelledby="current-title"><div class="section-heading"><div><h2 id="current-title">Current research</h2></div></div><div class="current-grid">{% for direction in site.data.current_research %}{% include current-research.html %}{% endfor %}</div></section>
