@@ -14,10 +14,9 @@
   image_alt: Spatial decision model comparing posterior belief, Fisher information,
     and belief entropy around two alternative targets.
   video_file: /assets/videos/spatial-decisions.mp4
-- title: Step selection in the wild
+- title: Movement decisions in the wild
   status: In progress
-  description: Using [HerdHover](https://www.herdhover.com/) data from Grévy’s and plains zebras to study how
-    terrain and social surroundings shape movement choices.
+  description: Studying how Grévy’s and plains zebras combine terrain, social context, and internal state when choosing where to move.
   collaboration: In collaboration with [Blair Costelloe](https://blaircostelloe.com/) · [Mara Elephant Project](https://maraelephantproject.org/).
   image: zebra-step-selection.webp
   image_alt: 3D reconstruction of zebras moving across natural terrain.
