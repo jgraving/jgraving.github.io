@@ -1,4 +1,4 @@
-import {simulate} from './decision-model.mjs';
+import {simulate} from './decision-model.mjs?v=20261017-equal-priors';
 const root = document.querySelector('.decision-experiment');
 if (root) {
   const canvas = root.querySelector('canvas'), ctx = canvas.getContext('2d');
@@ -34,7 +34,7 @@ if (root) {
     const left=paths.filter(p=>p.choice===0).length,right=paths.filter(p=>p.choice===1).length;
     status.textContent=`${left} paths reached A; ${right} reached B. Move a destination or change the separation to try another geometry.`;
   }
-  function reset() {stop();paths=simulate(targets,seed);progress=1;run.disabled=false;run.innerHTML='Run experiment <span aria-hidden="true">↗</span>';status.textContent='Each path is a repeat of the same experiment, with small internal fluctuations.';paint();}
+  function reset() {stop();paths=simulate(targets,seed);progress=1;run.disabled=false;run.innerHTML='Run experiment <span aria-hidden="true">↗</span>';status.textContent='Every run starts 50/50 between A and B. Small internal fluctuations break the symmetry.';paint();}
   function tick(now) {
     if(!started)started=now;
     progress=Math.min(1,(now-started)/5200);paint();
