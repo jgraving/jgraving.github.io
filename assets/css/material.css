@@ -125,7 +125,7 @@
  .hero-text>.hero-actions{grid-area:actions;margin-top:0}
 }
 
-.hello-wave{display:inline-block;margin-inline-start:.22em;transform-origin:72% 75%}
+.hello-wave{display:inline-block;margin-inline-start:.35em;transform-origin:72% 75%}
 @media(prefers-reduced-motion:no-preference){
  .hello-wave{animation:hello-wave 1.6s ease-in-out .25s 1 both}
  @keyframes hello-wave{0%,100%{transform:rotate(0)}12%{transform:rotate(18deg)}26%{transform:rotate(-10deg)}40%{transform:rotate(18deg)}54%{transform:rotate(-7deg)}68%{transform:rotate(12deg)}82%{transform:rotate(0)}}
