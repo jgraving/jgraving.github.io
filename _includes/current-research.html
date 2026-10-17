@@ -5,5 +5,6 @@
       {% else %}<img src="{{ '/assets/images/research/' | append: direction.image | relative_url }}" alt="{{ direction.image_alt | escape }}" width="{{ direction.image_width | default: 1400 }}" height="{{ direction.image_height | default: 800 }}" loading="{% if direction.compact_image %}eager{% else %}lazy{% endif %}" decoding="async">{% endif %}
     </div>
   </figure>
-  <div class="current-copy"><p class="project-meta">{{ direction.status | escape }}</p><h3>{{ direction.title | escape }}</h3><div class="current-description">{{ direction.description | markdownify }}</div>{% if direction.collaboration %}<div class="current-collaboration">{{ direction.collaboration | markdownify }}</div>{% endif %}</div>
+  <div class="current-copy"><h3>{{ direction.title | escape }}</h3><p class="project-meta">{{ direction.status | escape }}</p><div class="current-description">{{ direction.description | markdownify }}</div>{% if direction.collaboration %}<div class="current-collaboration">{{ direction.collaboration | markdownify }}</div>{% endif %}</div>
 </article>
+

@@ -8,7 +8,7 @@
 :root[data-theme=dark] .current-grid>.current-project{background:#292632;border-color:#51465f}
 .current-grid .current-copy{padding:28px}
 .current-grid .current-copy h3{font-size:25px;line-height:1.18}
-.current-grid .current-copy .project-meta{color:#70598a;margin-bottom:14px}
+.current-grid .current-copy .project-meta{color:#70598a;margin:10px 0 0}
 :root[data-theme=dark] .current-grid .current-project .project-meta{color:#c9b2e8}
 .current-grid .current-description{margin-top:14px;line-height:1.7}
 .current-grid .current-collaboration{margin-top:20px;font-size:12px;line-height:1.7}
@@ -41,3 +41,7 @@
 /* Compact figures use their own proportions rather than a letterboxed frame. */
 .current-grid .current-visual--compact{aspect-ratio:auto}
 .current-grid .current-visual--compact img{height:auto;object-fit:contain}
+
+
+/* Research context follows the title in ordinary text. */
+.research-grid .project-meta{font-size:12px;font-weight:500;letter-spacing:0;text-transform:none;margin:10px 0 0;line-height:1.5}

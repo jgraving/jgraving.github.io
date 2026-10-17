@@ -1,19 +1,20 @@
 <section class="decision-experiment wrap" aria-labelledby="decision-title" id="decision-experiment">
   <div class="decision-surface">
-    <div class="decision-intro"><p class="decision-kicker">A small experiment</p><h2 id="decision-title">When one path becomes two.</h2><p>Move the destinations. Watch a shared path split into different choices.</p></div>
+    <div class="decision-intro"><h2 id="decision-title">The geometry of choice</h2><p>Move the targets to explore how their geometry shapes a decision. Each line is a repeat of the same model, starting with equal preference for A and B.</p></div>
     <div class="decision-stage">
-      <canvas role="img" aria-label="Simulated trajectories from one starting point toward two destinations. Use the separation slider to change their positions."></canvas>
-      <button type="button" class="decision-target decision-target-a" aria-label="Destination A. Drag to move, or use arrow keys.">A</button>
-      <button type="button" class="decision-target decision-target-b" aria-label="Destination B. Drag to move, or use arrow keys.">B</button>
-      <span class="decision-start">Same starting point</span>
+      <canvas role="img" aria-label="Simulated trajectories from one starting point toward targets A and B. Drag either target or use the Target spacing slider to change their positions."></canvas>
+      <button type="button" class="decision-target decision-target-a" aria-label="Target A. Drag to move, or use arrow keys.">A</button>
+      <button type="button" class="decision-target decision-target-b" aria-label="Target B. Drag to move, or use arrow keys.">B</button>
+      <span class="decision-start">Starting point</span>
     </div>
     <div class="decision-controls">
-      <div class="decision-slider"><label for="decision-separation">Destination separation</label><input id="decision-separation" type="range" min="20" max="100" value="70" step="1"><span>Close together<span>Far apart</span></span></div>
-      <button type="button" class="button button-primary decision-run" disabled>Run experiment <span aria-hidden="true">↗</span></button>
+      <div class="decision-slider"><label for="decision-separation">Target spacing</label><input id="decision-separation" type="range" min="20" max="100" value="70" step="1"><span>Closer together<span>Far apart</span></span></div>
+      <button type="button" class="button button-primary decision-run" disabled>Simulate 20 paths</button>
     </div>
-    <p class="decision-status" role="status">Every run starts 50/50 between A and B. Small internal fluctuations break the symmetry.</p>
-    <details class="decision-explanation"><summary>What am I seeing?</summary><p>Each path starts with equal internal weights for A and B. Movement follows their weighted bearings. As the agent moves, the angle between those bearings changes: aligned options support equal weighting, while sufficiently separated options compete. Small, zero-mean internal fluctuations can then grow into commitment.</p><p>This demonstration uses coupled belief and movement updates, with a 90-degree cooperation threshold. The coupling strength, update rates, and noise level are illustrative choices, not estimates from animal data. Motor noise is switched off here so the effect of internal noise is easier to see. Equal internal weights need not mean equal final choice frequencies when you move the targets into an asymmetric arrangement.</p></details>
+    <p class="decision-status" role="status">Each path starts with equal weights for A and B. Random fluctuations can tip the decision toward either target.</p>
+    <details class="decision-explanation"><summary>How the model works</summary><p>The agent moves toward a weighted average of the two target directions. When those directions are similar, the weights tend to stay balanced. As the agent approaches and the directions spread apart, balanced weights become unstable. Small random fluctuations can then grow, and the agent commits to one target. This loss of stability is a bifurcation.</p><p>Here the transition from cooperation to competition occurs at an angle of 90 degrees. The model parameters are chosen to show the mechanism; they are not fitted to animal data. Noise acts on the internal weights, with no added movement noise. Moving the targets into an asymmetric arrangement can favor one outcome, even though the starting weights remain equal.</p></details>
     <noscript><p>This experiment needs JavaScript. The research below is available without it.</p></noscript>
   </div>
 </section>
+
 
