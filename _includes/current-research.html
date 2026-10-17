@@ -1,6 +1,6 @@
 <article class="current-project">
   <figure class="current-figure">
-    <div class="current-visual{% if direction.terrain %} current-visual--terrain{% endif %}{% if direction.video_file %} film-preview{% endif %}">
+    <div class="current-visual{% if direction.compact_image %} current-visual--compact{% endif %}{% if direction.terrain %} current-visual--terrain{% endif %}{% if direction.video_file %} film-preview{% endif %}">
       {% if direction.video_file %}<button class="research-film" type="button" data-video="{{ direction.video_file | relative_url }}" data-title="{{ direction.title | escape }}" aria-label="Play video: {{ direction.title | escape }}"><img src="{{ '/assets/images/research/' | append: direction.image | relative_url }}" alt="{{ direction.image_alt | escape }}" width="1400" height="607" loading="lazy" decoding="async"><span class="play-label"><span aria-hidden="true">▶</span> Play video</span></button>
       {% else %}<img src="{{ '/assets/images/research/' | append: direction.image | relative_url }}" alt="{{ direction.image_alt | escape }}" width="{{ direction.image_width | default: 1400 }}" height="{{ direction.image_height | default: 800 }}" loading="lazy" decoding="async">{% endif %}
     </div>
