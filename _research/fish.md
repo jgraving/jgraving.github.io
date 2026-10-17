@@ -8,6 +8,7 @@ summary: How fish coordinate their tailbeats to exploit the vortices produced by
 video: https://www.youtube.com/watch?v=J4T4hi8RO7s
 image: fish-full-preview.webp
 image_alt: Robotic fish and illustrated fish swimming through blue water
+image_credit: "© Liang Li / MPI-AB"
 youtube: J4T4hi8RO7s
 ---
 This paper identified a schooling strategy where fish synchronize their tailbeats to exploit hydrodynamic advantages, matching behavior previously seen in bio-inspired robots.
