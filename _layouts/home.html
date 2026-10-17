@@ -20,7 +20,7 @@
   {% include favicons.html %}
   <script src="{{ "/assets/js/research-media.js" | relative_url }}?v=20261017-loop" defer></script>
   <link rel="stylesheet" href="{{ '/assets/css/home.css' | relative_url }}">
-  <link rel="stylesheet" href="{{ '/assets/css/material.css' | relative_url }}?v=20261017-balanced-hero">
+  <link rel="stylesheet" href="{{ '/assets/css/material.css' | relative_url }}?v=20261017-hello-wave">
   <script src="{{ '/assets/js/material.js' | relative_url }}" defer></script>
   <link rel="stylesheet" href="{{ '/assets/css/socials.css' | relative_url }}?v=20261017-contact-card">
   <link rel="stylesheet" href="{{ '/assets/css/depth.css' | relative_url }}">
@@ -35,7 +35,7 @@
   <section class="hero wrap" id="about" aria-labelledby="hero-title">
     <div class="hero-text">
     <div class="hero-copy">
-      <h1 id="hero-title">{{ page.headline | escape }}</h1>
+      <h1 id="hero-title">{{ page.headline | remove: "👋" | strip | escape }}<span class="hello-wave" aria-hidden="true">👋</span></h1>
       <p class="intro">{{ page.intro | escape }}</p>
     </div>
 
