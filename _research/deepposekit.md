@@ -16,8 +16,6 @@ video_file: /assets/videos/deepposekit.mp4
 DeepPoseKit is an open-source software toolkit for fast, accurate animal pose estimation using a deep learning–based, multi-scale model.
 I led the development of DeepPoseKit to make deep learning–based posture tracking more accessible and efficient for behavioral researchers. The toolkit supports fast, accurate pose estimation across species — even with small training datasets — and has been adopted by labs working in both lab and field contexts.
 
-<video controls playsinline preload="none" poster="/assets/images/research/pose.webp" style="width:100%;height:auto;border-radius:12px" aria-label="Animal pose trajectories"><source src="/assets/videos/deepposekit.mp4" type="video/mp4"></video>
-
 ### Links  
 [Code on GitHub](https://github.com/jgraving/DeepPoseKit) · [Publication](https://elifesciences.org/articles/47994) · [Feature Article](https://www.campus.uni-konstanz.de/en/science/new-method-improves-measurement-of-animal-behaviour-using-deep-learning)
 
