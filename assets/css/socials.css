@@ -1,5 +1,5 @@
 /* Social links intentionally do not inherit the text-button padding rules. */
-.hero-socials{display:flex;align-items:center;gap:8px;flex:none}
+.hero-socials{display:flex;flex-wrap:wrap;align-items:center;gap:8px;max-width:100%;flex:0 1 auto}
 .hero-socials .social-link{box-sizing:border-box;display:grid;place-items:center;flex:0 0 44px;width:44px;height:44px;min-width:44px;min-height:44px;padding:0;border:0;border-radius:50%;color:var(--ink);background:transparent;text-decoration:none;line-height:1;transition:background-color 180ms,transform 180ms}
 .hero-socials .social-link svg{display:block;width:22px;height:22px;min-width:22px;min-height:22px;max-width:none;flex:none;fill:currentColor}
 .hero-socials .social-link:hover{background:var(--tonal)}
