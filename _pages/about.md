@@ -22,6 +22,8 @@ redirect_from:
 ---
 My research focuses on **modeling and theory**, using computational models, Bayesian statistics, and machine learning to understand animal behavior.
 
+My current work explores **decision making and inference**: how animals weigh alternatives, use uncertain information, and choose where to move. I develop models that connect internal beliefs with movement to understand how choices emerge.
+
 I collaborate with neuroscientists, biologists, physicists, and engineers, connecting **theory with data** from experiments and observations in the lab and in the wild.
 
 My goal is to turn computational insights into **scientific understanding**, using AI and mathematical models to go *beyond prediction*: testing hypotheses and revealing the mechanisms behind animal behavior.
