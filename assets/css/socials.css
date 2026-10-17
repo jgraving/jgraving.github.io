@@ -10,9 +10,3 @@
 /* The portrait doubles as a compact contact card. */
 .hero-portrait .hero-socials{margin-top:16px;gap:8px}
 .hero-portrait .hero-socials a{line-height:1;text-decoration:none}
-.research-grid{align-items:stretch}
-.research-grid>.project{display:flex;flex-direction:column}
-.research-grid>.project>.project-body{display:flex;flex:1;flex-direction:column}
-.research-grid .project-summary{margin-bottom:24px}
-.research-grid .research-details{margin-top:auto}
-@media(max-width:640px){.research-grid .project-summary{margin-bottom:0}.research-grid .research-details{margin-top:24px}}
