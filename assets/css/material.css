@@ -15,13 +15,10 @@
 .hero-portrait img{border-radius:0}
 .button,.theme-toggle,.play-label{transition:transform 280ms var(--ease-expressive),box-shadow 240ms var(--ease-settle),background-color 180ms,border-radius 280ms var(--ease-settle),border-color 180ms}
 .button,.theme-toggle{position:relative;isolation:isolate;overflow:hidden;min-height:48px}
-.button{padding:13px 24px;gap:18px;letter-spacing:.01em}
-.button-primary{box-shadow:var(--elevation-1)}
+.button{appearance:none;-webkit-appearance:none;padding:12px 24px;gap:12px;min-height:48px;font-size:14px;font-weight:600;line-height:20px;letter-spacing:.01em;border-radius:24px;transition:background-color 180ms,box-shadow 180ms,filter 180ms}
+.button-primary{border:0;background-image:none;box-shadow:0 1px 2px #0002}
 .button-secondary{border-width:1.5px}
-.button:active,.theme-toggle:active{transform:scale(.96);border-radius:16px;box-shadow:none}
-.button>span{transition:transform 280ms var(--ease-expressive)}
-.button-primary:hover>span{transform:translateY(3px)}
-.button-secondary:hover>span{transform:translate(2px,-2px)}
+.theme-toggle:active{transform:scale(.96);border-radius:16px;box-shadow:none}
 .material-ripple{position:absolute;pointer-events:none;border-radius:50%;background:currentColor;opacity:0;z-index:-1}
 .about-section{position:relative;background:var(--soft);border-block:1px solid var(--line);padding-block:62px}
 .about-grid{grid-template-columns:.7fr 1.3fr;gap:64px}
@@ -58,10 +55,10 @@
 }
 @media(hover:hover) and (pointer:fine){
  .project:hover{transform:translateY(-5px);box-shadow:var(--elevation-2);border-color:var(--chip-line)}
- .button:hover,.theme-toggle:hover{transform:translateY(-2px)}
- .button-primary:hover{box-shadow:var(--elevation-2)}
+ .theme-toggle:hover{transform:translateY(-2px)}
+ .button-primary:hover{box-shadow:0 2px 4px #0002}
  .button-secondary:hover{box-shadow:var(--elevation-1)}
- .button:active,.theme-toggle:active{transform:scale(.96)}
+ .theme-toggle:active{transform:scale(.96)}
  .research-film:hover .play-label{transform:translateY(-3px);box-shadow:0 8px 20px #0004}
  .nav-links>a:hover{background:var(--soft)}
 }
@@ -130,3 +127,9 @@
  .hello-wave{animation:hello-wave 1.6s ease-in-out .25s 1 both}
  @keyframes hello-wave{0%,100%{transform:rotate(0)}12%{transform:rotate(18deg)}26%{transform:rotate(-10deg)}40%{transform:rotate(18deg)}54%{transform:rotate(-7deg)}68%{transform:rotate(12deg)}82%{transform:rotate(0)}}
 }
+
+/* Filled controls use flat color and external elevation, never native bevels. */
+.button:hover,.button:active{transform:none}
+.button-primary:hover{filter:brightness(.96)}
+.button-primary:active{filter:brightness(.92);box-shadow:none}
+.button:focus-visible{outline:3px solid var(--green);outline-offset:4px}

@@ -11,6 +11,5 @@
 html.theme-reveal::view-transition-old(root),html.theme-reveal::view-transition-new(root){animation:none;mix-blend-mode:normal}
 html.theme-reveal::view-transition-old(root){z-index:1}
 html.theme-reveal::view-transition-new(root){z-index:2}
-@media(hover:hover) and (pointer:fine){.button:hover{border-radius:18px}.button:active{border-radius:14px}}
 @media(prefers-reduced-motion:reduce){.hero-portrait{transform:none}.hero-portrait::after{display:none}.theme-toggle:hover [aria-hidden]{transform:none}}
 @media print{.hero-portrait{transform:none}.hero-portrait::after{display:none}}

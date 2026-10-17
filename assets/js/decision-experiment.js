@@ -37,17 +37,17 @@ if (root) {
     const undecided=paths.length-left-right;
     status.textContent=`${left} reached A; ${right} reached B${undecided ? `; ${undecided} did not reach a target within the simulated time` : ""}. Move a target or adjust the spacing to compare outcomes.`;
   }
-  function reset() {stop();paths=simulate(targets,seed);progress=1;run.disabled=false;runLabel.textContent='Simulate 20 paths';status.textContent='Each path starts with equal weights for A and B. Random fluctuations can tip the decision toward either target.';paint();}
+  function reset() {stop();paths=simulate(targets,seed);progress=1;run.disabled=false;runLabel.textContent='Run simulation';status.textContent='Each path starts with equal weights for A and B. Random fluctuations can tip the decision toward either target.';paint();}
   function tick(now) {
     if(!started)started=now;
     progress=Math.min(1,(now-started)/5200);paint();
-    if(progress<1)frame=requestAnimationFrame(tick);else{frame=0;runLabel.textContent='Run another 20';outcome();}
+    if(progress<1)frame=requestAnimationFrame(tick);else{frame=0;runLabel.textContent='Run again';outcome();}
   }
   run.addEventListener('click',()=>{
     stop();seed+=31;paths=simulate(targets,seed);started=0;
-    if(reduced.matches){progress=1;paint();outcome();runLabel.textContent='Run another 20';return;}
-    progress=0;status.textContent='Simulating 20 paths from the same starting point.';
-    runLabel.textContent='Run another 20';frame=requestAnimationFrame(tick);
+    if(reduced.matches){progress=1;paint();outcome();runLabel.textContent='Run again';return;}
+    progress=0;status.textContent='Simulating paths from the same starting point.';
+    runLabel.textContent='Run again';frame=requestAnimationFrame(tick);
   });
   slider.addEventListener('input',()=>{const x=Number(slider.value)/200;targets=[{x:-x,y:.13},{x,y:.13}];reset();});
   const clamp=(v,lo,hi)=>Math.max(lo,Math.min(hi,v));

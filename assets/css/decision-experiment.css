@@ -16,7 +16,7 @@
 .decision-slider label{display:block;font-size:13px;font-weight:600;margin-bottom:10px}
 .decision-slider input{display:block;width:100%;accent-color:var(--green);cursor:pointer;min-height:24px;margin:0}
 .decision-slider>span{display:flex;justify-content:space-between;font-size:11px;color:var(--muted);margin-top:3px}
-.decision-run{white-space:nowrap;font:inherit;cursor:pointer}
+.decision-run{white-space:nowrap;font-family:inherit;cursor:pointer}
 .decision-run:disabled{opacity:.5;cursor:wait}
 .decision-status{padding:0 36px;margin:0 0 18px;color:var(--muted);font-size:12px;line-height:1.6}
 .decision-explanation{margin:0 36px 26px;color:var(--muted);max-width:760px;font-size:12px;line-height:1.7}
