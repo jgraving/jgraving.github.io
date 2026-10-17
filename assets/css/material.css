@@ -88,3 +88,17 @@
 .hero-actions .button{padding-inline:18px;gap:12px}
 .hero+.work-section{padding-top:36px}
 @media(max-width:640px){.hero-bio{font-size:15px;margin-top:24px}.hero+.work-section{padding-top:24px}}
+
+/* Intro and portrait lead the reading order; biography follows on narrow screens. */
+.hero{grid-template-areas:"intro portrait" "bio portrait" "actions portrait";grid-template-rows:auto auto 1fr;row-gap:24px}
+.hero-copy{grid-area:intro}
+.hero>.hero-portrait{grid-area:portrait}
+.hero>.hero-bio{grid-area:bio;margin-top:0}
+.hero>.hero-actions{grid-area:actions;margin-top:0;align-self:start}
+@media(max-width:760px){
+ .hero{grid-template-columns:1fr;grid-template-areas:"intro" "portrait" "bio" "actions";grid-template-rows:auto;gap:28px;padding-top:28px}
+ .hero-copy .intro{margin-top:18px;max-width:540px}
+ .hero>.hero-portrait{justify-self:center;max-width:380px}
+ .hero>.hero-bio{margin-top:0;max-width:none}
+ .hero>.hero-actions{margin-top:0}
+}
