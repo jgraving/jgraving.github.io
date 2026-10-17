@@ -1,15 +1,16 @@
 {
-	"name": "OOjs UI icon academic-progressive",
-	"icons": [
-		{
-			"src": "/images/favicon-192x192.png",
-			"sizes": "192x192",
-			"type": "image/png"
-		},
-		{
-			"src": "/images/favicon-512x512.png",
-			"sizes": "512x512",
-			"type": "image/png"
-		}
-	]
+  "name": "Jake Graving",
+  "short_name": "Jake Graving",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#141c18",
+  "theme_color": "#141c18",
+  "icons": [
+    {
+      "src": "/images/branching.svg?v=20261017",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
 }
