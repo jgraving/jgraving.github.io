@@ -1,6 +1,3 @@
-{% if project.slug == 'deepposekit' %}
-{% include measurement.html %}
-{% else %}
 {% assign image_src = project.image %}{% unless image_src contains '://' %}{% assign image_src = '/assets/images/research/' | append: image_src | relative_url %}{% endunless %}
 <div class="project-image{% if project.youtube or project.video_file %} film-preview{% endif %}">
   {% if project.youtube or project.video_file %}
@@ -14,5 +11,3 @@
 </div>
 
 {% if project.youtube %}<p class="media-privacy" id="video-privacy-{{ project.slug }}">By playing, you allow YouTube (Google) to process data and use cookies. <a href="{{ '/privacy/#youtube' | relative_url }}">Privacy</a>.</p>{% endif %}
-
-{% endif %}
