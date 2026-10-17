@@ -1,11 +1,10 @@
 ---
 slug: fish
-title: The mechanics of moving together
+title: Swimming in synchrony
 category: Collective behavior
 year: '2020'
 order: 3
-summary: How schooling fish synchronize their movements to benefit from the flow around
-  them.
+summary: How fish coordinate their tailbeats to exploit the vortices produced by their neighbors.
 video: https://www.youtube.com/watch?v=J4T4hi8RO7s
 image: https://i.ytimg.com/vi/J4T4hi8RO7s/hqdefault.jpg
 image_alt: Video preview of vortex phase matching in schooling fish

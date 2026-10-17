@@ -1,7 +1,6 @@
 - title: Making sense of direction
   status: In progress
-  description: New Bayesian methods for understanding direction and variability in
-    animal behavior.
+  description: Developing Bayesian circular statistics to model directional patterns and quantify uncertainty in animal behavior.
   collaboration: In collaboration with [James Foster](https://www.neurobiology.uni-konstanz.de/foster/) · [University of Konstanz](https://www.uni-konstanz.de/en/).
   image: circular-statistics.png
   image_alt: Animal tracks, circular distributions, and Bayesian model summaries.
@@ -23,10 +22,9 @@
   image_width: 1400
   image_height: 739
   terrain: true
-- title: How honeybees organize their nests
+- title: Inside the honeybee nest
   status: In progress
-  description: Modeling how honeybee colonies organize brood and food stores across
-    three-dimensional nests, and how that organization develops over time.
+  description: Modeling how brood and food stores are arranged across three-dimensional nests as colonies develop.
   collaboration: In collaboration with [Michael Smith](https://smithbeelab.com/) · [Auburn University](https://www.auburn.edu/).
   image: honeybee-nest-organization.webp
   image_alt: Three-dimensional honeybee nest maps comparing cell contents, model
