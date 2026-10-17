@@ -22,7 +22,7 @@ redirect_from:
 ---
 My research focuses on **modeling and theory**, using computational models, Bayesian statistics, and machine learning to understand animal behavior.
 
-My current work explores **decision making and inference**: how animals use uncertain information to weigh alternatives and select actions. I develop models of these processes across contexts, from choosing where to move to arranging brood and food stores within honeybee nests.
+My current work explores **decision making and inference**: how animals use uncertain information to weigh alternatives and select actions. I develop models that connect internal beliefs, environmental context, and action selection to understand how choices emerge.
 
 I collaborate with neuroscientists, biologists, physicists, and engineers, connecting **theory with data** from experiments and observations in the lab and in the wild.
 
