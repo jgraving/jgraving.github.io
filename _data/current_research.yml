@@ -1,11 +1,11 @@
-- title: Circular statistics
+- title: Making sense of direction
   status: In progress
   description: New Bayesian methods for understanding direction and variability in
     animal behavior.
   collaboration: In collaboration with [James Foster](https://www.neurobiology.uni-konstanz.de/foster/) · [University of Konstanz](https://www.uni-konstanz.de/en/).
   image: circular-statistics.png
   image_alt: Animal tracks, circular distributions, and Bayesian model summaries.
-- title: Normative decision making
+- title: Optimal decision making
   status: In progress
   description: Exploring how movement, beliefs, and spatial geometry shape animal
     decisions.
