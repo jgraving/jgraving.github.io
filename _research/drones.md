@@ -1,11 +1,10 @@
 ---
 slug: drones
-title: Quantifying group movement with drones and AI
+title: Tracking groups with drones
 category: Computer vision · Field research
 year: '2023'
 order: 2
-summary: Using drones and computer vision to reconstruct animal movement and environmental
-  context.
+summary: Reconstructing individual trajectories and environmental context with computer vision.
 image: tracks.webp
 image_alt: Animal trajectories over a reconstructed map of terrain height
 featured: true

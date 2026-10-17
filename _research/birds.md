@@ -1,11 +1,10 @@
 ---
 slug: birds
-title: Following individuals, understanding groups
+title: Tracking birds’ social lives
 category: Behavioral tracking
 year: '2018'
 order: 4
-summary: Computer vision and lightweight barcodes for tracking the lives and social
-  networks of birds.
+summary: Using lightweight barcodes and computer vision to map individual movements and social networks.
 video: /files/videos/zebra_finches_tracked.mp4
 image: birds.webp
 image_alt: Tracked zebra finches with colored position and orientation markers
