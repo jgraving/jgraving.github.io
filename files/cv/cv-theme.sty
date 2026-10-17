@@ -1,0 +1,37 @@
+% Shared restrained website-inspired CV styling. Compile with XeLaTeX.
+\ProvidesPackage{cv-theme}[2026/10/17 Minimal CV typography]
+\RequirePackage{fontspec}
+\defaultfontfeatures{Ligatures=TeX}
+\ifdefined\CVFontPath
+  \setmainfont{Carlito}[Path=\CVFontPath,Extension=.ttf,UprightFont=*-Regular,BoldFont=*-Bold,ItalicFont=*-Italic,BoldItalicFont=*-BoldItalic]
+\else
+  \IfFontExistsTF{Avenir Next}{\setmainfont{Avenir Next}}{%
+    \IfFontExistsTF{Carlito}{\setmainfont{Carlito}}{\setmainfont{TeX Gyre Heros}}}
+\fi
+\RequirePackage{xcolor}
+\definecolor{CVInk}{HTML}{25372E}
+\definecolor{CVGreen}{HTML}{355B42}
+\definecolor{CVMuted}{HTML}{5F6B62}
+\RequirePackage{geometry}
+\geometry{a4paper,left=16mm,right=16mm,top=15mm,bottom=16mm}
+\RequirePackage{hyperref}
+\hypersetup{colorlinks=true,urlcolor=CVGreen,linkcolor=CVGreen,pdftitle={Jacob M. Graving - Curriculum Vitae},pdfauthor={Jacob M. Graving}}
+\RequirePackage{enumitem}
+\setlist[itemize]{leftmargin=1.3em,label=\textbullet,topsep=3pt,itemsep=2pt,parsep=0pt}
+\RequirePackage{titlesec}
+\titleformat{\section}{\large\bfseries\color{CVGreen}}{}{0pt}{}
+\titlespacing*{\section}{0pt}{10pt}{5pt}
+\titleformat{\subsection}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\subsection}{0pt}{6pt}{3pt}
+\RequirePackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[L]{\footnotesize\color{CVMuted}Jacob M. Graving}
+\fancyfoot[R]{\footnotesize\color{CVMuted}\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+\setlength{\emergencystretch}{2em}
+\AtBeginDocument{\color{CVInk}\raggedright}
+\endinput

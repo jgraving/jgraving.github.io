@@ -2,61 +2,23 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % PREAMBLE (Updated for modern, professional font)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\documentclass[10pt,letterpaper]{article}
+\documentclass[10pt,a4paper]{article}
+\usepackage{cv-theme}
 
-% Encoding and fonts
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage[scaled]{helvet}
-\renewcommand{\familydefault}{\sfdefault} % Use Helvetica as default font
-
-% Page layout
-\usepackage[margin=2cm]{geometry}
-\setlength{\parindent}{0pt}    % No paragraph indentation
-\setlength{\parskip}{6pt}      % Space between paragraphs
-
-\usepackage{fancyhdr}
-\pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
-% Set footer
-\fancyfoot[L]{Jacob M. Graving}   % Left-aligned name
-\fancyfoot[C]{}                   % Center (empty)
-\fancyfoot[R]{\thepage}          % Right-aligned page number
-
-\renewcommand{\headrulewidth}{0pt} % Remove header line
-\renewcommand{\footrulewidth}{0pt} % Optional: add a line at the bottom
-\pagenumbering{arabic}             % Turn page numbers back on
-
-% Useful packages
-\usepackage{hyperref}          % Clickable URLs
-\usepackage{enumitem}          % Better lists
-\usepackage{fontawesome}       % For GitHub, Envelope icons, etc.
-
-% Make itemize spacing tighter
-\setlist[itemize]{topsep=2pt, itemsep=2pt, leftmargin=*, parsep=0pt}
-
-% Custom section heading
-\usepackage{titlesec}
-\titleformat{\section}{\large\bfseries}{}{0pt}{}[\titlerule]
-\titlespacing{\section}{0pt}{1em}{0.5em}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% DOCUMENT START
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 	
 	%-------------------- HEADER -----------------------%
 \begin{center}
 	{\huge \textbf{Jacob M. Graving}}\\[6pt]
-	\href{mailto:jgraving@gmail.com}{\faEnvelope\ jgraving@gmail.com}
+	\href{mailto:jgraving@gmail.com}{jgraving@gmail.com}
 	\quad | \quad
-	\href{http://jakegraving.com/}{\faGlobe\ jakegraving.com}
+	\href{http://jakegraving.com/}{jakegraving.com}
 	\quad | \quad
-	\href{https://github.com/jgraving}{\faGithub\ github.com/jgraving}\\[8pt]
+	\href{https://github.com/jgraving}{github.com/jgraving}\\[8pt]
 	
 	% Use a smaller font size for the long affiliation line:
 	{\small
-		Max Planck Institute of Animal Behavior \quad $\cdot$ \quad
+		Max Planck Institute of Animal Behavior \quad · \quad
 		University of Konstanz, Department of Biology \\
 		Universit\"{a}tsstr. 10, Konstanz, Germany 78464
 	}
@@ -156,7 +118,7 @@ International Max Planck Research School (IMPRS) \\
 	
 	\vspace{4pt}
 	\textbf{2023}\\
-	Koger, B., Deshpande, A., Kerby, J.T., \textbf{Graving, J.M.}, Costelloe, B. R., Couzin, I.D. (2023). Quantifying the movement, behaviour and environmental context of group‐living animals using drones and computer vision. \textit{Journal of Animal Ecology}. \href{https://doi.org/10.1111/1365-2656.13904}{doi:10.1111/1365-2656.13904} \textit{Code}: \href{https://github.com/benkoger/overhead-video-worked-examples}{github.com/benkoger/overhead-video-worked-examples}
+	Koger, B., Deshpande, A., Kerby, J.T., \textbf{Graving, J.M.}, Costelloe, B. R., Couzin, I.D. (2023). Quantifying the movement, behaviour and environmental context of group-living animals using drones and computer vision. \textit{Journal of Animal Ecology}. \href{https://doi.org/10.1111/1365-2656.13904}{doi:10.1111/1365-2656.13904} \textit{Code}: \href{https://github.com/benkoger/overhead-video-worked-examples}{github.com/benkoger/overhead-video-worked-examples}
 	\begin{itemize}
 		\item Co-developed a computer vision pipeline combining drone footage and deep learning to extract 3D behavioral and environmental data from animal groups in natural settings.
 		\item Integrated spatial context reconstruction with fine-scale movement tracking to support large-scale behavioral ecology studies.
