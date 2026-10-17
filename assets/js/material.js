@@ -21,7 +21,7 @@
         animate(target, [{opacity: .35, transform: 'translateY(22px)'}, {opacity: 1, transform: 'translateY(0)'}], {duration: 620, easing: ease});
       });
     }, {threshold: .08});
-    document.querySelectorAll('.hero-copy,.hero-portrait,.about-grid,.section-heading,.project,.current-project,.contact-section').forEach(el => arrivals.observe(el));
+    document.querySelectorAll('.hero-copy,.hero-portrait,.about-grid,.section-heading,.contact-section').forEach(el => arrivals.observe(el));
 
     const header = document.querySelector('.header');
     const hero = document.querySelector('.hero');

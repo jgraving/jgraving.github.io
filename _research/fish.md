@@ -6,8 +6,9 @@ year: '2020'
 order: 3
 summary: How fish coordinate their tailbeats to exploit the vortices produced by their neighbors.
 video: https://www.youtube.com/watch?v=J4T4hi8RO7s
-image: https://i.ytimg.com/vi/J4T4hi8RO7s/hqdefault.jpg
-image_alt: Video preview of vortex phase matching in schooling fish
+image: fish-preview.webp
+image_alt: Fish-like robots and goldfish illustrating the study of coordinated swimming
+image_credit: © MPI of Animal Behavior / Liang Li
 youtube: J4T4hi8RO7s
 ---
 This paper identified a schooling strategy where fish synchronize their tailbeats to exploit hydrodynamic advantages, matching behavior previously seen in bio-inspired robots.
