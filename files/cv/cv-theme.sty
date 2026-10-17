@@ -12,6 +12,8 @@
 \definecolor{CVInk}{HTML}{25372E}
 \definecolor{CVGreen}{HTML}{355B42}
 \definecolor{CVMuted}{HTML}{5F6B62}
+\definecolor{CVLine}{HTML}{CCD7C8}
+\definecolor{CVSoft}{HTML}{EFF3EC}
 \RequirePackage{geometry}
 \geometry{a4paper,left=16mm,right=16mm,top=15mm,bottom=16mm}
 \RequirePackage{hyperref}
@@ -19,19 +21,33 @@
 \RequirePackage{enumitem}
 \setlist[itemize]{leftmargin=1.3em,label=\textbullet,topsep=3pt,itemsep=2pt,parsep=0pt}
 \RequirePackage{titlesec}
-\titleformat{\section}{\large\bfseries\color{CVGreen}}{}{0pt}{}
-\titlespacing*{\section}{0pt}{10pt}{5pt}
-\titleformat{\subsection}{\normalsize\bfseries}{}{0pt}{}
-\titlespacing*{\subsection}{0pt}{6pt}{3pt}
+\titleformat{\section}{\fontsize{10}{12}\selectfont\bfseries\addfontfeatures{LetterSpace=7}\color{CVGreen}}{}{0pt}{\MakeUppercase}[{\color{CVLine}\titlerule[0.4pt]}]
+\titlespacing*{\section}{0pt}{10pt}{6pt}
+\titleformat{\subsection}{\fontsize{10.5}{13}\selectfont\bfseries}{}{0pt}{}
+\titlespacing*{\subsection}{0pt}{5pt}{3pt}
+\newcommand{\CVheader}[4]{%
+  {\fontsize{8}{10}\selectfont\bfseries\addfontfeatures{LetterSpace=12}\color{CVGreen}CURRICULUM VITAE\par}
+  \vspace{6pt}
+  {\fontsize{30}{34}\selectfont\bfseries #1\par}
+  \vspace{7pt}
+  {\fontsize{10}{13}\selectfont #2\par}
+  \vspace{5pt}
+  {\fontsize{9}{12}\selectfont\color{CVMuted}#3\par #4\par}
+  \vspace{9pt}
+  {\color{CVGreen}\rule{28mm}{2pt}\color{CVLine}\rule{\dimexpr\linewidth-28mm\relax}{0.4pt}\par}
+  \vspace{1pt}
+}
+\newcommand{\CVentry}[2]{\subsection*{{\color{CVGreen}#1}\enspace\textnormal{\color{CVLine}|}\enspace #2}}
 \RequirePackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhf{}
 \fancyfoot[L]{\footnotesize\color{CVMuted}Jacob M. Graving}
 \fancyfoot[R]{\footnotesize\color{CVMuted}\thepage}
 \renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0.3pt}
+\renewcommand{\footrule}{\hbox to\headwidth{\color{CVLine}\leaders\hrule height \footrulewidth\hfill}}
 \setlength{\parindent}{0pt}
-\setlength{\parskip}{4pt}
+\setlength{\parskip}{3pt}
 \setlength{\emergencystretch}{2em}
 \AtBeginDocument{\color{CVInk}\raggedright}
 \endinput
