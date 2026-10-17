@@ -9,7 +9,7 @@
     </div>
     <div class="decision-controls">
       <div class="decision-slider"><label for="decision-separation">Target spacing</label><input id="decision-separation" type="range" min="20" max="100" value="70" step="1"><span>Closer together<span>Far apart</span></span></div>
-      <button type="button" class="button button-primary decision-run" disabled>Simulate 20 paths</button>
+      <button type="button" class="button button-primary decision-run" disabled><span data-decision-run-label>Simulate 20 paths</span> {% include trajectory-arrow.html %}</button>
     </div>
     <p class="decision-status" role="status">Each path starts with equal weights for A and B. Random fluctuations can tip the decision toward either target.</p>
     <details class="decision-explanation"><summary>How the model works</summary><p>The agent moves toward a weighted average of the two target directions. When those directions are similar, the weights tend to stay balanced. As the agent approaches and the directions spread apart, balanced weights become unstable. Small random fluctuations can then grow, and the agent commits to one target. This loss of stability is a bifurcation.</p><p>Here the transition from cooperation to competition occurs at an angle of 90 degrees. The model parameters are chosen to show the mechanism; they are not fitted to animal data. Noise acts on the internal weights, with no added movement noise. Moving the targets into an asymmetric arrangement can favor one outcome, even though the starting weights remain equal.</p></details>

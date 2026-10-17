@@ -1,0 +1,6 @@
+/* A small movement trace, drawn to echo the trajectory wordmark. */
+.trajectory-arrow{display:inline-block;width:22px;height:22px;flex:0 0 22px;vertical-align:-.28em;color:inherit;overflow:visible}
+.portrait-affiliations .trajectory-arrow{width:16px;height:16px;flex-basis:16px;margin-left:4px}
+.nav-cv{display:inline-flex;align-items:center;gap:8px}
+.footer nav a{display:inline-flex;align-items:center;gap:5px}
+.footer .trajectory-arrow{width:15px;height:15px;flex-basis:15px}
